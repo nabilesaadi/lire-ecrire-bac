@@ -29,4 +29,6 @@ npm run dev      # serveur local
 npm run build    # version de production dans dist/
 ```
 
-Hébergement : Vercel (gratuit), importé depuis ce dépôt GitHub ; chaque mise à jour du dépôt republie le site.
+Site en ligne : https://nabilesaadi.github.io/lire-ecrire-bac/
+
+Hébergement : GitHub Pages (gratuit). La branche `gh-pages` contient le site compilé (`npm run build`, puis copie de `dist/` avec un fichier `.nojekyll`).
