@@ -236,6 +236,18 @@ grant execute on function public.check_class_code(text), public.username_availab
 grant execute on function public.create_class(text, text), public.seed_demo(jsonb) to authenticated;
 
 -- ---------------------------------------------------------------------
+-- Droits explicites (valables même si l'exposition automatique est désactivée)
+-- ---------------------------------------------------------------------
+grant usage on schema public to anon, authenticated;
+grant select on public.profiles to authenticated;
+grant select, update, delete on public.classes to authenticated;
+grant select, insert on public.attempts to authenticated;
+grant select, insert on public.submissions to authenticated;
+grant select, insert, update, delete on public.assignments to authenticated;
+grant usage, select on all sequences in schema public to authenticated;
+revoke all on public.app_settings from anon, authenticated;
+
+-- ---------------------------------------------------------------------
 -- Règles d'accès (Row Level Security)
 -- ---------------------------------------------------------------------
 alter table public.app_settings enable row level security;
