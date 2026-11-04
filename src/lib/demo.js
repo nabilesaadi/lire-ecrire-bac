@@ -1,5 +1,5 @@
 // Génère une classe de démonstration (données fictives) pour le tableau de bord.
-import { CATALOG, ITEMS_BY_ACTIVITY, WORK, PE, POINTS } from './items'
+import { ANT, ANT_PATH, CATALOG, ITEMS_BY_ACTIVITY, WORK, PE, POINTS } from './items'
 
 function rng(seed) {
   let s = seed >>> 0
@@ -22,8 +22,8 @@ const DIFF = {
 
 // Réponses fausses plausibles pour les questions à choix (affichées dans « erreurs fréquentes »)
 function wrongAnswer(activity, item, r) {
-  if (activity.startsWith('bam.quiz.')) {
-    const q = WORK.quizzes[Number(activity.split('.')[2]) - 1]
+  if (activity.startsWith('bam.quiz.') || activity.startsWith('ant.quiz.')) {
+    const q = (activity.startsWith('ant.') ? ANT : WORK).quizzes[Number(activity.split('.')[2]) - 1]
     const [s, i] = item.slice(1).split('.').map(Number)
     const sec = q.sections[s]
     const it = sec.items[i]
@@ -76,7 +76,9 @@ export function generateDemo(seed = 2026) {
   students.forEach((s) => {
     const nRead = Math.max(2, Math.round(order.length * s.pace * (0.55 + r() * 0.45)))
     const nPe = Math.max(1, Math.round(peOrder.length * s.pace * (0.25 + r() * 0.35)))
-    const plan = [...order.slice(0, nRead), ...peOrder.slice(0, nPe)]
+    // Antigone : commencée plus tard, seulement par une partie de la classe
+    const nAnt = s.pace > 0.7 ? Math.round(ANT_PATH.length * (s.pace - 0.6) * (0.8 + r() * 0.6)) : 0
+    const plan = [...order.slice(0, nRead), ...peOrder.slice(0, nPe), ...ANT_PATH.slice(0, nAnt).map((x) => x.id)]
     plan.forEach((act, k) => {
       const progress = k / plan.length
       const t0 = now - (weeks * 7 - progress * weeks * 7 + r() * 2) * DAY

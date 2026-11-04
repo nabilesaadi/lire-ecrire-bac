@@ -7,6 +7,7 @@ import { StudentHome, WorkHub, MyWork } from './pages/student'
 import { Lecture, Chapter, Quiz } from './pages/lecture'
 import { Writing, Structure, Theme } from './pages/writing'
 import { Teacher } from './pages/teacher'
+import { AntHub, AntLecture, AntUnit, AntQuiz } from './pages/antigone'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -44,6 +45,10 @@ function Shell() {
           <Route path="/oeuvre/bam/ecriture" element={<Need role="learner"><Writing /></Need>} />
           <Route path="/oeuvre/bam/ecriture/structure" element={<Need role="learner"><Structure /></Need>} />
           <Route path="/oeuvre/bam/ecriture/theme/:n" element={<Need role="learner"><Theme /></Need>} />
+          <Route path="/oeuvre/antigone" element={<Need role="learner"><AntHub /></Need>} />
+          <Route path="/oeuvre/antigone/lecture" element={<Need role="learner"><AntLecture /></Need>} />
+          <Route path="/oeuvre/antigone/etape/:n" element={<Need role="learner"><AntUnit /></Need>} />
+          <Route path="/oeuvre/antigone/quiz/:n" element={<Need role="learner"><AntQuiz /></Need>} />
           <Route path="/prof" element={<Need role="teacher"><Teacher /></Need>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

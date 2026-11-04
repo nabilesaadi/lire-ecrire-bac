@@ -2,9 +2,18 @@
 // l'interface, l'enregistrement des réponses, le tableau de bord et les données de démonstration.
 import bam from '../content/bam.json'
 import pe from '../content/pe.json'
+import ant from '../content/antigone.json'
 
 export const WORK = bam
 export const PE = pe
+export const ANT = ant
+export const WORKS = { bam, antigone: ant }
+
+// Ordre de lecture d'Antigone : les étapes, avec chaque quiz placé après l'étape indiquée
+export const ANT_PATH = ant.units.flatMap((u) => [{ kind: 'unit', n: u.n, id: `ant.u.${u.n}` },
+  ...ant.quizzes.filter((q) => q.after === u.n).map((q) => ({ kind: 'quiz', n: q.n, id: `ant.quiz.${q.n}` }))])
+export const antUnitShort = (u) => (u.n >= 5 && u.n <= 8 ? `Ant. T${u.n - 4}` : `Ant. É${u.n < 5 ? u.n : 6}`)
+export const antSecComp = (sec) => (sec.label === 'Pour aller plus loin' ? 'Interprétation' : sec.type === 'sort' ? 'Repérage' : 'Compréhension')
 
 export const COMPETENCES = [
   'Lecture',
@@ -26,12 +35,12 @@ export function buildCatalog() {
   const activities = []
   const items = []
   bam.chapters.forEach((c) => {
-    const a = { id: `bam.ch.${c.n}`, kind: 'chapter', label: `Chapitre ${c.n} · ${c.title}`, short: `Ch. ${c.n}` }
+    const a = { id: `bam.ch.${c.n}`, kind: 'chapter', work: 'bam', label: `Chapitre ${c.n} · ${c.title}`, short: `Ch. ${c.n}` }
     activities.push(a)
     items.push({ activity: a.id, item: 'lu', competence: 'Lecture', text: `Lecture du chapitre ${c.n}` })
   })
   bam.quizzes.forEach((q) => {
-    const a = { id: `bam.quiz.${q.n}`, kind: 'quiz', label: `Quiz ${q.n} · chapitres ${q.chapters[0]} à ${q.chapters[2]}`, short: `Quiz ${q.n}` }
+    const a = { id: `bam.quiz.${q.n}`, kind: 'quiz', work: 'bam', label: `Quiz ${q.n} · chapitres ${q.chapters[0]} à ${q.chapters[2]}`, short: `Quiz ${q.n}` }
     activities.push(a)
     q.sections.forEach((s, si) => {
       s.items.forEach((it, ii) => {
@@ -43,7 +52,7 @@ export function buildCatalog() {
   pe.themes.forEach((t) => {
     const base = `bam.pe.t${t.n}`
     const lv = (n, label) => {
-      const a = { id: `${base}.n${n}`, kind: 'pe', theme: t.n, level: n, label: `Thème ${t.n} · niveau ${n} · ${label}`, short: `T${t.n} N${n}` }
+      const a = { id: `${base}.n${n}`, kind: 'pe', work: 'bam', theme: t.n, level: n, label: `Thème ${t.n} · niveau ${n} · ${label}`, short: `T${t.n} N${n}` }
       activities.push(a)
       return a.id
     }
@@ -61,6 +70,19 @@ export function buildCatalog() {
     t.n3.forEach((p, i) => items.push({ activity: id, item: `p.${i}`, competence: 'Argumentation', text: `Phrase manquante du paragraphe ${i + 1}` }))
     lv(4, 'paragraphe argumentatif')
     lv(5, 'production complète')
+  })
+  ANT_PATH.forEach((x) => {
+    if (x.kind === 'unit') {
+      const u = ant.units[x.n - 1]
+      activities.push({ id: x.id, kind: 'unit', work: 'antigone', n: u.n, label: `Antigone · ${u.etape} · ${u.short}`, short: antUnitShort(u) })
+      items.push({ activity: x.id, item: 'lu', competence: 'Lecture', text: `Lecture : ${u.short}` })
+    } else {
+      const q = ant.quizzes[x.n - 1]
+      activities.push({ id: x.id, kind: 'quiz', work: 'antigone', n: q.n, label: `Antigone · quiz ${q.n} · ${q.title}`, short: `Ant. Q${q.n}` })
+      q.sections.forEach((sec, si) => sec.items.forEach((it, ii) => {
+        items.push({ activity: x.id, item: `s${si}.${ii}`, competence: antSecComp(sec), text: sec.type === 'sort' ? `Classer « ${it[0]} »` : it.q })
+      }))
+    }
   })
   return { activities, items }
 }
@@ -89,7 +111,7 @@ export function activityDone(activityId, attemptsByActivity, submissions) {
 export const LEVELS = [
   { id: '1bac', label: '1re année du baccalauréat', works: [
     { id: 'bam', title: 'La Boîte à merveilles', author: 'Ahmed Sefrioui', ready: true },
-    { id: 'antigone', title: 'Antigone', author: 'Jean Anouilh', ready: false },
+    { id: 'antigone', title: 'Antigone', author: 'Jean Anouilh', ready: true },
     { id: 'djc', title: 'Le Dernier Jour d’un condamné', author: 'Victor Hugo', ready: false },
   ] },
   { id: '2bac', label: '2e année du baccalauréat', works: [

@@ -1,0 +1,3256 @@
+{
+ "id": "antigone",
+ "title": "Antigone",
+ "author": "Jean Anouilh",
+ "year": 1944,
+ "cover": "ant/cover.webp",
+ "hero": "ant/bg13.webp",
+ "tagline": "Un voyage dans la Grèce antique… et dans le Paris de la guerre",
+ "bref": {
+  "img": "ant/p40.webp",
+  "rows": [
+   [
+    "Auteur",
+    "Jean Anouilh (1910-1987), auteur de théâtre français. Il a aussi écrit « L’Alouette », « Becket » ou « Médée »."
+   ],
+   [
+    "Genre",
+    "Une tragédie : la fin est connue dès le début et rien ne peut la changer."
+   ],
+   [
+    "Première",
+    "Le 4 février 1944, au théâtre de l’Atelier, à Paris, pendant l’Occupation. Mise en scène : André Barsacq."
+   ],
+   [
+    "Modèle",
+    "La tragédie de Sophocle (vers 441 av. J.-C.), qu’Anouilh réécrit à sa façon."
+   ],
+   [
+    "Lieu et temps",
+    "Thèbes, dans un décor neutre à trois portes. Une seule journée, de l’aube à cinq heures du soir."
+   ],
+   [
+    "Héroïne",
+    "Antigone, fille d’Œdipe, 20 ans. Elle veut enterrer son frère Polynice malgré l’interdiction du roi Créon."
+   ],
+   [
+    "Structure",
+    "Une pièce en un seul acte : 27 scènes regroupées en 4 temps."
+   ]
+  ]
+ },
+ "units": [
+  {
+   "letter": "Α",
+   "etape": "Étape 1 / 6",
+   "t": "Voyage dans la Grèce antique",
+   "lead": "Ferme les yeux. Il y a plus de 2 000 ans, au bord de la mer, sous le soleil… Tu vas voir comment vivaient ceux qui ont inventé le théâtre.",
+   "cover": "ant/bg3.webp",
+   "n": 1,
+   "short": "La Grèce antique",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 4,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Où sommes-nous ? En Grèce",
+     "lines": [
+      "La Grèce est un pays de montagnes, de mer et d’îles.",
+      "Il n’y avait pas un seul pays : chaque cité avait son propre gouvernement.",
+      "Notre histoire se passe à Thèbes, au nord d’Athènes."
+     ],
+     "img": "fig4.webp",
+     "wide": false,
+     "legend": [
+      "Thèbes : la ville de la pièce",
+      "Delphes : l’oracle d’Apollon",
+      "Corinthe : où grandit Œdipe",
+      "Athènes : la ville du théâtre"
+     ],
+     "square": true,
+     "info": "Sur la carte, les pointillés montrent le chemin d’Œdipe : Delphes → carrefour → Thèbes. De Delphes à Thèbes : environ 75 km à vol d’oiseau."
+    },
+    {
+     "type": "frame",
+     "slide": 5,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Thèbes, une cité aux sept portes",
+     "lines": [
+      "Une cité grecque, c’est une ville avec ses murs, sa citadelle sur la colline, son marché et ses temples.",
+      "Thèbes a sept portes. Dans l’histoire, sept princes étrangers attaquent la ville, chacun devant une porte.",
+      "Le roi dirige la cité. À Thèbes, il y a eu Laïos, puis Œdipe, puis Créon."
+     ],
+     "img": "bg5.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Une cité = une ville + son territoire + ses lois. Elle a son propre roi ou son propre gouvernement."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi avoir des murs et sept portes ?",
+       "a": "Pour se défendre des ennemis."
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "slide": 6,
+     "t": "Une journée en Grèce antique",
+     "cards": [
+      {
+       "t": "La maison",
+       "d": "Une maison construite autour d’une cour, avec un petit autel pour les dieux.",
+       "icon": "ic6_0.webp"
+      },
+      {
+       "t": "Les repas",
+       "d": "On mange du pain, des olives, des figues, du fromage. On boit du vin mélangé d’eau.",
+       "icon": "ic6_1.webp"
+      },
+      {
+       "t": "Femmes et hommes",
+       "d": "Les femmes vivent surtout à la maison. Les hommes vont sur la place du marché et à la guerre.",
+       "icon": "ic6_2.webp"
+      },
+      {
+       "t": "La laine",
+       "d": "On file et on tisse la laine à la maison. Dans la pièce, la reine Eurydice tricote sans cesse.",
+       "icon": "ic6_3.webp"
+      }
+     ],
+     "ask": [
+      {
+       "q": "Compare avec notre vie : qu’est-ce qui est pareil, qu’est-ce qui change ?"
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "slide": 7,
+     "t": "Les vêtements que tu vas voir",
+     "cards": [
+      {
+       "k": "ANTIGONE",
+       "t": "Le péplos",
+       "d": "Une longue robe de laine, simple, que portent les femmes.",
+       "img": "v7_0.webp"
+      },
+      {
+       "k": "HÉMON",
+       "t": "Le chiton et le manteau",
+       "d": "Une tunique, avec un manteau jeté sur l’épaule.",
+       "img": "v7_1.webp"
+      },
+      {
+       "k": "CRÉON",
+       "t": "L’himation pourpre",
+       "d": "Un grand manteau. La pourpre coûte très cher : c’est la couleur du roi.",
+       "img": "v7_2.webp"
+      },
+      {
+       "k": "UN GARDE",
+       "t": "La cuirasse",
+       "d": "Un plastron de cuir, un casque et une lance pour le soldat.",
+       "img": "v7_3.webp"
+      }
+     ],
+     "portraits": true,
+     "info": "Dans nos images, tous les personnages portent des vêtements de la Grèce antique : laine et lin, couleurs naturelles. La pourpre, rare et chère, est réservée aux puissants."
+    },
+    {
+     "type": "cards",
+     "slide": 8,
+     "t": "Quatre dieux à connaître",
+     "cards": [
+      {
+       "t": "Zeus",
+       "d": "Le roi des dieux. Il règne sur le ciel et lance la foudre.",
+       "icon": "ic8_0.webp"
+      },
+      {
+       "t": "Apollon",
+       "d": "Le dieu de la lumière. C’est lui qui parle par l’oracle de Delphes.",
+       "icon": "ic8_1.webp"
+      },
+      {
+       "t": "Hadès",
+       "d": "Le dieu des morts. Son royaume porte aussi son nom.",
+       "icon": "ic8_2.webp"
+      },
+      {
+       "t": "Dionysos",
+       "d": "Le dieu du vin et de la fête. C’est le dieu du théâtre.",
+       "icon": "ic8_3.webp"
+      }
+     ],
+     "info": "Dans la pièce, Antigone ne cite pas ses dieux : elle dit seulement qu’un mort qu’on n’enterre pas ne trouve pas le repos. Cette croyance vient de la religion grecque."
+    },
+    {
+     "type": "frame",
+     "slide": 9,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Delphes, la maison de l’oracle",
+     "lines": [
+      "Delphes est un sanctuaire accroché à la montagne. On y vient de toute la Grèce poser une question au dieu Apollon.",
+      "Une prêtresse, la Pythie, répond au nom du dieu. Ses réponses sont mystérieuses.",
+      "Une réponse de l’oracle est une prédiction. Les Grecs pensent qu’on ne peut pas y échapper."
+     ],
+     "img": "bg9.webp",
+     "wide": true,
+     "box": {
+      "l": "À savoir",
+      "t": "Dans l’histoire d’Œdipe, deux oracles changent toute la vie de la famille."
+     },
+     "ask": [
+      {
+       "q": "Si un oracle te disait ton avenir, voudrais-tu le connaître ?"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "slide": 10,
+     "t": "La fatalité : on n’échappe pas au destin",
+     "steps": [
+      {
+       "n": "1",
+       "t": "Un oracle annonce un malheur",
+       "d": "Une prédiction terrible : « ton fils te tuera »."
+      },
+      {
+       "n": "2",
+       "t": "On essaie d’y échapper",
+       "d": "On fuit, on cache, on abandonne un enfant."
+      },
+      {
+       "n": "3",
+       "t": "On y tombe quand même",
+       "d": "C’est en fuyant qu’on accomplit la prédiction."
+      }
+     ],
+     "box": {
+      "l": "Exemple",
+      "t": "Laïos abandonne son fils pour échapper à l’oracle… et c’est ce fils qui le tuera. Voilà une tragédie."
+     },
+     "arrows": true
+    },
+    {
+     "type": "frame",
+     "slide": 11,
+     "k": "GRÈCE ANTIQUE",
+     "t": "La mort : veiller le défunt",
+     "lines": [
+      "Quand quelqu’un meurt, sa famille lave le corps, l’habille et l’étend sur un lit dans la maison.",
+      "Les femmes le pleurent à voix haute. C’est un devoir sacré envers le mort.",
+      "Puis on porte le corps jusqu’à la tombe."
+     ],
+     "img": "p11.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Ce sont surtout les femmes de la famille qui s’occupent des morts. Cela explique le rôle d’Antigone."
+     },
+     "ask": [
+      {
+       "q": "Dans notre pays, comment accompagne-t-on un mort ? Que retrouve-t-on de pareil ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 12,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Les offrandes sur la tombe",
+     "lines": [
+      "Sur la tombe, on verse du lait, du miel, du vin ou de l’eau. Ce sont les libations.",
+      "On apporte aussi des fleurs et de la nourriture pour le mort.",
+      "Un mort sans tombe ne trouve pas le repos : son âme erre sans fin. C’est la pire des choses."
+     ],
+     "img": "p12.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Quelques poignées de terre jetées sur le corps comptent comme un enterrement. C’est ce que fait Antigone."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Antigone dit-elle qu’elle « devait » enterrer son frère ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 13,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Un théâtre en plein air",
+     "lines": [
+      "Les pièces se jouent en plein jour, devant des milliers de spectateurs assis sur des gradins en demi-cercle.",
+      "Le chœur chante et danse sur l’orchestra, la grande piste ronde. Les acteurs jouent devant lui.",
+      "À Athènes, les pièces sont jouées lors des fêtes de Dionysos, le dieu du théâtre."
+     ],
+     "img": "bg13.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Aller au théâtre, c’était à la fois une fête religieuse et une grande fête de toute la cité."
+     },
+     "ask": [
+      {
+       "q": "Quelle différence avec une salle de théâtre ou de cinéma aujourd’hui ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 14,
+     "k": "GRÈCE ANTIQUE",
+     "t": "Des acteurs masqués",
+     "lines": [
+      "Les acteurs sont tous des hommes. Ils jouent aussi les rôles de femmes.",
+      "Chaque acteur porte un masque. En changeant de masque, il change de personnage.",
+      "Un masque triste et un masque rieur : ce sont les deux symboles du théâtre."
+     ],
+     "img": "p14.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Sans visage visible, les acteurs jouent avec la voix et avec les gestes."
+     },
+     "ask": [
+      {
+       "q": "Comment montrer la colère ou la peur avec un masque ?"
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "slide": 15,
+     "t": "Huit mots pour comprendre",
+     "cards": [
+      {
+       "t": "Cité",
+       "d": "Une ville grecque avec son territoire et son gouvernement."
+      },
+      {
+       "t": "Oracle",
+       "d": "La réponse d’un dieu à une question. Une prédiction."
+      },
+      {
+       "t": "Destin",
+       "d": "Ce qui est écrit d’avance et qu’on ne peut pas changer."
+      },
+      {
+       "t": "Tragédie",
+       "d": "Une pièce qui finit mal. Le héros court vers un malheur inévitable."
+      },
+      {
+       "t": "Chœur",
+       "d": "Un groupe, ou un personnage, qui commente l’histoire."
+      },
+      {
+       "t": "Hadès",
+       "d": "Le monde des morts, chez les Grecs."
+      },
+      {
+       "t": "Sépulture",
+       "d": "La tombe. Enterrer, c’est rendre le mort à la terre."
+      },
+      {
+       "t": "Libation",
+       "d": "Un liquide versé sur la terre pour honorer un mort."
+      }
+     ],
+     "glossary": true
+    }
+   ]
+  },
+  {
+   "letter": "Β",
+   "etape": "Étape 2 / 6",
+   "t": "La famille maudite d’Œdipe",
+   "lead": "Pour comprendre Antigone, il faut connaître l’histoire de son père. Elle commence avant sa naissance.",
+   "cover": "ant/bg16.webp",
+   "n": 2,
+   "short": "La famille d’Œdipe",
+   "pages": [
+    {
+     "type": "figure",
+     "slide": 17,
+     "t": "L’arbre de la famille",
+     "img": "fig17.webp",
+     "alt": "Arbre de la famille : Laïos et Jocaste sont les parents d’Œdipe ; Créon est le frère de Jocaste et le mari d’Eurydice ; Œdipe et Jocaste ont quatre enfants : Étéocle, Polynice, Ismène et Antigone ; Hémon, fils de Créon, est le fiancé d’Antigone.",
+     "lines": [
+      "Laïos (roi de Thèbes) et Jocaste (reine de Thèbes) sont les parents d’Œdipe.",
+      "Créon est le frère de Jocaste. Sa femme s’appelle Eurydice, leur fils Hémon.",
+      "Œdipe a épousé sa mère, Jocaste : ils ont eu quatre enfants. Étéocle, Polynice, Ismène et Antigone.",
+      "Antigone et Hémon sont fiancés."
+     ],
+     "box": {
+      "l": "Dans la pièce",
+      "t": "Laïos, Jocaste, Œdipe, Étéocle et Polynice sont déjà morts."
+     },
+     "ask": [
+      {
+       "q": "Qui est l’oncle d’Antigone ?",
+       "a": "Créon."
+      },
+      {
+       "q": "Qui est son fiancé ?",
+       "a": "Hémon, son cousin."
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 18,
+     "k": "ŒDIPE",
+     "t": "Laïos et l’oracle",
+     "lines": [
+      "Laïos est roi de Thèbes. Sa femme s’appelle Jocaste.",
+      "Il va à Delphes demander l’avenir à l’oracle. La réponse est terrible : son fils le tuera.",
+      "Laïos a très peur. Il décide d’empêcher cela, quoi qu’il arrive."
+     ],
+     "img": "p18.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Tout commence par une peur : on veut échapper au destin."
+     },
+     "ask": [
+      {
+       "q": "Laïos va-t-il réussir à échapper à l’oracle ? Qu’en pensent les Grecs ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 19,
+     "k": "ŒDIPE",
+     "t": "Le bébé abandonné",
+     "lines": [
+      "Jocaste a un fils. Laïos ordonne de l’abandonner sur la montagne.",
+      "Un berger trouve le bébé et ne peut pas le laisser mourir. Il le sauve.",
+      "Les pieds du bébé sont blessés. Son nom, Œdipe, rappelle ses pieds enflés."
+     ],
+     "img": "p19.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "En voulant éviter l’oracle, Laïos met l’histoire en marche."
+     },
+     "info": "Anouilh a écrit une autre pièce : « Œdipe ou le Roi boiteux »."
+    },
+    {
+     "type": "frame",
+     "slide": 20,
+     "k": "ŒDIPE",
+     "t": "Une nouvelle famille à Corinthe",
+     "lines": [
+      "Le berger confie l’enfant à Polybe et Mérope, roi et reine de Corinthe.",
+      "Ils n’ont pas d’enfant. Ils l’élèvent comme leur fils et l’appellent Œdipe.",
+      "Œdipe grandit heureux. Il croit que Polybe est son vrai père."
+     ],
+     "img": "p20.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Œdipe ne sait pas qui sont ses vrais parents. C’est la clé du malheur."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Polybe et Mérope ne lui disent-ils pas la vérité ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 21,
+     "k": "ŒDIPE",
+     "t": "Le deuxième oracle",
+     "lines": [
+      "Devenu jeune homme, Œdipe doute de ses origines. Il va à Delphes.",
+      "L’oracle lui annonce un malheur : il tuera son père et épousera sa mère.",
+      "Terrifié, Œdipe fuit Corinthe pour ne pas faire de mal à Polybe, qu’il croit son père."
+     ],
+     "img": "p21.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "En fuyant, Œdipe se dirige sans le savoir vers sa vraie famille."
+     },
+     "ask": [
+      {
+       "q": "Que ferais-tu à sa place ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 22,
+     "k": "ŒDIPE",
+     "t": "Le carrefour",
+     "lines": [
+      "Sur la route de Thèbes, Œdipe rencontre un vieil homme en char, à un carrefour.",
+      "Ils se disputent pour savoir qui passe le premier. Œdipe, en colère, tue le vieillard.",
+      "Ce vieil homme, c’était Laïos : le vrai père d’Œdipe. Une partie de l’oracle est réalisée."
+     ],
+     "img": "p22.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Œdipe tue son père sans le savoir : ce n’est pas un crime voulu."
+     },
+     "ask": [
+      {
+       "q": "Œdipe est-il coupable ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 23,
+     "k": "ŒDIPE",
+     "t": "Le Sphinx",
+     "lines": [
+      "Le Sphinx, un monstre ailé, bloque la route de Thèbes. Il pose une énigme aux voyageurs.",
+      "Qui marche à quatre pattes le matin, sur deux à midi, sur trois le soir ?",
+      "Œdipe répond : l’homme. Le monstre est vaincu, Thèbes est sauvée."
+     ],
+     "img": "p23.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Œdipe est intelligent. Mais il ne se connaît pas lui-même."
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 24,
+     "k": "ŒDIPE",
+     "t": "Œdipe, roi de Thèbes",
+     "lines": [
+      "Pour le remercier, les Thébains font d’Œdipe leur roi.",
+      "Il épouse la reine Jocaste, la veuve de Laïos. Il ne sait pas que c’est sa mère.",
+      "Ils ont quatre enfants : Étéocle, Polynice, Antigone et Ismène."
+     ],
+     "img": "p24.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Voilà la famille d’Antigone. Tout a l’air heureux… mais l’oracle est réalisé."
+     },
+     "ask": [
+      {
+       "q": "Qui sont les parents d’Antigone ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 25,
+     "k": "ŒDIPE",
+     "t": "La peste frappe Thèbes",
+     "lines": [
+      "Des années plus tard, une terrible maladie, la peste, s’abat sur Thèbes.",
+      "Le peuple supplie le roi, des rameaux d’olivier à la main. Il faut trouver la cause.",
+      "Œdipe promet de trouver le coupable : celui qui a tué Laïos autrefois."
+     ],
+     "img": "p25.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Œdipe veut sauver son peuple. Sans le savoir, il cherche… sa propre faute."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Œdipe est-il pressé de trouver le coupable ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 26,
+     "k": "ŒDIPE",
+     "t": "Le devin Tirésias dit la vérité",
+     "lines": [
+      "Le devin Tirésias est aveugle, mais il voit la vérité.",
+      "Il annonce à Œdipe que le coupable, c’est lui. Œdipe refuse de le croire.",
+      "Peu à peu, tout s’éclaire : Laïos et Jocaste étaient ses vrais parents."
+     ],
+     "img": "p26.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Un aveugle voit la vérité, un roi intelligent ne la voit pas."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Tirésias, aveugle, est-il un si bon devin ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 27,
+     "k": "ŒDIPE",
+     "t": "La vérité et l’exil",
+     "lines": [
+      "Jocaste comprend tout. Dans son désespoir, elle met fin à ses jours.",
+      "Œdipe, fou de douleur, se rend aveugle.",
+      "Il quitte Thèbes pour mendier sur les routes. Sa fille Antigone le guide."
+     ],
+     "img": "p27.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone a déjà accompagné son père dans le malheur. Elle est habituée à tenir bon."
+     },
+     "ask": [
+      {
+       "q": "Que choisit Œdipe pour ne plus voir ce qu’il a fait ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 28,
+     "k": "ŒDIPE",
+     "t": "Les frères ennemis",
+     "lines": [
+      "Étéocle et Polynice devaient régner un an chacun, à tour de rôle.",
+      "Au bout d’un an, Étéocle refuse de laisser la place. Polynice lève une armée contre Thèbes.",
+      "Après un combat sous les murs, les deux frères se tuent l’un l’autre."
+     ],
+     "img": "p28.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "La ville est sauvée, mais les deux fils d’Œdipe sont morts."
+     },
+     "ask": [
+      {
+       "q": "Qui devient roi quand les deux frères sont morts ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 29,
+     "k": "ŒDIPE",
+     "t": "Le décret de Créon",
+     "lines": [
+      "Créon, le frère de Jocaste, devient roi de Thèbes.",
+      "Étéocle aura de grandes funérailles. Polynice, le traître, restera sans tombe, aux corbeaux et aux chacals.",
+      "Quiconque l’enterrera sera puni de mort. C’est ici que commence la pièce."
+     ],
+     "img": "p29.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Pour les Grecs, un mort sans tombe ne trouve pas le repos. Antigone ne peut pas l’accepter."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi le décret est-il si grave pour Antigone ?"
+      }
+     ]
+    },
+    {
+     "type": "gallery",
+     "slide": 30,
+     "t": "L’histoire d’Œdipe en 10 images",
+     "items": [
+      {
+       "img": "v30_0.webp",
+       "t": "L’oracle",
+       "n": 1
+      },
+      {
+       "img": "v30_1.webp",
+       "t": "Abandonné",
+       "n": 2
+      },
+      {
+       "img": "v30_2.webp",
+       "t": "Corinthe",
+       "n": 3
+      },
+      {
+       "img": "v30_3.webp",
+       "t": "La fuite",
+       "n": 4
+      },
+      {
+       "img": "v30_4.webp",
+       "t": "Le carrefour",
+       "n": 5
+      },
+      {
+       "img": "v30_5.webp",
+       "t": "Le Sphinx",
+       "n": 6
+      },
+      {
+       "img": "v30_6.webp",
+       "t": "Roi de Thèbes",
+       "n": 7
+      },
+      {
+       "img": "v30_7.webp",
+       "t": "La vérité",
+       "n": 8
+      },
+      {
+       "img": "v30_8.webp",
+       "t": "Les frères",
+       "n": 9
+      },
+      {
+       "img": "v30_9.webp",
+       "t": "Le décret",
+       "n": 10
+      }
+     ],
+     "ask": [
+      {
+       "q": "Raconte l’histoire d’Œdipe en t’aidant seulement de ces 10 images."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "letter": "Γ",
+   "etape": "Étape 3 / 6",
+   "t": "Anouilh et la pièce",
+   "lead": "Un auteur du XXᵉ siècle reprend une histoire vieille de 2 000 ans. Pourquoi ? Et comment ?",
+   "cover": "ant/bg32.webp",
+   "n": 3,
+   "short": "Anouilh et la pièce",
+   "pages": [
+    {
+     "type": "cards",
+     "slide": 33,
+     "t": "Anouilh et son Antigone",
+     "cards": [
+      {
+       "t": "L’auteur",
+       "d": "Jean Anouilh (1910-1987), auteur de théâtre français. Il a aussi écrit « L’Alouette », « Becket » ou « Médée ».",
+       "icon": "ic33_0.webp"
+      },
+      {
+       "t": "La première",
+       "d": "Le 4 février 1944, au théâtre de l’Atelier, à Paris. Mise en scène : André Barsacq.",
+       "icon": "ic33_1.webp"
+      },
+      {
+       "t": "Le modèle",
+       "d": "La tragédie de Sophocle, écrite il y a plus de 2 000 ans. Anouilh la réécrit à sa façon.",
+       "icon": "ic33_2.webp"
+      },
+      {
+       "t": "La forme",
+       "d": "Une pièce en un seul acte. Un décor neutre, trois portes, un Chœur qui parle au public.",
+       "icon": "ic33_3.webp"
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "slide": 34,
+     "t": "Antigone naît pendant la guerre",
+     "steps": [
+      {
+       "t": "1939",
+       "d": "Septembre : la Seconde Guerre mondiale commence."
+      },
+      {
+       "t": "1940",
+       "d": "Juin : la France est vaincue. Paris est occupée par l’armée allemande."
+      },
+      {
+       "t": "Février 1944",
+       "d": "Antigone est jouée pour la première fois, à Paris."
+      },
+      {
+       "t": "Août 1944",
+       "d": "Paris est libérée."
+      },
+      {
+       "t": "1945",
+       "d": "Mai : la guerre se termine en Europe."
+      }
+     ],
+     "timeline": true,
+     "box": {
+      "l": "Anouilh",
+      "t": "Il dit que la pièce de Sophocle l’a bouleversé pendant la guerre, et qu’il l’a réécrite à sa façon."
+     },
+     "info": "En 1944 Paris est occupée : les spectacles sont surveillés. Chaque spectateur pouvait entendre la pièce à sa manière (Créon, un chef qui doit gouverner ? Antigone, une révoltée ?). Il n’y a pas une seule lecture."
+    },
+    {
+     "type": "compare",
+     "slide": 35,
+     "t": "Sophocle et Anouilh : ce qui change",
+     "cols": [
+      "Sophocle",
+      "Anouilh"
+     ],
+     "rows": [
+      [
+       "Époque",
+       "Vers 441 av. J.-C.",
+       "1944"
+      ],
+      [
+       "Lieu",
+       "Athènes, théâtre en plein air",
+       "Paris, salle de théâtre"
+      ],
+      [
+       "Langage",
+       "Des vers, un ton solennel",
+       "Le langage de tous les jours"
+      ],
+      [
+       "Le Chœur",
+       "Un groupe de vieillards de Thèbes",
+       "Un seul personnage qui parle au public"
+      ],
+      [
+       "Créon",
+       "Un roi sûr de lui qui finit puni",
+       "Un roi fatigué qui ne veut pas la tuer"
+      ]
+     ],
+     "info": "Dans la pièce de Sophocle, le chœur est formé de vieillards thébains ; chez Anouilh, un seul personnage s’adresse au public. Chez Anouilh, Créon est plus humain : il essaie de sauver Antigone."
+    },
+    {
+     "type": "cards",
+     "slide": 36,
+     "t": "Anouilh mêle les époques",
+     "cards": [
+      {
+       "t": "Les cigarettes",
+       "d": "Polynice allume une cigarette.",
+       "icon": "ic36_0.webp"
+      },
+      {
+       "t": "Les voitures",
+       "d": "Il roule vite dans de belles voitures.",
+       "icon": "ic36_1.webp"
+      },
+      {
+       "t": "Les bars",
+       "d": "Il dépense son argent dans les bars.",
+       "icon": "ic36_2.webp"
+      },
+      {
+       "t": "Le café et les tartines",
+       "d": "La nourrice sert un café et des tartines.",
+       "icon": "ic36_3.webp"
+      },
+      {
+       "t": "Les cartes",
+       "d": "Les gardes jouent aux cartes.",
+       "icon": "ic36_4.webp"
+      },
+      {
+       "t": "Le conseil de guerre",
+       "d": "Les gardes risquent un conseil de guerre.",
+       "icon": "ic36_5.webp"
+      }
+     ],
+     "info": "Tous ces détails viennent du texte : la pièce se passe à Thèbes, mais on y parle comme au XXᵉ siècle. Pourquoi ce mélange ? Pour que l’histoire parle aussi de notre monde."
+    },
+    {
+     "type": "steps",
+     "slide": 37,
+     "t": "Une seule journée",
+     "steps": [
+      {
+       "n": "4 h",
+       "t": "Avant l’aube",
+       "d": "Antigone sort et jette de la terre sur le corps."
+      },
+      {
+       "n": "Aube",
+       "t": "Au retour",
+       "d": "Elle rentre pieds nus. La nourrice l’attend."
+      },
+      {
+       "n": "Matin",
+       "t": "À la maison",
+       "d": "Adieux à Ismène, à la nourrice et à Hémon."
+      },
+      {
+       "n": "Midi",
+       "t": "Au soleil",
+       "d": "Elle recommence. Les gardes l’arrêtent."
+      },
+      {
+       "n": "Après-midi",
+       "t": "Au palais",
+       "d": "Face à Créon. Condamnée. Lettre. Tombeau."
+      },
+      {
+       "n": "5 h",
+       "t": "Le soir",
+       "d": "Créon part pour le Conseil. Le rideau tombe."
+      }
+     ],
+     "box": {
+      "l": "Retiens",
+      "t": "Toute la pièce tient en un seul jour, dans un seul lieu : tout est resserré, comme dans le théâtre classique."
+     },
+     "arrows": true,
+     "ask": [
+      {
+       "q": "Quelle heure est-il quand Antigone est arrêtée ?",
+       "a": "Midi."
+      },
+      {
+       "q": "Quand finit la pièce ?",
+       "a": "Cinq heures."
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 38,
+     "k": "ANOUILH · LE DÉCOR",
+     "t": "Un décor neutre, trois portes",
+     "lines": [
+      "Anouilh demande un décor neutre : ni palais, ni temple. Le spectateur imagine.",
+      "Trois portes semblables : tous les personnages entrent et sortent par là.",
+      "Au lever du rideau, tout le monde est déjà sur scène : ils bavardent, tricotent, jouent aux cartes."
+     ],
+     "img": "fig38.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Peu de décor, beaucoup de paroles : tout repose sur le texte et sur les acteurs."
+     },
+     "square": true,
+     "ask": [
+      {
+       "q": "Comment faire sentir un palais avec seulement trois portes ?",
+       "a": "Par la lumière, les bruits, les mots."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "letter": "Δ",
+   "etape": "Étape 4 / 6",
+   "t": "Les personnages",
+   "lead": "Dix personnages. Pour chacun : qui il est, ce qu’il fait, et un mot pour le retenir.",
+   "cover": "ant/bg39.webp",
+   "n": 4,
+   "short": "Les personnages",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 40,
+     "k": "PERSONNAGE",
+     "t": "Antigone",
+     "lines": [
+      "Petite, maigre, brune, renfermée : dans la famille, personne ne la prenait au sérieux.",
+      "Elle est fiancée à Hémon, mais elle sait qu’elle ne l’épousera jamais.",
+      "Elle veut enterrer son frère Polynice malgré le roi. Elle sait qu’elle va mourir."
+     ],
+     "sub": "Fille d’Œdipe, 20 ans",
+     "img": "p40.webp",
+     "wide": false,
+     "word": "Refuser",
+     "char": "antigone"
+    },
+    {
+     "type": "frame",
+     "slide": 41,
+     "k": "PERSONNAGE",
+     "t": "Ismène",
+     "lines": [
+      "Blonde, belle, rieuse : elle aime la fête, les jeux et le bonheur.",
+      "Elle a peur de Créon et de la mort. Elle supplie Antigone de ne rien faire.",
+      "Trop tard, elle veut mourir avec sa sœur. Antigone refuse."
+     ],
+     "sub": "Sœur aînée d’Antigone",
+     "img": "p41.webp",
+     "wide": false,
+     "word": "Craindre",
+     "char": "ismene"
+    },
+    {
+     "type": "frame",
+     "slide": 42,
+     "k": "PERSONNAGE",
+     "t": "Créon",
+     "lines": [
+      "Un homme robuste, fatigué, aux cheveux blancs. Avant, il aimait la musique et les beaux livres.",
+      "Quand Œdipe et ses fils sont morts, il a pris leur place. Pour lui, être roi est un métier.",
+      "Il veut sauver Antigone, mais il pense qu’un roi doit faire respecter la loi."
+     ],
+     "sub": "Oncle d’Antigone, roi de Thèbes",
+     "img": "p42.webp",
+     "wide": false,
+     "word": "Gouverner",
+     "char": "creon"
+    },
+    {
+     "type": "frame",
+     "slide": 43,
+     "k": "PERSONNAGE",
+     "t": "Hémon",
+     "lines": [
+      "Il aime la danse et les jeux. Pourtant, un soir de bal, il a demandé la main d’Antigone.",
+      "Il admire son père, son modèle d’enfant. Puis il le découvre faible.",
+      "Quand il perd Antigone, il ne veut pas vivre sans elle."
+     ],
+     "sub": "Fils de Créon, fiancé d’Antigone",
+     "img": "p43.webp",
+     "wide": false,
+     "word": "Aimer",
+     "char": "hemon"
+    },
+    {
+     "type": "frame",
+     "slide": 44,
+     "k": "PERSONNAGE",
+     "t": "Eurydice",
+     "lines": [
+      "Une vieille dame bonne et digne. Elle tricote pendant presque toute la pièce.",
+      "Elle ne peut rien faire pour aider son mari : Créon est seul.",
+      "À la fin, elle apprend la mort de son fils, finit son rang de tricot, puis va mourir."
+     ],
+     "sub": "Reine, femme de Créon",
+     "img": "p44.webp",
+     "wide": false,
+     "word": "Tricoter",
+     "char": "eurydice"
+    },
+    {
+     "type": "frame",
+     "slide": 45,
+     "k": "PERSONNAGE",
+     "t": "La Nourrice",
+     "lines": [
+      "Elle gronde, elle s’inquiète. Elle aime beaucoup « ses petites ».",
+      "Antigone lui demande de bien s’occuper de sa chienne Douce.",
+      "Elle ne comprend pas ce que prépare Antigone."
+     ],
+     "sub": "Elle a élevé Antigone et Ismène",
+     "img": "p45.webp",
+     "wide": false,
+     "word": "Protéger",
+     "char": "nourrice"
+    },
+    {
+     "type": "frame",
+     "slide": 46,
+     "k": "PERSONNAGE",
+     "t": "Le Garde (Jonas)",
+     "lines": [
+      "Un homme simple, sans imagination. Il sent l’ail, le cuir et le vin rouge, dit le Prologue.",
+      "Il pense à sa solde et à son avancement. Pour lui, il suffit d’obéir aux ordres.",
+      "Il découvre le corps couvert de terre, puis il arrête Antigone."
+     ],
+     "sub": "Garde de la 2e compagnie",
+     "img": "p46.webp",
+     "wide": false,
+     "word": "Obéir",
+     "char": "garde"
+    },
+    {
+     "type": "frame",
+     "slide": 47,
+     "k": "PERSONNAGE",
+     "t": "Le Messager",
+     "lines": [
+      "Dès le début, il reste seul au fond, adossé au mur. Il ne parle à personne.",
+      "Il sait déjà ce qui va arriver : c’est lui qui apportera la mauvaise nouvelle.",
+      "Il raconte la mort d’Antigone et d’Hémon, puis il cherche la reine."
+     ],
+     "sub": "Un jeune homme pâle",
+     "img": "p47.webp",
+     "wide": false,
+     "word": "Annoncer",
+     "char": "messager"
+    },
+    {
+     "type": "frame",
+     "slide": 48,
+     "k": "PERSONNAGE",
+     "t": "Le Page",
+     "lines": [
+      "Il est trop petit pour aider Créon, mais il reste toujours près de lui.",
+      "Créon lui parle quand il est seul et qu’il ne peut parler à personne.",
+      "À la fin, c’est lui qui rappelle le Conseil de cinq heures."
+     ],
+     "sub": "Un petit garçon, au service de Créon",
+     "img": "p48.webp",
+     "wide": false,
+     "word": "Rester",
+     "char": "page"
+    },
+    {
+     "type": "frame",
+     "slide": 49,
+     "k": "PERSONNAGE",
+     "t": "Le Chœur",
+     "lines": [
+      "Au début, il présente tous les personnages au public : c’est le Prologue.",
+      "Il commente l’histoire. Il explique ce qu’est une tragédie : tout est déjà décidé.",
+      "À la fin, il constate que tous sont morts, sauf les gardes qui jouent aux cartes."
+     ],
+     "sub": "Un personnage qui parle au public",
+     "img": "p49.webp",
+     "wide": false,
+     "word": "Savoir",
+     "char": "choeur"
+    },
+    {
+     "type": "figure",
+     "slide": 50,
+     "t": "Qui est lié à qui ?",
+     "img": "fig50.webp",
+     "alt": "Schéma des liens : Créon et Eurydice sont mariés ; Hémon est leur fils ; le Page est le petit page de Créon ; Créon est l’oncle d’Antigone ; Hémon et Antigone sont fiancés ; Antigone et Ismène sont sœurs ; la Nourrice les a élevées.",
+     "lines": [
+      "Créon et Eurydice sont mariés. Hémon est leur fils.",
+      "Le Page est le petit page de Créon.",
+      "Créon est l’oncle d’Antigone (et d’Ismène).",
+      "Hémon et Antigone sont fiancés.",
+      "Antigone et Ismène sont sœurs. La Nourrice les a élevées."
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "letter": "Ε",
+   "etape": "Étape 5 / 6 · Temps 1",
+   "t": "Temps 1 · Le prologue et le petit matin",
+   "short": "Le prologue et le petit matin",
+   "lead": "Scènes 1 à 7. Antigone dit adieu à tout ce qu’elle aime.",
+   "cover": "ant/p56.webp",
+   "pages": [
+    {
+     "type": "steps",
+     "slide": 53,
+     "t": "Le plan : 4 temps",
+     "steps": [
+      {
+       "n": "1",
+       "t": "Le prologue et le petit matin",
+       "sub": "SCÈNES 1 À 7",
+       "d": "Antigone dit adieu à tout ce qu’elle aime.",
+       "unit": 5
+      },
+      {
+       "n": "2",
+       "t": "L’alerte et l’arrestation",
+       "sub": "SCÈNES 8 À 10",
+       "d": "Le corps a été recouvert : les gardes arrêtent Antigone.",
+       "unit": 6
+      },
+      {
+       "n": "3",
+       "t": "Le duel",
+       "sub": "SCÈNES 11 À 15",
+       "d": "Créon et Antigone s’affrontent : oui contre non.",
+       "unit": 7
+      },
+      {
+       "n": "4",
+       "t": "La chute",
+       "sub": "SCÈNES 16 À 27",
+       "d": "Condamnation, tombeau, morts. Les gardes continuent de jouer.",
+       "unit": 8
+      }
+     ],
+     "box": {
+      "l": "Retiens",
+      "t": "27 scènes, 4 temps, 1 seule journée."
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 54,
+     "k": "TEMPS 1 · SCÈNE 1 / 27",
+     "t": "Le rideau se lève : le Prologue",
+     "lines": [
+      "Le décor est neutre, avec trois portes semblables. Tous les personnages sont déjà sur scène.",
+      "Le Prologue s’avance et parle au public. Il montre chaque personnage, l’un après l’autre.",
+      "Il annonce le sujet : Antigone va se dresser seule contre le roi, son oncle, et elle va mourir."
+     ],
+     "img": "p54.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Dès le début, on connaît la fin. C’est une tragédie : rien ne pourra changer."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi révéler la fin dès le début ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 55,
+     "k": "TEMPS 1 · SCÈNE 2 / 27",
+     "t": "Les gardes jouent aux cartes",
+     "lines": [
+      "Trois gardes sont assis, le chapeau sur la nuque. Ils jouent aux cartes.",
+      "Le Prologue le dit : ce ne sont pas de mauvaises gens. Ils ont une femme et des enfants.",
+      "Mais ils arrêteront n’importe quel accusé, sans état d’âme. Ils obéissent, sans imagination."
+     ],
+     "img": "bg55.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Leurs noms : Jonas, Durand et Boudousse. Ils servent la justice de Créon."
+     },
+     "ask": [
+      {
+       "q": "Est-ce que les gardes sont méchants ? Qu’est-ce qui est plus inquiétant ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 56,
+     "k": "TEMPS 1 · SCÈNE 3 / 27",
+     "t": "L’aube : Antigone rentre pieds nus",
+     "lines": [
+      "Il fait gris. Antigone entre sans bruit dans la maison, ses sandales à la main.",
+      "La nourrice la surprend : « D’où viens-tu ? » Antigone parle du jardin endormi, mais pas de la vérité.",
+      "La nourrice croit à un rendez-vous d’amoureux. Antigone la laisse croire."
+     ],
+     "img": "p56.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone sort avant le lever du jour. Ce qu’elle a fait, on le comprendra plus tard."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Antigone cache-t-elle la vérité ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 57,
+     "k": "TEMPS 1 · SCÈNE 4 / 27",
+     "t": "Ismène veut la retenir",
+     "lines": [
+      "Ismène n’a pas dormi. Elle a réfléchi toute la nuit : « Nous ne pouvons pas ! »",
+      "Elle a peur : le roi les fera mourir, la ville entière les haïra, et mourir fait mal.",
+      "Antigone répond calmement. Elle aussi voudrait ne pas mourir, mais chacun a son rôle."
+     ],
+     "img": "p57.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Ismène choisit la prudence. Antigone ne veut pas « comprendre » : elle veut agir."
+     },
+     "ask": [
+      {
+       "q": "Ismène a-t-elle tort d’avoir peur ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 58,
+     "k": "TEMPS 1 · SCÈNE 5 / 27",
+     "t": "La nourrice et la chienne Douce",
+     "lines": [
+      "Antigone est fatiguée. Elle demande la main de sa nourrice, comme quand elle était petite.",
+      "Elle lui fait promettre de ne jamais gronder sa chienne Douce, et de lui parler souvent.",
+      "Elle ajoute d’une voix dure : si Douce est trop triste, mieux vaut la faire tuer sans qu’elle souffre."
+     ],
+     "img": "p58.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone prépare ses adieux sans le dire. Elle pense à tout ce qu’elle laisse."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi parle-t-elle de sa chienne ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 59,
+     "k": "TEMPS 1 · SCÈNE 6 / 27",
+     "t": "Antigone dit adieu à Hémon",
+     "lines": [
+      "Antigone demande pardon à Hémon pour leur dispute de la veille. Elle lui parle du petit garçon qu’ils auraient pu avoir.",
+      "Elle lui fait jurer de sortir sans poser de questions. Puis elle lui dit qu’elle ne pourra jamais l’épouser.",
+      "Hémon obéit sans comprendre. Antigone reste seule : pour Hémon, c’est fini."
+     ],
+     "img": "p59.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Elle ne dit pas pourquoi. Hémon comprendra plus tard."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi lui demande-t-elle de ne poser aucune question ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 60,
+     "k": "TEMPS 1 · SCÈNE 7 / 27",
+     "t": "« C’est trop tard » : l’aveu",
+     "lines": [
+      "Ismène revient, inquiète. Elle supplie sa sœur de ne pas aller enterrer Polynice.",
+      "Antigone sourit doucement et part. Elle lui dit : « C’est trop tard. Ce matin, quand tu m’as rencontrée, j’en venais. »",
+      "Antigone avait déjà jeté de la terre sur le corps de son frère pendant la nuit."
+     ],
+     "img": "p60.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Premier coup de théâtre : on comprend enfin ce que cachait Antigone depuis le début."
+     },
+     "ask": [
+      {
+       "q": "Quels indices montraient déjà qu’Antigone cachait quelque chose ?"
+      }
+     ]
+    }
+   ],
+   "intro": "Une seule journée. 27 scènes. Suis le temps qui passe, de l’aube jusqu’à cinq heures du soir."
+  },
+  {
+   "n": 6,
+   "letter": "Ε",
+   "etape": "Étape 5 / 6 · Temps 2",
+   "t": "Temps 2 · L’alerte et l’arrestation",
+   "short": "L’alerte et l’arrestation",
+   "lead": "Scènes 8 à 10. Le corps a été recouvert : les gardes arrêtent Antigone.",
+   "cover": "ant/p64.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 62,
+     "k": "TEMPS 2 · SCÈNE 8 / 27",
+     "t": "Le garde annonce la nouvelle",
+     "lines": [
+      "Le garde Jonas vient voir Créon, mort de peur : les trois gardes ont tiré au sort pour savoir qui irait.",
+      "Quelqu’un a couvert de terre le corps de Polynice, selon les rites. Traces : un pas léger et une vieille pelle d’enfant.",
+      "Créon croit à un complot de ses ennemis. Il double la garde et menace les gardes de mort s’ils parlent."
+     ],
+     "img": "p62.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Le roi pense d’abord à la politique. Il ne pense pas à Antigone."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Créon veut-il que personne ne le sache ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 63,
+     "k": "TEMPS 2 · SCÈNE 9 / 27",
+     "t": "Le Chœur explique la tragédie",
+     "lines": [
+      "Le Chœur s’avance. Maintenant, dit-il, le ressort est bandé : l’histoire va se dérouler toute seule.",
+      "Pour lui, la tragédie est reposante : on sait qu’il n’y a plus d’espoir. On peut enfin crier ce qu’on avait à dire.",
+      "Il annonce : la petite Antigone est prise. Pour la première fois, elle va pouvoir être elle-même."
+     ],
+     "img": "p63.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Un drame laisse espérer qu’on s’en sort. Une tragédie, non : tout est joué d’avance."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi le Chœur dit-il que la tragédie est « reposante » ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 64,
+     "k": "TEMPS 2 · SCÈNE 10 / 27",
+     "t": "Antigone est arrêtée",
+     "lines": [
+      "Les gardes amènent Antigone, les mains attachées. Ses ongles sont pleins de terre.",
+      "Jonas raconte : en plein midi, elle grattait la terre à mains nues. Elle se débattait pour finir.",
+      "Les gardes rient : ils rêvent d’une prime et d’un bon repas. Ils n’ont rien compris."
+     ],
+     "img": "p64.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Contraste : Antigone joue sa vie, les gardes pensent à leur repas."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Antigone recommence, alors qu’elle est surveillée ?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "letter": "Ε",
+   "etape": "Étape 5 / 6 · Temps 3",
+   "t": "Temps 3 · Le duel",
+   "short": "Le duel",
+   "lead": "Scènes 11 à 15. Créon et Antigone s’affrontent : oui contre non.",
+   "cover": "ant/p67.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 65,
+     "k": "TEMPS 3 · SCÈNE 11 / 27",
+     "t": "Face à face : « Je le devais »",
+     "lines": [
+      "Créon renvoie les gardes. Seul avec elle, il propose de tout oublier : rentre chez toi, dis que tu es malade.",
+      "Antigone refuse : elle recommencera. Elle devait enterrer son frère, même si la loi l’interdit.",
+      "Pourquoi ? Pour que Polynice trouve le repos. Et, au fond, dit-elle, pour personne : pour elle."
+     ],
+     "img": "p65.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon veut la sauver. Antigone refuse d’être sauvée."
+     },
+     "ask": [
+      {
+       "q": "Pour qui Antigone agit-elle vraiment ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 66,
+     "k": "TEMPS 3 · SCÈNE 12 / 27",
+     "t": "Créon la serre et la menace",
+     "lines": [
+      "Créon dit : « Je veux te sauver. » Antigone répond qu’il ne peut ni la sauver ni la forcer. Il peut seulement la tuer.",
+      "Il lui serre le bras, puis la lâche. Il enlève sa veste et lui parle, en bras de chemise.",
+      "Il avoue que l’odeur du cadavre le dégoûte. Mais pour que le peuple comprenne, tout Thèbes doit la sentir un mois."
+     ],
+     "img": "p66.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon n’est pas un monstre : il dit que c’est son métier. L’ordre passe avant sa pitié."
+     },
+     "ask": [
+      {
+       "q": "Peut-on être cruel sans être méchant ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 67,
+     "k": "TEMPS 3 · SCÈNE 13 / 27",
+     "t": "« Oui » ou « non » ?",
+     "lines": [
+      "Pourquoi Créon a-t-il interdit la tombe ? Un matin, il s’est réveillé roi, et il a dit oui à ce travail.",
+      "Il compare le pays à un bateau dans la tempête : quelqu’un doit tenir la barre, même si cela coûte cher.",
+      "Antigone répond : moi, je n’ai pas dit oui. Je peux dire non à tout ce que je n’aime pas."
+     ],
+     "img": "p67.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "C’est le cœur de la pièce : celui qui accepte de gouverner contre celle qui refuse."
+     },
+     "ask": [
+      {
+       "q": "Qui a raison, Créon ou Antigone ? Pourquoi ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 68,
+     "k": "TEMPS 3 · SCÈNE 14 / 27",
+     "t": "La vérité sur les deux frères",
+     "lines": [
+      "Créon raconte ce qu’Antigone ne sait pas : Polynice n’était pas le héros qu’elle croit. Étéocle n’était pas meilleur.",
+      "Les deux frères se sont tués. On les a retrouvés l’un contre l’autre, méconnaissables.",
+      "Créon a choisi un corps pour des funérailles de héros, et laissé l’autre pourrir. Il ne sait même pas lequel."
+     ],
+     "img": "p68.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon dit que la vérité est laide. Antigone répond seulement : « Moi, je croyais. »"
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Créon lui raconte-t-il tout cela ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 69,
+     "k": "TEMPS 3 · SCÈNE 15 / 27",
+     "t": "Le bonheur qu’elle refuse",
+     "lines": [
+      "Créon change de ton : marie-toi vite, sois heureuse. La vie, dit-il, est simple : un livre, un enfant, un banc au soleil.",
+      "Antigone demande à quel prix : à qui devrait-elle mentir, sourire, se vendre ?",
+      "Elle répond : je veux tout, tout de suite, ou rien. Elle refuse un petit bonheur « modeste »."
+     ],
+     "img": "p69.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon défend la vie ordinaire. Antigone veut une vie entière, pure, ou la mort."
+     },
+     "ask": [
+      {
+       "q": "À ton avis, qu’est-ce que le bonheur ?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "letter": "Ε",
+   "etape": "Étape 5 / 6 · Temps 4",
+   "t": "Temps 4 · La chute",
+   "short": "La chute",
+   "lead": "Scènes 16 à 27. Condamnation, tombeau, morts. Les gardes continuent de jouer.",
+   "cover": "ant/p79.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 70,
+     "k": "TEMPS 4 · SCÈNE 16 / 27",
+     "t": "Ismène : « Je veux mourir avec elle »",
+     "lines": [
+      "Antigone crie de plus en plus fort. L’antichambre est pleine de monde : tout le palais va l’entendre.",
+      "Ismène entre. Maintenant elle a du courage : si Antigone meurt, elle veut mourir aussi.",
+      "Antigone refuse : tu as choisi la vie, moi la mort. C’est moi seule."
+     ],
+     "img": "p70.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Ismène trouve le courage trop tard. La mort d’Antigone n’appartient qu’à elle."
+     },
+     "ask": [
+      {
+       "q": "Antigone a-t-elle raison de refuser ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 71,
+     "k": "TEMPS 4 · SCÈNE 17 / 27",
+     "t": "« Gardes ! Emmenez-la »",
+     "lines": [
+      "Antigone provoque Créon jusqu’au bout : appelle donc tes gardes !",
+      "Créon crie enfin : « Gardes ! Emmenez-la. » Antigone répond par un cri de soulagement.",
+      "Les gardes l’emmènent. Ismène la suit en pleurant. Créon reste seul face au Chœur."
+     ],
+     "img": "p71.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone voulait être condamnée. Elle se sent enfin libre."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi est-elle soulagée ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 72,
+     "k": "TEMPS 4 · SCÈNE 18 / 27",
+     "t": "Hémon contre son père",
+     "lines": [
+      "Le Chœur supplie Créon d’agir. Il répond : trop tard. La foule hurle autour du palais.",
+      "Hémon accourt : « Père, ne la laisse pas emmener ! » Créon lui dit qu’il doit apprendre à être un homme.",
+      "Hémon comprend que son père n’est pas le héros de son enfance. Il part en criant le nom d’Antigone."
+     ],
+     "img": "p72.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Hémon perd en même temps Antigone et l’image de son père : « C’est déjà fini. »"
+     },
+     "ask": [
+      {
+       "q": "Que veut dire « devenir un homme » pour Créon ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 73,
+     "k": "TEMPS 4 · SCÈNE 19 / 27",
+     "t": "La foule envahit le palais",
+     "lines": [
+      "Les gardes ramènent Antigone. Derrière la porte, la foule hurle.",
+      "Un garde crie : « Chef, ils envahissent le palais ! »",
+      "Antigone supplie Créon de ne plus voir personne. Créon fait vider le palais et laisse un garde avec elle."
+     ],
+     "img": "bg73.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "La foule réclame la mort d’Antigone. C’est ce que craignait Ismène."
+     },
+     "ask": [
+      {
+       "q": "Que représente la foule ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 74,
+     "k": "TEMPS 4 · SCÈNE 20 / 27",
+     "t": "Antigone et son dernier visage d’homme",
+     "lines": [
+      "Antigone est seule avec un garde : « Alors, c’est toi ? Mon dernier visage d’homme. »",
+      "Elle lui demande son âge et ses enfants. Il répond : 39 ans, deux enfants. Puis il ne parle que de sa solde.",
+      "Elle apprend comment elle va mourir : murée vivante dans une grotte. Elle se sent seule."
+     ],
+     "img": "p74.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone cherche un peu de chaleur humaine. Le garde, lui, parle de son avancement."
+     },
+     "ask": [
+      {
+       "q": "Que dit cette scène sur la solitude d’Antigone ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 75,
+     "k": "TEMPS 4 · SCÈNE 21 / 27",
+     "t": "La lettre à Hémon",
+     "lines": [
+      "Antigone offre sa bague en or au garde s’il remet une lettre à Hémon. Il accepte d’écrire dans son carnet.",
+      "Elle dicte : elle a peur et ne sait plus pourquoi elle meurt. Puis elle dit : « Raye tout cela. »",
+      "Il reste très peu : « Pardon… Je t’aime. » Le garde empoche la bague. La lettre est « drôle », dit-il."
+     ],
+     "img": "p75.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Antigone n’ose pas montrer sa peur. Elle garde son secret, même pour Hémon."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Antigone raye-t-elle presque toute la lettre ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 76,
+     "k": "TEMPS 4 · SCÈNE 22 / 27",
+     "t": "Le tombeau dans la montagne",
+     "lines": [
+      "Antigone est emmenée près de la ville. On va la murer vivante dans une grotte.",
+      "Elle appelle sa tombe son « lit nuptial » : elle ne sera jamais l’épouse d’Hémon.",
+      "Chez les Grecs, Hadès est le royaume des morts : cette grotte est la porte de l’au-delà."
+     ],
+     "img": "bg76.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Cette scène n’est pas jouée : tout se passe hors de la scène. Le Messager la racontera."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi ne pas montrer la mort sur la scène ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 77,
+     "k": "TEMPS 4 · SCÈNE 23 / 27",
+     "t": "Le Messager apporte la nouvelle",
+     "lines": [
+      "Le Messager arrive en courant : « Où est la reine ? » Il raconte ce qu’il a vu.",
+      "À peine Antigone murée, on entend une plainte. On rouvre : Antigone s’est donné la mort, Hémon la tient dans ses bras.",
+      "Hémon regarde son père avec mépris, puis met fin à ses jours près d’Antigone."
+     ],
+     "img": "p77.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Le regard de mépris d’Hémon fait plus de mal à Créon qu’une lame."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi le Messager raconte-t-il au lieu qu’on voie la scène ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 78,
+     "k": "TEMPS 4 · SCÈNE 24 / 27",
+     "t": "La mort d’Eurydice",
+     "lines": [
+      "Créon revient avec son page. Il dit qu’Antigone et Hémon sont enfin réunis, couchés l’un près de l’autre.",
+      "Le Chœur lui apprend qu’il reste une dernière chose : Eurydice, sa femme.",
+      "En apprenant la mort de son fils, la reine a fini son rang de tricot, calmement. Puis elle est allée mourir dans sa chambre."
+     ],
+     "img": "p78.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Elle tricotait pour les pauvres. Elle meurt comme elle a vécu : sans bruit."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi Anouilh insiste-t-il sur le tricot ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 79,
+     "k": "TEMPS 4 · SCÈNE 25 / 27",
+     "t": "Créon est tout seul",
+     "lines": [
+      "Créon dit : elle aussi. Ils donnent tous. Il se sent épuisé : cela doit être bon de dormir.",
+      "Le Chœur lui répond : tu es tout seul, maintenant. Créon reconnaît que oui.",
+      "Sa famille est détruite : Antigone, Hémon, Eurydice. Il ne lui reste que son petit page."
+     ],
+     "img": "p79.webp",
+     "wide": false,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon a gagné : la loi est respectée. Mais il a tout perdu."
+     },
+     "ask": [
+      {
+       "q": "À quoi a servi l’ordre qu’il voulait faire respecter ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 80,
+     "k": "TEMPS 4 · SCÈNE 26 / 27",
+     "t": "« Cinq heures : le Conseil »",
+     "lines": [
+      "Créon demande à son page s’il a hâte de devenir grand. Le petit répond : « Oh oui ! »",
+      "Créon murmure qu’il ne faudrait jamais devenir grand.",
+      "L’horloge sonne cinq heures : il y a Conseil. Créon s’appuie sur le page et sort. La vie du roi continue."
+     ],
+     "img": "bg80.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Créon retourne au travail. Il fait son métier de roi, comme il l’avait dit."
+     },
+     "ask": [
+      {
+       "q": "Que veut dire « il ne faudrait jamais devenir grand » ?"
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 81,
+     "k": "TEMPS 4 · SCÈNE 27 / 27",
+     "t": "Les gardes jouent encore aux cartes",
+     "lines": [
+      "Le Chœur dit : tous ceux qui devaient mourir sont morts, ceux qui croyaient une chose et ceux qui croyaient le contraire.",
+      "Les vivants vont les oublier et confondre leurs noms. Un grand apaisement triste tombe sur Thèbes.",
+      "Il ne reste que les gardes. Cela leur est égal : ils jouent aux cartes. Le rideau tombe."
+     ],
+     "img": "bg81.webp",
+     "wide": true,
+     "box": {
+      "l": "Retiens",
+      "t": "La pièce finit comme elle a commencé : les gardes, les cartes. Pour eux, rien n’a changé."
+     },
+     "ask": [
+      {
+       "q": "Pourquoi finir sur les gardes ?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "letter": "Ζ",
+   "etape": "Étape 6 / 6",
+   "t": "Comprendre et retenir",
+   "lead": "Qui a raison, Créon ou Antigone ? Quels sont les grands thèmes ? Qu’est-ce qu’il faut garder en tête ?",
+   "cover": "ant/bg83.webp",
+   "n": 9,
+   "short": "Comprendre et retenir",
+   "pages": [
+    {
+     "type": "duo",
+     "slide": 84,
+     "t": "Deux façons de voir le monde",
+     "cols": [
+      {
+       "t": "Créon dit OUI",
+       "img": "v84_0.webp",
+       "lines": [
+        "Il faut maintenir l’ordre.",
+        "Un roi doit prendre des décisions difficiles.",
+        "La vie ordinaire et le bonheur comptent.",
+        "Il essaie de sauver Antigone."
+       ]
+      },
+      {
+       "t": "Antigone dit NON",
+       "img": "v84_1.webp",
+       "lines": [
+        "Un mort doit être enterré.",
+        "On peut dire non à ce qu’on n’aime pas.",
+        "Elle veut tout, ou rien.",
+        "Elle agit pour elle, pas pour la politique."
+       ]
+      }
+     ],
+     "tip": "Il n’y a pas de bonne réponse unique : Anouilh donne de bons arguments aux deux."
+    },
+    {
+     "type": "cards",
+     "slide": 85,
+     "t": "Six thèmes de la pièce",
+     "cards": [
+      {
+       "t": "La loi et la conscience",
+       "d": "Faut-il toujours obéir à la loi ? Et si elle semble injuste ?",
+       "icon": "ic85_0.webp"
+      },
+      {
+       "t": "Le pouvoir",
+       "d": "Gouverner, c’est dire « oui » et en payer le prix.",
+       "icon": "ic85_1.webp"
+      },
+      {
+       "t": "Le bonheur",
+       "d": "Se contenter d’un petit bonheur, ou tout vouloir ?",
+       "icon": "ic85_2.webp"
+      },
+      {
+       "t": "La mort et le destin",
+       "d": "Dans une tragédie, tout est déjà décidé.",
+       "icon": "ic85_3.webp"
+      },
+      {
+       "t": "La famille",
+       "d": "Deux frères, deux sœurs, un oncle, un fils : une famille qui se déchire.",
+       "icon": "ic85_4.webp"
+      },
+      {
+       "t": "Grandir",
+       "d": "Devenir adulte : voir son père tel qu’il est vraiment.",
+       "icon": "ic85_5.webp"
+      }
+     ]
+    },
+    {
+     "type": "cards",
+     "slide": 86,
+     "t": "Les objets qui parlent",
+     "cards": [
+      {
+       "t": "La pelle",
+       "d": "Une petite pelle d’enfant, avec le nom de Polynice. Elle rappelle l’enfance.",
+       "icon": "ic86_0.webp"
+      },
+      {
+       "t": "La terre",
+       "d": "Les ongles d’Antigone sont pleins de terre : sa preuve et son geste.",
+       "icon": "ic86_1.webp"
+      },
+      {
+       "t": "La fleur de papier",
+       "d": "Un cadeau de Polynice, quand elle était petite. Un souvenir doux.",
+       "icon": "ic86_2.webp"
+      },
+      {
+       "t": "La bague",
+       "d": "Antigone la donne au garde pour qu’il écrive sa lettre.",
+       "icon": "ic86_3.webp"
+      },
+      {
+       "t": "Le tricot",
+       "d": "Eurydice tricote : la douceur d’une vie ordinaire.",
+       "icon": "ic86_4.webp"
+      },
+      {
+       "t": "Les cartes",
+       "d": "Les gardes jouent : le monde continue sans comprendre.",
+       "icon": "ic86_5.webp"
+      }
+     ],
+     "ask": [
+      {
+       "q": "Pour chaque objet, retrouve la scène où il apparaît."
+      }
+     ]
+    },
+    {
+     "type": "steps",
+     "slide": 87,
+     "t": "L’histoire en 5 étapes",
+     "steps": [
+      {
+       "t": "Début",
+       "d": "Le Prologue présente tous les personnages."
+      },
+      {
+       "t": "Nœud",
+       "d": "Antigone a couvert le corps de Polynice de terre."
+      },
+      {
+       "t": "Crise",
+       "d": "Elle est arrêtée. Face à Créon : oui contre non."
+      },
+      {
+       "t": "Chute",
+       "d": "Condamnée, elle est murée vivante dans la grotte."
+      },
+      {
+       "t": "Fin",
+       "d": "Morts d’Hémon et d’Eurydice. Les gardes jouent aux cartes."
+      }
+     ],
+     "arrows": true
+    },
+    {
+     "type": "gallery",
+     "slide": 88,
+     "t": "À retenir : qui est qui ?",
+     "items": [
+      {
+       "img": "v88_0.webp",
+       "t": "Antigone",
+       "d": "Refuse la loi du roi"
+      },
+      {
+       "img": "v88_1.webp",
+       "t": "Ismène",
+       "d": "Prudente, elle a peur"
+      },
+      {
+       "img": "v88_2.webp",
+       "t": "Créon",
+       "d": "Roi, oncle d’Antigone"
+      },
+      {
+       "img": "v88_3.webp",
+       "t": "Hémon",
+       "d": "Fiancé d’Antigone"
+      },
+      {
+       "img": "v88_4.webp",
+       "t": "Eurydice",
+       "d": "Reine qui tricote"
+      },
+      {
+       "img": "v88_5.webp",
+       "t": "La Nourrice",
+       "d": "A élevé les filles"
+      },
+      {
+       "img": "v88_6.webp",
+       "t": "Le Garde",
+       "d": "Obéit aux ordres"
+      },
+      {
+       "img": "v88_7.webp",
+       "t": "Le Messager",
+       "d": "Annonce les morts"
+      },
+      {
+       "img": "v88_8.webp",
+       "t": "Le Page",
+       "d": "Petit, fidèle à Créon"
+      },
+      {
+       "img": "v88_9.webp",
+       "t": "Le Chœur",
+       "d": "Parle au public"
+      }
+     ],
+     "round": true
+    },
+    {
+     "type": "steps",
+     "slide": 89,
+     "t": "À retenir en 6 phrases",
+     "steps": [
+      {
+       "n": "1",
+       "d": "Antigone veut enterrer son frère Polynice, malgré l’interdiction du roi."
+      },
+      {
+       "n": "2",
+       "d": "Créon est le roi. Pour lui, la loi et l’ordre passent avant la pitié."
+      },
+      {
+       "n": "3",
+       "d": "Ismène a peur, Hémon aime Antigone. Tous essaient de la retenir."
+      },
+      {
+       "n": "4",
+       "d": "Antigone refuse tout compromis : elle dit non, jusqu’à la mort."
+      },
+      {
+       "n": "5",
+       "d": "Antigone, Hémon et Eurydice meurent. Créon reste seul."
+      },
+      {
+       "n": "6",
+       "d": "Les gardes jouent aux cartes : le monde continue sans comprendre."
+      }
+     ],
+     "list": true,
+     "ask": [
+      {
+       "q": "Redis ces 6 phrases avec tes propres mots, sans regarder."
+      }
+     ]
+    },
+    {
+     "type": "discuss",
+     "slide": 90,
+     "t": "Pour discuter en classe",
+     "qs": [
+      "Antigone a-t-elle raison de désobéir à la loi ? Et si la loi est injuste ?",
+      "Créon est-il un méchant ? Que ferais-tu à sa place ?",
+      "Pourquoi Antigone refuse-t-elle le bonheur que Créon lui offre ?",
+      "Pourquoi finir sur les gardes qui jouent aux cartes ?",
+      "Que reste-t-il de cette histoire aujourd’hui ?"
+     ],
+     "tip": "Prends 5 minutes pour noter ton avis, puis échange. Il n’y a pas de bonne ou de mauvaise réponse : il faut argumenter."
+    },
+    {
+     "type": "frame",
+     "slide": 91,
+     "k": null,
+     "t": "Fin du voyage",
+     "lines": [
+      "Tu as traversé la Grèce antique, la famille d’Œdipe et la journée d’Antigone. Une dernière question : et toi, qu’aurais-tu dit, oui ou non ?"
+     ],
+     "img": "bg91.webp",
+     "wide": true
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "id": "antigone",
+   "name": "Antigone",
+   "role": "Fille d’Œdipe, 20 ans",
+   "facts": [
+    "Petite, maigre, brune, renfermée : dans la famille, personne ne la prenait au sérieux.",
+    "Elle est fiancée à Hémon, mais elle sait qu’elle ne l’épousera jamais.",
+    "Elle veut enterrer son frère Polynice malgré le roi. Elle sait qu’elle va mourir."
+   ],
+   "word": "Refuser",
+   "img": "p40.webp",
+   "ref": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "ismene",
+   "name": "Ismène",
+   "role": "Sœur aînée d’Antigone",
+   "facts": [
+    "Blonde, belle, rieuse : elle aime la fête, les jeux et le bonheur.",
+    "Elle a peur de Créon et de la mort. Elle supplie Antigone de ne rien faire.",
+    "Trop tard, elle veut mourir avec sa sœur. Antigone refuse."
+   ],
+   "word": "Craindre",
+   "img": "p41.webp",
+   "ref": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "creon",
+   "name": "Créon",
+   "role": "Oncle d’Antigone, roi de Thèbes",
+   "facts": [
+    "Un homme robuste, fatigué, aux cheveux blancs. Avant, il aimait la musique et les beaux livres.",
+    "Quand Œdipe et ses fils sont morts, il a pris leur place. Pour lui, être roi est un métier.",
+    "Il veut sauver Antigone, mais il pense qu’un roi doit faire respecter la loi."
+   ],
+   "word": "Gouverner",
+   "img": "p42.webp",
+   "ref": [
+    4,
+    3
+   ]
+  },
+  {
+   "id": "hemon",
+   "name": "Hémon",
+   "role": "Fils de Créon, fiancé d’Antigone",
+   "facts": [
+    "Il aime la danse et les jeux. Pourtant, un soir de bal, il a demandé la main d’Antigone.",
+    "Il admire son père, son modèle d’enfant. Puis il le découvre faible.",
+    "Quand il perd Antigone, il ne veut pas vivre sans elle."
+   ],
+   "word": "Aimer",
+   "img": "p43.webp",
+   "ref": [
+    4,
+    4
+   ]
+  },
+  {
+   "id": "eurydice",
+   "name": "Eurydice",
+   "role": "Reine, femme de Créon",
+   "facts": [
+    "Une vieille dame bonne et digne. Elle tricote pendant presque toute la pièce.",
+    "Elle ne peut rien faire pour aider son mari : Créon est seul.",
+    "À la fin, elle apprend la mort de son fils, finit son rang de tricot, puis va mourir."
+   ],
+   "word": "Tricoter",
+   "img": "p44.webp",
+   "ref": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "nourrice",
+   "name": "La Nourrice",
+   "role": "Elle a élevé Antigone et Ismène",
+   "facts": [
+    "Elle gronde, elle s’inquiète. Elle aime beaucoup « ses petites ».",
+    "Antigone lui demande de bien s’occuper de sa chienne Douce.",
+    "Elle ne comprend pas ce que prépare Antigone."
+   ],
+   "word": "Protéger",
+   "img": "p45.webp",
+   "ref": [
+    4,
+    6
+   ]
+  },
+  {
+   "id": "garde",
+   "name": "Le Garde (Jonas)",
+   "role": "Garde de la 2e compagnie",
+   "facts": [
+    "Un homme simple, sans imagination. Il sent l’ail, le cuir et le vin rouge, dit le Prologue.",
+    "Il pense à sa solde et à son avancement. Pour lui, il suffit d’obéir aux ordres.",
+    "Il découvre le corps couvert de terre, puis il arrête Antigone."
+   ],
+   "word": "Obéir",
+   "img": "p46.webp",
+   "ref": [
+    4,
+    7
+   ]
+  },
+  {
+   "id": "messager",
+   "name": "Le Messager",
+   "role": "Un jeune homme pâle",
+   "facts": [
+    "Dès le début, il reste seul au fond, adossé au mur. Il ne parle à personne.",
+    "Il sait déjà ce qui va arriver : c’est lui qui apportera la mauvaise nouvelle.",
+    "Il raconte la mort d’Antigone et d’Hémon, puis il cherche la reine."
+   ],
+   "word": "Annoncer",
+   "img": "p47.webp",
+   "ref": [
+    4,
+    8
+   ]
+  },
+  {
+   "id": "page",
+   "name": "Le Page",
+   "role": "Un petit garçon, au service de Créon",
+   "facts": [
+    "Il est trop petit pour aider Créon, mais il reste toujours près de lui.",
+    "Créon lui parle quand il est seul et qu’il ne peut parler à personne.",
+    "À la fin, c’est lui qui rappelle le Conseil de cinq heures."
+   ],
+   "word": "Rester",
+   "img": "p48.webp",
+   "ref": [
+    4,
+    9
+   ]
+  },
+  {
+   "id": "choeur",
+   "name": "Le Chœur",
+   "role": "Un personnage qui parle au public",
+   "facts": [
+    "Au début, il présente tous les personnages au public : c’est le Prologue.",
+    "Il commente l’histoire. Il explique ce qu’est une tragédie : tout est déjà décidé.",
+    "À la fin, il constate que tous sont morts, sauf les gardes qui jouent aux cartes."
+   ],
+   "word": "Savoir",
+   "img": "p49.webp",
+   "ref": [
+    4,
+    10
+   ]
+  }
+ ],
+ "quizzes": [
+  {
+   "n": 1,
+   "after": 2,
+   "title": "La Grèce antique et l’histoire d’Œdipe",
+   "cover": "ant/p22.webp",
+   "units": [
+    1,
+    2
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? L’histoire d’Œdipe",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Laïos apprend par un oracle que son fils le tuera.",
+       "a": true,
+       "ref": [
+        2,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Œdipe grandit à Thèbes chez ses vrais parents.",
+       "a": false,
+       "ref": [
+        2,
+        4
+       ],
+       "ex": "Il grandit à Corinthe, chez Polybe et Mérope."
+      },
+      {
+       "type": "vf",
+       "q": "Œdipe tue Laïos à un carrefour sans savoir qui il est.",
+       "a": true,
+       "ref": [
+        2,
+        6
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Œdipe vainc le Sphinx en répondant « l’homme ».",
+       "a": true,
+       "ref": [
+        2,
+        7
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Œdipe épouse Jocaste sans savoir que c’est sa mère.",
+       "a": true,
+       "ref": [
+        2,
+        8
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Étéocle et Polynice règnent ensemble sans aucun problème.",
+       "a": false,
+       "ref": [
+        2,
+        12
+       ],
+       "ex": "Ils se battent et se tuent."
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Dans quelle cité se passe la pièce ?",
+       "opts": [
+        "Athènes",
+        "Corinthe",
+        "Thèbes"
+       ],
+       "a": 2,
+       "ref": [
+        1,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "À Delphes, qui répond aux questions au nom du dieu Apollon ?",
+       "opts": [
+        "Jocaste",
+        "La Pythie, une prêtresse",
+        "Le Sphinx"
+       ],
+       "a": 1,
+       "ref": [
+        1,
+        6
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pour les Grecs, que devient un mort sans tombe ?",
+       "opts": [
+        "Son âme erre sans fin",
+        "Il devient un dieu",
+        "Il revient à la vie"
+       ],
+       "a": 0,
+       "ref": [
+        1,
+        9
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qu’est-ce qui compte comme un enterrement ?",
+       "opts": [
+        "Un masque posé sur le visage",
+        "Une prière au Sphinx",
+        "Quelques poignées de terre jetées sur le corps"
+       ],
+       "a": 2,
+       "ref": [
+        1,
+        9
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que rappelle le nom « Œdipe » ?",
+       "opts": [
+        "Ses pieds enflés",
+        "Le nom de son père",
+        "La ville de Corinthe"
+       ],
+       "a": 0,
+       "ref": [
+        2,
+        3
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui est Tirésias ?",
+       "opts": [
+        "Le roi de Corinthe",
+        "Un devin aveugle",
+        "Le frère de Jocaste"
+       ],
+       "a": 1,
+       "ref": [
+        2,
+        10
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que décide Créon pour le corps de Polynice ?",
+       "opts": [
+        "De grandes funérailles",
+        "Il sera enterré à Corinthe",
+        "Il restera sans tombe, et qui l’enterre sera puni de mort"
+       ],
+       "a": 2,
+       "ref": [
+        2,
+        13
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Classe les mots",
+     "title": "Un dieu, un lieu ou la mort ?",
+     "type": "sort",
+     "cats": [
+      "Un dieu",
+      "Un lieu",
+      "La mort et les morts"
+     ],
+     "hint": "Les dieux sont présentés à la page 5 de l’étape 1, les lieux sur la carte (page 1), la mort aux pages 8 et 9.",
+     "items": [
+      [
+       "Zeus",
+       0
+      ],
+      [
+       "Thèbes",
+       1
+      ],
+      [
+       "Les libations",
+       2
+      ],
+      [
+       "Apollon",
+       0
+      ],
+      [
+       "Delphes",
+       1
+      ],
+      [
+       "La sépulture",
+       2
+      ],
+      [
+       "Dionysos",
+       0
+      ],
+      [
+       "Corinthe",
+       1
+      ],
+      [
+       "Veiller le défunt",
+       2
+      ]
+     ],
+     "ref": [
+      1,
+      5
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Une cité",
+     "d": "Une ville avec son territoire et ses lois. À Thèbes, il y a eu Laïos, puis Œdipe, puis Créon."
+    },
+    {
+     "t": "La fatalité",
+     "d": "On n’échappe pas au destin : en voulant fuir l’oracle, Laïos et Œdipe l’accomplissent."
+    },
+    {
+     "t": "Un mort sans tombe",
+     "d": "Il ne trouve pas le repos. Quelques poignées de terre jetées sur le corps comptent comme un enterrement."
+    },
+    {
+     "t": "Le décret de Créon",
+     "d": "Étéocle aura des funérailles, Polynice restera sans tombe. C’est là que commence la pièce."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "after": 4,
+   "title": "Anouilh et les personnages",
+   "cover": "ant/p42.webp",
+   "units": [
+    3,
+    4
+   ],
+   "sections": [
+    {
+     "label": "Qui est-ce ?",
+     "title": "QCM : qui est-ce ?",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Qui est le fiancé d’Antigone ?",
+       "opts": [
+        "Créon",
+        "Hémon",
+        "Polynice"
+       ],
+       "a": 1,
+       "ref": [
+        4,
+        4
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui tricote pendant presque toute la pièce ?",
+       "opts": [
+        "La Nourrice",
+        "Ismène",
+        "Eurydice"
+       ],
+       "a": 2,
+       "ref": [
+        4,
+        5
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui joue aux cartes ?",
+       "opts": [
+        "Les gardes",
+        "Le Chœur",
+        "Le Messager"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        10
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui annonce la mort d’Antigone et d’Hémon ?",
+       "opts": [
+        "Le Messager",
+        "Le Page",
+        "Le garde Jonas"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        8
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Comment s’appelle la chienne d’Antigone ?",
+       "opts": [
+        "Douce",
+        "Brume",
+        "Fidèle"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        6
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui explique ce qu’est une tragédie ?",
+       "opts": [
+        "Créon",
+        "Le Chœur",
+        "Ismène"
+       ],
+       "a": 1,
+       "ref": [
+        4,
+        10
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? Anouilh et ses personnages",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Antigone est jouée pour la première fois en 1944, à Paris.",
+       "a": true,
+       "ref": [
+        3,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "La pièce d’Anouilh compte cinq actes.",
+       "a": false,
+       "ref": [
+        3,
+        1
+       ],
+       "ex": "C’est une pièce en un seul acte."
+      },
+      {
+       "type": "vf",
+       "q": "Chez Anouilh, le Chœur est un seul personnage qui parle au public.",
+       "a": true,
+       "ref": [
+        3,
+        3
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Toute la pièce se passe en une seule journée.",
+       "a": true,
+       "ref": [
+        3,
+        5
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le décor représente un riche palais avec un temple.",
+       "a": false,
+       "ref": [
+        3,
+        6
+       ],
+       "ex": "Anouilh demande un décor neutre, avec trois portes semblables."
+      },
+      {
+       "type": "vf",
+       "q": "Ismène est la sœur aînée d’Antigone.",
+       "a": true,
+       "ref": [
+        4,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Créon ne veut pas sauver Antigone.",
+       "a": false,
+       "ref": [
+        4,
+        3
+       ],
+       "ex": "Il veut la sauver, mais il pense qu’un roi doit faire respecter la loi."
+      }
+     ]
+    },
+    {
+     "label": "Sophocle ou Anouilh ?",
+     "title": "Sophocle ou Anouilh ?",
+     "type": "sort",
+     "cats": [
+      "Chez Sophocle",
+      "Chez Anouilh"
+     ],
+     "hint": "Revois le tableau « Sophocle et Anouilh : ce qui change » (étape 3, page 3).",
+     "items": [
+      [
+       "Vers 441 av. J.-C.",
+       0
+      ],
+      [
+       "1944",
+       1
+      ],
+      [
+       "Un théâtre en plein air, à Athènes",
+       0
+      ],
+      [
+       "Une salle de théâtre, à Paris",
+       1
+      ],
+      [
+       "Des vers, un ton solennel",
+       0
+      ],
+      [
+       "Le langage de tous les jours",
+       1
+      ],
+      [
+       "Un chœur de vieillards de Thèbes",
+       0
+      ],
+      [
+       "Un seul personnage qui parle au public",
+       1
+      ],
+      [
+       "Un roi sûr de lui qui finit puni",
+       0
+      ],
+      [
+       "Un roi fatigué qui ne veut pas la tuer",
+       1
+      ]
+     ],
+     "ref": [
+      3,
+      3
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Une pièce de 1944",
+     "d": "Jouée pour la première fois à Paris pendant la guerre. Anouilh réécrit la tragédie de Sophocle à sa façon."
+    },
+    {
+     "t": "Peu de décor",
+     "d": "Un décor neutre, trois portes, une seule journée : tout repose sur le texte et sur les acteurs."
+    },
+    {
+     "t": "Un mot par personnage",
+     "d": "Antigone : refuser. Créon : gouverner. Ismène : craindre. Hémon : aimer. Le Garde : obéir."
+    },
+    {
+     "t": "Le Chœur",
+     "d": "Il présente les personnages, commente l’histoire et explique la tragédie au public."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "after": 5,
+   "title": "Le petit matin (scènes 1 à 7)",
+   "cover": "ant/p60.webp",
+   "units": [
+    5
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? Le petit matin",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Au lever du rideau, tous les personnages sont déjà sur scène.",
+       "a": true,
+       "ref": [
+        5,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Antigone dit toute la vérité à la nourrice dès son retour.",
+       "a": false,
+       "ref": [
+        5,
+        4
+       ],
+       "ex": "Elle laisse croire à un rendez-vous d’amoureux."
+      },
+      {
+       "type": "vf",
+       "q": "Ismène veut aider Antigone à enterrer Polynice.",
+       "a": false,
+       "ref": [
+        5,
+        5
+       ],
+       "ex": "Elle a peur et veut l’en empêcher."
+      },
+      {
+       "type": "vf",
+       "q": "Antigone dit à Ismène qu’elle a déjà couvert le corps de terre.",
+       "a": true,
+       "ref": [
+        5,
+        8
+       ],
+       "ex": "« C’est trop tard. »"
+      },
+      {
+       "type": "vf",
+       "q": "Antigone dit à Hémon qu’elle l’épousera bientôt.",
+       "a": false,
+       "ref": [
+        5,
+        7
+       ],
+       "ex": "Elle lui dit qu’elle ne pourra jamais l’épouser."
+      },
+      {
+       "type": "vf",
+       "q": "La nourrice doit promettre de ne jamais gronder la chienne Douce.",
+       "a": true,
+       "ref": [
+        5,
+        6
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Qui présente les personnages au public ?",
+       "opts": [
+        "Créon",
+        "Le Prologue",
+        "La nourrice"
+       ],
+       "a": 1,
+       "ref": [
+        5,
+        2
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Comment s’appellent les trois gardes ?",
+       "opts": [
+        "Polybe, Laïos et Créon",
+        "Hémon, Étéocle et Polynice",
+        "Jonas, Durand et Boudousse"
+       ],
+       "a": 2,
+       "ref": [
+        5,
+        3
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Comment Antigone rentre-t-elle à l’aube ?",
+       "opts": [
+        "Sans bruit, ses sandales à la main",
+        "Entourée des gardes",
+        "En chantant"
+       ],
+       "a": 0,
+       "ref": [
+        5,
+        4
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi Ismène ne veut-elle pas agir ?",
+       "opts": [
+        "Elle n’aimait pas Polynice",
+        "Elle a peur : le roi les fera mourir",
+        "Elle doit partir à Corinthe"
+       ],
+       "a": 1,
+       "ref": [
+        5,
+        5
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que fait jurer Antigone à Hémon ?",
+       "opts": [
+        "De sortir sans poser de questions",
+        "De parler à Créon",
+        "D’enterrer Polynice avec elle"
+       ],
+       "a": 0,
+       "ref": [
+        5,
+        7
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Qui fait quoi ?",
+     "title": "Qui dit ou fait quoi ?",
+     "type": "sort",
+     "cats": [
+      "Antigone",
+      "Ismène",
+      "La nourrice",
+      "Hémon"
+     ],
+     "hint": "Relis les scènes 3 à 7 : chacune met Antigone face à un seul personnage.",
+     "items": [
+      [
+       "Entre sans bruit, ses sandales à la main",
+       0
+      ],
+      [
+       "Croit à un rendez-vous d’amoureux",
+       2
+      ],
+      [
+       "« Nous ne pouvons pas ! »",
+       1
+      ],
+      [
+       "Demande pardon pour la dispute de la veille",
+       0
+      ],
+      [
+       "Obéit sans comprendre",
+       3
+      ],
+      [
+       "Promet de ne jamais gronder Douce",
+       2
+      ],
+      [
+       "N’a pas dormi de la nuit",
+       1
+      ],
+      [
+       "« C’est trop tard. »",
+       0
+      ]
+     ],
+     "ref": [
+      5,
+      4
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Une tragédie",
+     "d": "Dès le Prologue, on connaît la fin : Antigone va se dresser contre le roi et mourir."
+    },
+    {
+     "t": "Les adieux",
+     "d": "Antigone dit adieu à la nourrice, à Ismène et à Hémon, sans dire pourquoi."
+    },
+    {
+     "t": "Prudence et action",
+     "d": "Ismène choisit la prudence. Antigone ne veut pas « comprendre » : elle veut agir."
+    },
+    {
+     "t": "Le premier coup de théâtre",
+     "d": "« C’est trop tard » : Antigone a déjà jeté de la terre sur le corps de son frère."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "after": 9,
+   "title": "Toute la pièce (scènes 8 à 27)",
+   "cover": "ant/bg81.webp",
+   "units": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? Toute la pièce",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Créon veut d’abord sauver Antigone.",
+       "a": true,
+       "ref": [
+        7,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Antigone finit par dire oui, comme Créon.",
+       "a": false,
+       "ref": [
+        7,
+        3
+       ],
+       "ex": "Elle dit non jusqu’au bout."
+      },
+      {
+       "type": "vf",
+       "q": "Créon ne sait pas lequel des deux frères repose dans le tombeau de marbre.",
+       "a": true,
+       "ref": [
+        7,
+        4
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Ismène meurt avec Antigone.",
+       "a": false,
+       "ref": [
+        8,
+        1
+       ],
+       "ex": "Antigone refuse de la laisser faire."
+      },
+      {
+       "type": "vf",
+       "q": "Le Messager annonce la mort d’Antigone et d’Hémon.",
+       "a": true,
+       "ref": [
+        8,
+        8
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "À la fin, Créon est entouré de sa famille.",
+       "a": false,
+       "ref": [
+        8,
+        10
+       ],
+       "ex": "Il est seul avec son page."
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Quelles traces trouve-t-on près du corps de Polynice ?",
+       "opts": [
+        "Une bague en or",
+        "Un pas léger et une vieille pelle d’enfant",
+        "Un masque de théâtre"
+       ],
+       "a": 1,
+       "ref": [
+        6,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pour le Chœur, pourquoi la tragédie est-elle « reposante » ?",
+       "opts": [
+        "Tout finit bien",
+        "Personne ne meurt",
+        "On sait qu’il n’y a plus d’espoir"
+       ],
+       "a": 2,
+       "ref": [
+        6,
+        2
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "À quoi Créon compare-t-il le pays ?",
+       "opts": [
+        "À un bateau dans la tempête",
+        "À une maison en ruine",
+        "À un jardin endormi"
+       ],
+       "a": 0,
+       "ref": [
+        7,
+        3
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que répond Antigone au petit bonheur que lui propose Créon ?",
+       "opts": [
+        "Elle accepte de se marier",
+        "Elle veut tout, tout de suite, ou rien",
+        "Elle demande à quitter Thèbes"
+       ],
+       "a": 1,
+       "ref": [
+        7,
+        5
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que donne Antigone au garde pour qu’il écrive sa lettre ?",
+       "opts": [
+        "Sa chienne Douce",
+        "Sa petite pelle",
+        "Sa bague en or"
+       ],
+       "a": 2,
+       "ref": [
+        8,
+        6
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que fait Eurydice en apprenant la mort de son fils ?",
+       "opts": [
+        "Elle finit son rang de tricot, puis va mourir dans sa chambre",
+        "Elle part au Conseil",
+        "Elle chasse Créon du palais"
+       ],
+       "a": 0,
+       "ref": [
+        8,
+        9
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quelle heure sonne à la fin de la pièce ?",
+       "opts": [
+        "Midi",
+        "Cinq heures",
+        "Minuit"
+       ],
+       "a": 1,
+       "ref": [
+        8,
+        11
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Les 5 étapes",
+     "title": "Place chaque scène dans l’histoire en 5 étapes",
+     "type": "sort",
+     "cats": [
+      "Début",
+      "Nœud",
+      "Crise",
+      "Chute",
+      "Fin"
+     ],
+     "hint": "Début : scène 1 · Nœud : scène 7 · Crise : scènes 10 à 15 · Chute : scènes 16 à 22 · Fin : scènes 23 à 27.",
+     "items": [
+      [
+       "Le Prologue présente les personnages",
+       0
+      ],
+      [
+       "« C’est trop tard » : l’aveu",
+       1
+      ],
+      [
+       "Antigone est arrêtée",
+       2
+      ],
+      [
+       "« Oui » ou « non » ?",
+       2
+      ],
+      [
+       "Le bonheur qu’elle refuse",
+       2
+      ],
+      [
+       "« Gardes ! Emmenez-la »",
+       3
+      ],
+      [
+       "La lettre à Hémon",
+       3
+      ],
+      [
+       "Le tombeau dans la montagne",
+       3
+      ],
+      [
+       "Le Messager apporte la nouvelle",
+       4
+      ],
+      [
+       "La mort d’Eurydice",
+       4
+      ],
+      [
+       "Les gardes jouent encore aux cartes",
+       4
+      ]
+     ],
+     "ref": [
+      9,
+      4
+     ]
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Créon dit oui, Antigone dit non : qui pense quoi ?",
+     "type": "sort",
+     "cats": [
+      "Créon",
+      "Antigone"
+     ],
+     "hint": "Revois la page « Deux façons de voir le monde » (étape 6, page 1).",
+     "items": [
+      [
+       "Il faut maintenir l’ordre",
+       0
+      ],
+      [
+       "Un mort doit être enterré",
+       1
+      ],
+      [
+       "Un roi doit prendre des décisions difficiles",
+       0
+      ],
+      [
+       "On peut dire non à ce qu’on n’aime pas",
+       1
+      ],
+      [
+       "La vie ordinaire et le bonheur comptent",
+       0
+      ],
+      [
+       "Vouloir tout, ou rien",
+       1
+      ]
+     ],
+     "ref": [
+      9,
+      1
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Oui contre non",
+     "d": "Le cœur de la pièce : Créon accepte de gouverner, Antigone refuse."
+    },
+    {
+     "t": "Créon a gagné… et tout perdu",
+     "d": "La loi est respectée, mais Antigone, Hémon et Eurydice sont morts. Il ne lui reste que son page."
+    },
+    {
+     "t": "Les grands thèmes",
+     "d": "La loi et la conscience, le pouvoir, le bonheur, la mort et le destin, la famille, grandir."
+    },
+    {
+     "t": "La fin",
+     "d": "La pièce finit comme elle a commencé : les gardes jouent aux cartes. Pour eux, rien n’a changé."
+    }
+   ]
+  }
+ ]
+}

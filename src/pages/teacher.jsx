@@ -179,7 +179,7 @@ function Overview({ st, setTab }) {
           ))}
         </div>
         <div className="row small muted" style={{ marginTop: 10 }}>
-          <span><i style={{ display: 'inline-block', width: 10, height: 10, background: 'var(--teal)', borderRadius: 2 }} /> Chapitres</span>
+          <span><i style={{ display: 'inline-block', width: 10, height: 10, background: 'var(--teal)', borderRadius: 2 }} /> Chapitres et étapes</span>
           <span><i style={{ display: 'inline-block', width: 10, height: 10, background: 'var(--gold)', borderRadius: 2 }} /> Quiz</span>
           <span><i style={{ display: 'inline-block', width: 10, height: 10, background: 'var(--terra)', borderRadius: 2 }} /> Écriture (niveaux 0 à 3)</span>
         </div>
@@ -251,8 +251,10 @@ function Assignments({ st, cls, api, reload }) {
     setF({ ...f, title: '', note: '', acts: [] }); reload()
   }
   const groups = [
-    ['Chapitres', CATALOG.activities.filter((a) => a.kind === 'chapter')],
-    ['Quiz', CATALOG.activities.filter((a) => a.kind === 'quiz')],
+    ['La Boîte à merveilles · chapitres', CATALOG.activities.filter((a) => a.kind === 'chapter')],
+    ['La Boîte à merveilles · quiz', CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === 'bam')],
+    ['Antigone · étapes', CATALOG.activities.filter((a) => a.kind === 'unit')],
+    ['Antigone · quiz', CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === 'antigone')],
     ...PE.themes.map((t) => [`Écriture · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.theme === t.n)]),
   ]
   return (

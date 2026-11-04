@@ -28,15 +28,16 @@ export function Header() {
           {p && p.role !== 'teacher' && (
             <nav>
               <NavLink to="/eleve" end>Accueil</NavLink>
-              <NavLink to="/oeuvre/bam/lecture">Lecture</NavLink>
-              <NavLink to="/oeuvre/bam/ecriture">Écriture</NavLink>
+              <NavLink to="/oeuvre/bam">Boîte à merveilles</NavLink>
+              <NavLink to="/oeuvre/antigone">Antigone</NavLink>
               {p.role === 'student' && <NavLink to="/mes-travaux">Mes travaux</NavLink>}
             </nav>
           )}
           {p?.role === 'teacher' && (
             <nav>
               <NavLink to="/prof" end>Tableau de bord</NavLink>
-              <NavLink to="/oeuvre/bam/lecture">Contenus</NavLink>
+              <NavLink to="/oeuvre/bam/lecture">Boîte à merveilles</NavLink>
+              <NavLink to="/oeuvre/antigone/lecture">Antigone</NavLink>
             </nav>
           )}
           <div className="grow" />
@@ -82,7 +83,7 @@ export function Footer() {
     <footer className="foot">
       <div className="wrap row spread">
         <span>{SITE} · conçu par Nabil Saadi, professeur de français · Tétouan</span>
-        <span>Illustrations : résumé illustré de <i>La Boîte à merveilles</i> (A. Sefrioui)</span>
+        <span>Illustrations : résumés illustrés de <i>La Boîte à merveilles</i> (A. Sefrioui) et d’<i>Antigone</i> (J. Anouilh)</span>
       </div>
     </footer>
   )

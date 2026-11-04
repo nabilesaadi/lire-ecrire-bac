@@ -248,3 +248,94 @@ table.t tr.click:hover td { background: var(--paper); }
 .prod { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 18px; align-items: start; }
 @media (max-width: 860px) { .prod { grid-template-columns: 1fr; } }
 .opt[disabled] { color: var(--ink); opacity: 1; }
+
+/* ---------- Antigone : pages d'étape ---------- */
+.tablewrap { overflow-x: auto; }
+.ant-hero { min-height: 380px; }
+.ant-hero .ant-letter { font-family: var(--serif); font-size: 5.5rem; line-height: 1; color: var(--gold-2); font-weight: 700; margin-bottom: 4px; text-shadow: 0 2px 18px rgba(0, 0, 0, .4); }
+.ant-toc { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 0; background: linear-gradient(var(--paper) 75%, rgba(245, 238, 226, 0)); }
+.ant-toc a { display: inline-grid; place-items: center; min-width: 34px; height: 34px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); color: var(--ink-2); font-weight: 700; font-size: .9rem; text-decoration: none; }
+.ant-toc a:hover { border-color: var(--gold-2); color: var(--ink); }
+.ant-anchor { scroll-margin-top: 64px; }
+.ant-pg { padding: 30px 0; border-bottom: 1px solid var(--line); }
+.ant-k { font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; color: var(--terra); font-weight: 800; margin-bottom: 4px; display: block; }
+.ant-t { font-size: 1.55rem; margin: 0 0 6px; }
+.ant-sub { font-family: var(--serif); font-style: italic; color: var(--ink-2); margin: 0 0 8px; }
+.ant-lines { padding-left: 1.1em; margin: 8px 0 0; }
+.ant-lines li { margin-bottom: 8px; font-size: 1.06rem; }
+.ant-legend { list-style: none; padding: 10px 14px; margin: 10px 0 0; background: var(--paper-2); border-radius: 12px; font-size: .95rem; }
+.ant-legend li { padding: 2px 0; }
+.ant-frame { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; align-items: center; }
+.ant-frame.flip .pic { order: 2; }
+.ant-frame .pic img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow); }
+.ant-frame .pic img.contain { object-fit: contain; background: var(--night); }
+.ant-frame.wide { grid-template-columns: 1fr; }
+.ant-frame.wide .pic { order: 0; }
+.ant-frame.wide .pic img { aspect-ratio: 16/8; }
+.ant-box { margin-top: 14px; background: var(--gold-soft); border-left: 4px solid var(--gold); border-radius: 10px; padding: 10px 14px; display: grid; gap: 2px; }
+.ant-box b { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: #7a5410; }
+.ant-word { margin-top: 14px; display: inline-grid; gap: 0; background: var(--night); color: #fff; border-radius: 12px; padding: 8px 16px; }
+.ant-word small { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-2); }
+.ant-word b { font-family: var(--serif); font-size: 1.35rem; }
+.ant-info { margin: 12px 0 0; font-size: .95rem; color: var(--ink-2); background: var(--paper-2); border-radius: 10px; padding: 8px 12px; }
+.ant-ask { margin-top: 14px; border: 1px dashed var(--teal-2); border-radius: 12px; padding: 10px 14px; background: var(--teal-soft); }
+.ant-ask .eyebrow { margin-bottom: 4px; }
+.ant-ask-q { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 4px 0; font-weight: 600; }
+.ant-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 14px; }
+.ant-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; gap: 12px; align-items: flex-start; }
+.ant-card b { font-family: var(--serif); font-size: 1.08rem; display: block; }
+.ant-card p { margin: 4px 0 0; color: var(--ink-2); }
+.ant-card .ic { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--terra); display: grid; place-items: center; }
+.ant-card .ic img { width: 24px; height: 24px; }
+.ant-cards.portraits .ant-card { flex-direction: column; align-items: stretch; text-align: center; }
+.ant-cards.portraits .ph { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 6px; border: 3px solid var(--gold-2); }
+.ant-cards.gloss { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.ant-cards.gloss b { color: var(--terra); }
+.ant-steps { list-style: none; padding: 0; margin: 14px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; counter-reset: s; }
+.ant-steps li { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; gap: 10px; align-items: flex-start; }
+.ant-steps li .n { flex: none; min-width: 34px; height: 34px; padding: 0 8px; border-radius: 999px; background: var(--gold-2); color: var(--night); font-weight: 800; display: grid; place-items: center; font-family: var(--serif); }
+.ant-steps li b { font-family: var(--serif); display: block; }
+.ant-steps li p { margin: 4px 0 0; color: var(--ink-2); }
+.ant-steps:not(.list):not(.timeline) li { flex-direction: column; }
+.ant-steps.arrows li:not(:last-child)::after { content: '→'; position: absolute; right: -11px; top: 50%; transform: translateY(-50%); color: var(--gold); font-weight: 800; z-index: 1; }
+.ant-steps.list { grid-template-columns: 1fr; }
+.ant-steps.list li { align-items: center; }
+.ant-steps.list li p { color: var(--ink); margin: 0; }
+.ant-steps.timeline { grid-template-columns: 1fr; gap: 0; border-left: 3px solid var(--gold-2); margin-left: 10px; padding-left: 0; }
+.ant-steps.timeline li { border: 0; background: none; padding: 8px 0 8px 22px; flex-direction: column; gap: 0; }
+.ant-steps.timeline li::before { content: ''; position: absolute; left: -9px; top: 14px; width: 15px; height: 15px; border-radius: 50%; background: var(--card); border: 3px solid var(--gold); }
+.ant-steps.timeline li b { color: var(--terra); }
+.ant-compare th, .ant-compare td { vertical-align: top; }
+.ant-compare thead th { font-family: var(--serif); font-size: 1.1rem; }
+.ant-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+.ant-duo .col { border-radius: 16px; padding: 16px; color: #fff; }
+.ant-duo .col.yes { background: #4a2a4f; }
+.ant-duo .col.no { background: var(--night); }
+.ant-duo .col img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold-2); }
+.ant-duo .col h4 { margin: 0; color: var(--gold-2); font-family: var(--serif); font-size: 1.25rem; }
+.ant-duo .col ul { margin: 10px 0 0; padding-left: 1.1em; }
+.ant-duo .col li { margin-bottom: 6px; }
+.ant-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-top: 14px; }
+.ant-gallery figure { margin: 0; position: relative; }
+.ant-gallery img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
+.ant-gallery.round img { border-radius: 50%; border: 3px solid var(--gold-2); width: 78%; margin: 0 auto; }
+.ant-gallery .n { position: absolute; top: 8px; left: 8px; width: 28px; height: 28px; border-radius: 50%; background: var(--gold-2); color: var(--night); font-weight: 800; display: grid; place-items: center; font-size: .85rem; }
+.ant-gallery figcaption { text-align: center; margin-top: 6px; }
+.ant-gallery figcaption b { display: block; font-family: var(--serif); }
+.ant-gallery figcaption small { color: var(--ink-3); }
+.ant-fig { display: block; width: 100%; border: 0; padding: 0; background: var(--night); border-radius: 16px; overflow: hidden; cursor: zoom-in; margin-top: 12px; }
+.ant-fig img { width: 100%; }
+@media (max-width: 760px) {
+  .ant-frame { grid-template-columns: 1fr; gap: 14px; }
+  .ant-frame.flip .pic { order: 0; }
+  .ant-frame .pic img { aspect-ratio: 4/3; }
+  .ant-frame .pic img.contain { aspect-ratio: 1; }
+  .ant-duo { grid-template-columns: 1fr; }
+  .ant-steps.arrows li:not(:last-child)::after { display: none; }
+  .ant-hero .ant-letter { font-size: 4rem; }
+  .ant-t { font-size: 1.3rem; }
+}
+.modal .ant-pg { border-bottom: 0; padding: 8px 0 0; }
+.modal .ant-frame { grid-template-columns: 1fr; }
+.modal .ant-frame.flip .pic { order: 0; }
+.modal .ant-frame .pic img { aspect-ratio: 16/9; }
