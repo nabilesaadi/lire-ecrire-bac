@@ -7,7 +7,7 @@ import { StudentHome, WorkHub, MyWork } from './pages/student'
 import { Lecture, Chapter, Quiz } from './pages/lecture'
 import { Writing, Structure, Theme } from './pages/writing'
 import { Teacher } from './pages/teacher'
-import { AntHub, AntLecture, AntUnit, AntQuiz } from './pages/antigone'
+import { WorkScope, WHub, WLecture, WUnit, WQuiz } from './pages/unitwork'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -45,10 +45,14 @@ function Shell() {
           <Route path="/oeuvre/bam/ecriture" element={<Need role="learner"><Writing /></Need>} />
           <Route path="/oeuvre/bam/ecriture/structure" element={<Need role="learner"><Structure /></Need>} />
           <Route path="/oeuvre/bam/ecriture/theme/:n" element={<Need role="learner"><Theme /></Need>} />
-          <Route path="/oeuvre/antigone" element={<Need role="learner"><AntHub /></Need>} />
-          <Route path="/oeuvre/antigone/lecture" element={<Need role="learner"><AntLecture /></Need>} />
-          <Route path="/oeuvre/antigone/etape/:n" element={<Need role="learner"><AntUnit /></Need>} />
-          <Route path="/oeuvre/antigone/quiz/:n" element={<Need role="learner"><AntQuiz /></Need>} />
+          <Route path="/oeuvre/antigone" element={<Need role="learner"><WorkScope wid="antigone"><WHub /></WorkScope></Need>} />
+          <Route path="/oeuvre/antigone/lecture" element={<Need role="learner"><WorkScope wid="antigone"><WLecture /></WorkScope></Need>} />
+          <Route path="/oeuvre/antigone/etape/:n" element={<Need role="learner"><WorkScope wid="antigone"><WUnit /></WorkScope></Need>} />
+          <Route path="/oeuvre/antigone/quiz/:n" element={<Need role="learner"><WorkScope wid="antigone"><WQuiz /></WorkScope></Need>} />
+          <Route path="/oeuvre/djc" element={<Need role="learner"><WorkScope wid="djc"><WHub /></WorkScope></Need>} />
+          <Route path="/oeuvre/djc/lecture" element={<Need role="learner"><WorkScope wid="djc"><WLecture /></WorkScope></Need>} />
+          <Route path="/oeuvre/djc/etape/:n" element={<Need role="learner"><WorkScope wid="djc"><WUnit /></WorkScope></Need>} />
+          <Route path="/oeuvre/djc/quiz/:n" element={<Need role="learner"><WorkScope wid="djc"><WQuiz /></WorkScope></Need>} />
           <Route path="/prof" element={<Need role="teacher"><Teacher /></Need>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

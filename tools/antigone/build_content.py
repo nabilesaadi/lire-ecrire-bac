@@ -335,7 +335,15 @@ work = {
         ['Structure', 'Une pièce en un seul acte : 27 scènes regroupées en 4 temps.'],
     ]},
     'units': units, 'characters': characters,
+    'brefTitle': 'Une tragédie en une journée',
+    'lectureLead': 'Découvre d’où vient l’histoire, rencontre les personnages, puis suis la pièce scène par scène. Teste-toi avec les quiz.',
+    'pathTitle': 'Le voyage en 6 étapes et les 4 quiz', 'pathH2': 'Avance étape par étape',
+    'hub': {'lecture': {'img': 'ant/p56.webp', 'd': 'Un voyage en 6 étapes : la Grèce antique, la famille d’Œdipe, Anouilh, les 10 personnages, les 27 scènes, puis 4 quiz.'},
+            'extra': {'unit': 9, 'img': 'ant/p67.webp', 't': 'Comprendre et débattre', 'd': 'Créon dit oui, Antigone dit non. Les thèmes, les objets qui parlent, et cinq questions pour argumenter.', 'tag': 'Étape 6'}},
 }
+for u in units:
+    u['tag'] = f"{u['etape'].replace(' / 6', '').upper()} · {u['letter']}"
+    u['tileTitle'] = u['short'] if 5 <= u['n'] <= 8 else u['t']
 from quizzes import QUIZZES
 work['quizzes'] = QUIZZES
 json.dump(work, open(sys.argv[1], 'w'), ensure_ascii=False, indent=1)

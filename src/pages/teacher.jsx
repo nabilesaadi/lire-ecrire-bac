@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, PE, activityDone } from '../lib/items'
+import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, PE, UNIT_WORKS, activityDone } from '../lib/items'
 import { Modal, pct } from '../components/ui'
 
 const DAY = 86400000
@@ -253,8 +253,10 @@ function Assignments({ st, cls, api, reload }) {
   const groups = [
     ['La Boîte à merveilles · chapitres', CATALOG.activities.filter((a) => a.kind === 'chapter')],
     ['La Boîte à merveilles · quiz', CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === 'bam')],
-    ['Antigone · étapes', CATALOG.activities.filter((a) => a.kind === 'unit')],
-    ['Antigone · quiz', CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === 'antigone')],
+    ...Object.values(UNIT_WORKS).flatMap((w) => [
+      [`${w.data.title} · ${w.unitsWord}`, CATALOG.activities.filter((a) => a.kind === 'unit' && a.work === w.id)],
+      [`${w.data.title} · quiz`, CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === w.id)],
+    ]),
     ...PE.themes.map((t) => [`Écriture · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.theme === t.n)]),
   ]
   return (

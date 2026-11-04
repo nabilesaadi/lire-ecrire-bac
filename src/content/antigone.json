@@ -363,7 +363,9 @@
      ],
      "glossary": true
     }
-   ]
+   ],
+   "tag": "ÉTAPE 1 · Α",
+   "tileTitle": "Voyage dans la Grèce antique"
   },
   {
    "letter": "Β",
@@ -718,7 +720,9 @@
       }
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 2 · Β",
+   "tileTitle": "La famille maudite d’Œdipe"
   },
   {
    "letter": "Γ",
@@ -940,7 +944,9 @@
       }
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 3 · Γ",
+   "tileTitle": "Anouilh et la pièce"
   },
   {
    "letter": "Δ",
@@ -1125,7 +1131,9 @@
       "Antigone et Ismène sont sœurs. La Nourrice les a élevées."
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 4 · Δ",
+   "tileTitle": "Les personnages"
   },
   {
    "n": 5,
@@ -1330,7 +1338,9 @@
      ]
     }
    ],
-   "intro": "Une seule journée. 27 scènes. Suis le temps qui passe, de l’aube jusqu’à cinq heures du soir."
+   "intro": "Une seule journée. 27 scènes. Suis le temps qui passe, de l’aube jusqu’à cinq heures du soir.",
+   "tag": "ÉTAPE 5 · TEMPS 1 · Ε",
+   "tileTitle": "Le prologue et le petit matin"
   },
   {
    "n": 6,
@@ -1407,7 +1417,9 @@
       }
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 5 · TEMPS 2 · Ε",
+   "tileTitle": "L’alerte et l’arrestation"
   },
   {
    "n": 7,
@@ -1528,7 +1540,9 @@
       }
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 5 · TEMPS 3 · Ε",
+   "tileTitle": "Le duel"
   },
   {
    "n": 8,
@@ -1803,7 +1817,9 @@
       }
      ]
     }
-   ]
+   ],
+   "tag": "ÉTAPE 5 · TEMPS 4 · Ε",
+   "tileTitle": "La chute"
   },
   {
    "letter": "Ζ",
@@ -2068,7 +2084,9 @@
      "img": "bg91.webp",
      "wide": true
     }
-   ]
+   ],
+   "tag": "ÉTAPE 6 · Ζ",
+   "tileTitle": "Comprendre et retenir"
   }
  ],
  "characters": [
@@ -2233,6 +2251,23 @@
    ]
   }
  ],
+ "brefTitle": "Une tragédie en une journée",
+ "lectureLead": "Découvre d’où vient l’histoire, rencontre les personnages, puis suis la pièce scène par scène. Teste-toi avec les quiz.",
+ "pathTitle": "Le voyage en 6 étapes et les 4 quiz",
+ "pathH2": "Avance étape par étape",
+ "hub": {
+  "lecture": {
+   "img": "ant/p56.webp",
+   "d": "Un voyage en 6 étapes : la Grèce antique, la famille d’Œdipe, Anouilh, les 10 personnages, les 27 scènes, puis 4 quiz."
+  },
+  "extra": {
+   "unit": 9,
+   "img": "ant/p67.webp",
+   "t": "Comprendre et débattre",
+   "d": "Créon dit oui, Antigone dit non. Les thèmes, les objets qui parlent, et cinq questions pour argumenter.",
+   "tag": "Étape 6"
+  }
+ },
  "quizzes": [
   {
    "n": 1,

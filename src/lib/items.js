@@ -3,17 +3,28 @@
 import bam from '../content/bam.json'
 import pe from '../content/pe.json'
 import ant from '../content/antigone.json'
+import djc from '../content/djc.json'
 
 export const WORK = bam
 export const PE = pe
 export const ANT = ant
-export const WORKS = { bam, antigone: ant }
+export const DJC = djc
+export const WORKS = { bam, antigone: ant, djc }
 
-// Ordre de lecture d'Antigone : les étapes, avec chaque quiz placé après l'étape indiquée
-export const ANT_PATH = ant.units.flatMap((u) => [{ kind: 'unit', n: u.n, id: `ant.u.${u.n}` },
-  ...ant.quizzes.filter((q) => q.after === u.n).map((q) => ({ kind: 'quiz', n: q.n, id: `ant.quiz.${q.n}` }))])
-export const antUnitShort = (u) => (u.n >= 5 && u.n <= 8 ? `Ant. T${u.n - 4}` : `Ant. É${u.n < 5 ? u.n : 6}`)
+// Œuvres organisées en étapes (unités de lecture) et quiz : identifiants « préfixe.u.N » et « préfixe.quiz.N »
+export const UNIT_WORKS = {
+  antigone: { id: 'antigone', prefix: 'ant', folder: 'ant', abbr: 'Ant.', data: ant, unitWord: 'étape', unitsWord: 'étapes',
+    short: (u) => (u.n >= 5 && u.n <= 8 ? `Ant. T${u.n - 4}` : `Ant. É${u.n < 5 ? u.n : 6}`) },
+  djc: { id: 'djc', prefix: 'djc', folder: 'djc', abbr: 'DJC', navShort: true, data: djc, unitWord: 'partie de lecture', unitsWord: 'lectures',
+    short: (u) => `DJC ${u.n}` },
+}
+const pathOf = (w) => w.data.units.flatMap((u) => [{ kind: 'unit', n: u.n, id: `${w.prefix}.u.${u.n}` },
+  ...w.data.quizzes.filter((q) => q.after === u.n).map((q) => ({ kind: 'quiz', n: q.n, id: `${w.prefix}.quiz.${q.n}` }))])
+export const PATHS = Object.fromEntries(Object.values(UNIT_WORKS).map((w) => [w.id, pathOf(w)]))
+export const ANT_PATH = PATHS.antigone
+export const antUnitShort = UNIT_WORKS.antigone.short
 export const antSecComp = (sec) => (sec.label === 'Pour aller plus loin' ? 'Interprétation' : sec.type === 'sort' ? 'Repérage' : 'Compréhension')
+export const secItems = (sec) => (sec.type === 'order' ? [{ order: true }] : sec.type === 'open' ? [] : sec.items)
 
 export const COMPETENCES = [
   'Lecture',
@@ -71,18 +82,20 @@ export function buildCatalog() {
     lv(4, 'paragraphe argumentatif')
     lv(5, 'production complète')
   })
-  ANT_PATH.forEach((x) => {
-    if (x.kind === 'unit') {
-      const u = ant.units[x.n - 1]
-      activities.push({ id: x.id, kind: 'unit', work: 'antigone', n: u.n, label: `Antigone · ${u.etape} · ${u.short}`, short: antUnitShort(u) })
-      items.push({ activity: x.id, item: 'lu', competence: 'Lecture', text: `Lecture : ${u.short}` })
-    } else {
-      const q = ant.quizzes[x.n - 1]
-      activities.push({ id: x.id, kind: 'quiz', work: 'antigone', n: q.n, label: `Antigone · quiz ${q.n} · ${q.title}`, short: `Ant. Q${q.n}` })
-      q.sections.forEach((sec, si) => sec.items.forEach((it, ii) => {
-        items.push({ activity: x.id, item: `s${si}.${ii}`, competence: antSecComp(sec), text: sec.type === 'sort' ? `Classer « ${it[0]} »` : it.q })
-      }))
-    }
+  Object.values(UNIT_WORKS).forEach((w) => {
+    PATHS[w.id].forEach((x) => {
+      if (x.kind === 'unit') {
+        const u = w.data.units[x.n - 1]
+        activities.push({ id: x.id, kind: 'unit', work: w.id, n: u.n, label: `${w.data.title} · ${u.etape.replace(' / 6', '')} · ${u.short}`, short: w.short(u) })
+        items.push({ activity: x.id, item: 'lu', competence: 'Lecture', text: `Lecture : ${u.short}` })
+      } else {
+        const q = w.data.quizzes[x.n - 1]
+        activities.push({ id: x.id, kind: 'quiz', work: w.id, n: q.n, label: `${w.data.title} · quiz ${q.n} · ${q.title}`, short: `${w.abbr} Q${q.n}` })
+        q.sections.forEach((sec, si) => secItems(sec).forEach((it, ii) => {
+          items.push({ activity: x.id, item: `s${si}.${ii}`, competence: antSecComp(sec), text: sec.type === 'order' ? 'Remettre les événements dans l’ordre' : sec.type === 'sort' ? `Classer « ${it[0]} »` : it.q })
+        }))
+      }
+    })
   })
   return { activities, items }
 }
@@ -112,7 +125,7 @@ export const LEVELS = [
   { id: '1bac', label: '1re année du baccalauréat', works: [
     { id: 'bam', title: 'La Boîte à merveilles', author: 'Ahmed Sefrioui', ready: true },
     { id: 'antigone', title: 'Antigone', author: 'Jean Anouilh', ready: true },
-    { id: 'djc', title: 'Le Dernier Jour d’un condamné', author: 'Victor Hugo', ready: false },
+    { id: 'djc', title: 'Le Dernier Jour d’un condamné', author: 'Victor Hugo', ready: true },
   ] },
   { id: '2bac', label: '2e année du baccalauréat', works: [
     { id: 'candide', title: 'Candide', author: 'Voltaire', ready: false },

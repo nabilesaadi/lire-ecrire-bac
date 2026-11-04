@@ -339,3 +339,24 @@ table.t tr.click:hover td { background: var(--paper); }
 .modal .ant-frame { grid-template-columns: 1fr; }
 .modal .ant-frame.flip .pic { order: 0; }
 .modal .ant-frame .pic img { aspect-ratio: 16/9; }
+
+/* ---------- Œuvres en étapes : compléments (Le Dernier Jour…) ---------- */
+.ant-frame .pic img.photo { aspect-ratio: 4/3; }
+.ant-frame .pic img.tall { aspect-ratio: 3/4; }
+.ant-res { font-size: 1.08rem; margin: 6px 0 0; }
+.ant-lines.numd { padding-left: 1.3em; }
+.ant-lines.numd li::marker { font-weight: 800; color: var(--terra); }
+.ant-intro p { margin: 6px 0; color: var(--ink-2); }
+.ant-cards.stats { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.ant-cards.stats .ant-card { flex-direction: column; gap: 0; text-align: center; align-items: center; }
+.ant-cards.stats b { font-size: 2.4rem; line-height: 1.1; color: var(--terra); }
+.ant-cards.people .ant-card { flex-direction: column; align-items: stretch; }
+.ant-cards.people .ph { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; }
+.ant-card .cnum { flex: none; min-width: 34px; height: 34px; border-radius: 999px; background: var(--gold-2); color: var(--night); font-weight: 800; display: grid; place-items: center; font-family: var(--serif); padding: 0 6px; }
+.ant-card .quote.small { font-size: .95rem; margin: 8px 0 0; }
+.ant-steps.clock { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+.ant-steps.clock li { flex-direction: column; gap: 4px; }
+.ant-steps.clock li .n { background: var(--terra); color: #fff; font-family: var(--sans); font-size: .9rem; }
+.para.ev { align-items: center; }
+.para.ev img { width: 72px; height: 54px; object-fit: cover; border-radius: 8px; flex: none; }
+.para.ev.bad { border-color: var(--red); background: var(--red-soft); }

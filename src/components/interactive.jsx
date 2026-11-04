@@ -258,3 +258,58 @@ export function OrderParas({ activity, item, competence, paras, answer }) {
     </div>
   )
 }
+
+/** Remettre des événements dans l'ordre (avec images). answer = indices des items dans le bon ordre. */
+export function OrderEvents({ activity, item, competence, items, answer, hint, img }) {
+  const api = useApi()
+  const prev = useDone(activity, item)
+  const [order, setOrder] = useState(() => (prev ? answer : items.map((_, i) => i)))
+  const [tries, setTries] = useState(0)
+  const [state, setState] = useState(prev ? 'past' : 'idle')
+  const [wrong, setWrong] = useState([])
+  const locked = state === 'ok' || state === 'fail' || state === 'past'
+  const move = (k, d) => {
+    if (locked) return
+    const o = [...order]; const j = k + d
+    if (j < 0 || j >= o.length) return
+    ;[o[k], o[j]] = [o[j], o[k]]; setOrder(o); setWrong([])
+  }
+  const check = () => {
+    const t = tries + 1
+    const ok = order.every((x, k) => x === answer[k])
+    if (ok) {
+      setState('ok')
+      api.record({ activity, item, competence, correct_first: t === 1, correct: true, tries: t, answer: order.join('-'), points: t === 1 ? POINTS.first : POINTS.second })
+    } else if (t === 1) {
+      setTries(1); setState('retry'); setWrong(order.map((x, k) => (x !== answer[k] ? k : -1)).filter((k) => k >= 0))
+    } else {
+      setState('fail'); setOrder(answer)
+      api.record({ activity, item, competence, correct_first: false, correct: false, tries: 3, answer: order.join('-'), points: 0 })
+    }
+  }
+  return (
+    <div className="q">
+      {!locked && <div className="small muted" style={{ marginBottom: 8 }}>Utilise les flèches pour déplacer les événements, puis vérifie.</div>}
+      {order.map((ii, k) => (
+        <div className={`para ev ${wrong.includes(k) ? 'bad' : ''}`} key={ii}>
+          <div className="n">{k + 1}</div>
+          {items[ii].img && <img src={img(items[ii].img)} alt="" />}
+          <div style={{ flex: 1 }}>
+            {items[ii].t}
+            {locked && items[ii].ch && <div className="small muted">Chapitre {items[ii].ch}</div>}
+          </div>
+          {!locked && (
+            <div className="mv">
+              <button onClick={() => move(k, -1)} aria-label="Monter">▲</button>
+              <button onClick={() => move(k, 1)} aria-label="Descendre">▼</button>
+            </div>
+          )}
+        </div>
+      ))}
+      {!locked && <div style={{ marginTop: 12 }}><button className="btn btn-primary btn-sm" onClick={check}>Vérifier l’ordre</button></div>}
+      {state === 'retry' && <Bubble kind="hint" title={`Pas encore… ${wrong.length} événements ne sont pas à leur place.`}>{hint}</Bubble>}
+      {state === 'ok' && <OkBubble tries={tries + 1} />}
+      {state === 'fail' && <Bubble kind="ko" title="Voici le bon ordre.">Les numéros de chapitre sont indiqués sous chaque événement.</Bubble>}
+    </div>
+  )
+}

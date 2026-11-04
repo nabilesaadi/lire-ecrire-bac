@@ -1,0 +1,2993 @@
+{
+ "id": "djc",
+ "title": "Le Dernier Jour d’un condamné",
+ "author": "Victor Hugo",
+ "year": 1829,
+ "cover": "djc/cover.webp",
+ "hero": "djc/bg11.webp",
+ "tagline": "Six semaines d'attente, un dernier jour, heure par heure : le journal d'un homme condamné à mort.",
+ "brefTitle": "Un plaidoyer contre la peine de mort",
+ "lectureLead": "Découvre l’auteur et les personnages, puis suis le condamné de Bicêtre à la place de Grève, chapitre par chapitre. Teste-toi avec les quiz.",
+ "pathTitle": "Les 3 parties, les 49 chapitres et les 3 quiz",
+ "pathH2": "Lis partie par partie",
+ "hub": {
+  "lecture": {
+   "img": "djc/c45.webp",
+   "d": "Les 49 chapitres en images, de Bicêtre à la place de Grève, avec une question « À deux » par chapitre, puis 3 quiz."
+  },
+  "extra": {
+   "unit": 11,
+   "img": "djc/p90.webp",
+   "t": "La thèse de Victor Hugo",
+   "d": "Thèmes, registres, les quatre arguments contre la peine de mort et cinq questions pour réfléchir et écrire.",
+   "tag": "Synthèse"
+  }
+ },
+ "bref": {
+  "img": "djc/cover.webp",
+  "rows": [
+   [
+    "Auteur",
+    "Victor Hugo (1802-1885), poète, romancier et dramaturge, chef du mouvement romantique."
+   ],
+   [
+    "Genre",
+    "Un roman à thèse écrit comme un journal intime, à la première personne."
+   ],
+   [
+    "Publication",
+    "Février 1829, chez Charles Gosselin, sans nom d’auteur. Préface signée en 1832."
+   ],
+   [
+    "Narrateur",
+    "Un condamné à mort : nous ne connaissons ni son nom ni son crime."
+   ],
+   [
+    "Lieux",
+    "Bicêtre, la Conciergerie, la place de Grève, à Paris."
+   ],
+   [
+    "Temps",
+    "Six semaines d’attente, puis un dernier jour, heure par heure, jusqu’à « QUATRE HEURES »."
+   ],
+   [
+    "Thèse",
+    "La peine de mort est une torture morale, injuste et inutile."
+   ]
+  ]
+ },
+ "units": [
+  {
+   "n": 1,
+   "letter": "",
+   "etape": "Avant de lire",
+   "tag": "AVANT DE LIRE",
+   "t": "L’auteur, l’œuvre et les personnages",
+   "short": "L’auteur et l’œuvre",
+   "lead": "Qui est Victor Hugo ? Pourquoi ce roman ? Qui sont les personnages, où et quand se passe l’histoire ?",
+   "cover": "djc/u1.webp",
+   "pages": [
+    {
+     "type": "steps",
+     "slide": 3,
+     "k": "L’AUTEUR",
+     "t": "Victor Hugo (1802-1885)",
+     "intro": [
+      "Victor Hugo est poète, romancier et dramaturge. Il est le chef du mouvement romantique en France.",
+      "Toute sa vie, il lutte contre la misère et contre la peine de mort. Il écrit aussi Claude Gueux (1834) sur ce sujet."
+     ],
+     "steps": [
+      {
+       "t": "1802",
+       "d": "Naissance à Besançon."
+      },
+      {
+       "t": "1829",
+       "d": "Le Dernier Jour d'un condamné."
+      },
+      {
+       "t": "1831",
+       "d": "Notre-Dame de Paris."
+      },
+      {
+       "t": "1851-1870",
+       "d": "Exil à Jersey puis à Guernesey."
+      },
+      {
+       "t": "1862",
+       "d": "Les Misérables."
+      },
+      {
+       "t": "1885",
+       "d": "Mort à Paris ; funérailles nationales."
+      }
+     ],
+     "timeline": true
+    },
+    {
+     "type": "cards",
+     "slide": 4,
+     "t": "L'œuvre : un plaidoyer",
+     "cards": [
+      {
+       "t": "49",
+       "d": "chapitres courts"
+      },
+      {
+       "t": "6",
+       "d": "semaines d'attente"
+      },
+      {
+       "t": "1",
+       "d": "dernier jour, heure par heure"
+      },
+      {
+       "t": "?",
+       "d": "nom inconnu, crime jamais raconté"
+      }
+     ],
+     "stats": true,
+     "intro": [
+      "Fin 1828, Hugo traverse la place de l'Hôtel-de-Ville : le bourreau prépare la guillotine. Il écrit le roman très vite.",
+      "Le livre paraît en février 1829 chez Charles Gosselin, sans nom d'auteur. En 1832, Hugo ajoute une longue préface signée : le roman est un plaidoyer contre la peine de mort."
+     ],
+     "box": {
+      "l": "Aujourd’hui",
+      "t": "En France, la peine de mort a été abolie en 1981."
+     }
+    },
+    {
+     "type": "cards",
+     "slide": 5,
+     "t": "Comment lire ce roman ?",
+     "cards": [
+      {
+       "n": "1",
+       "t": "Un journal intime",
+       "d": "Le condamné écrit lui-même, au jour le jour, puis heure par heure. Nous lisons ses pensées au moment où il les vit (point de vue interne, « je »)."
+      },
+      {
+       "n": "2",
+       "t": "Un narrateur anonyme",
+       "d": "Nous ne connaissons ni son nom ni son crime. Ainsi, il représente tous les condamnés à mort."
+      },
+      {
+       "n": "3",
+       "t": "Un roman à thèse",
+       "d": "Hugo veut convaincre : la peine de mort est une torture morale, injuste et inutile."
+      },
+      {
+       "n": "4",
+       "t": "Un compte à rebours",
+       "d": "Le temps se rétrécit : six semaines à Bicêtre, puis un seul jour, puis quelques heures, jusqu'à « QUATRE HEURES »."
+      }
+     ],
+     "quote": {
+      "t": "dans ce procès-verbal de la pensée agonisante",
+      "p": "chap. 6, p. 15"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 6,
+     "k": "LE PERSONNAGE PRINCIPAL",
+     "t": "Le condamné",
+     "sub": "Le narrateur, héros du roman",
+     "lines": [],
+     "rows": [
+      [
+       "Nom",
+       "Inconnu : Hugo ne le donne jamais."
+      ],
+      [
+       "Âge",
+       "Il est jeune, « sain et fort »."
+      ],
+      [
+       "Éducation",
+       "Il est instruit : il parle latin et lit beaucoup."
+      ],
+      [
+       "Famille",
+       "Sa vieille mère, sa femme malade et Marie, sa fille de trois ans."
+      ],
+      [
+       "Crime",
+       "Un crime de sang, jamais raconté."
+      ],
+      [
+       "Rôle",
+       "Il écrit son journal jusqu'à la dernière minute."
+      ]
+     ],
+     "img": "djc/p6.webp",
+     "tall": true,
+     "quote": {
+      "t": "misérable qui ai commis un véritable crime, qui ai versé du sang !",
+      "p": "chap. 11, p. 23"
+     }
+    },
+    {
+     "type": "cards",
+     "slide": 7,
+     "k": "LES PERSONNAGES",
+     "t": "Autour du condamné",
+     "cards": [
+      {
+       "t": "Marie",
+       "k": "SA FILLE, TROIS ANS",
+       "d": "Douce, rose, aux grands yeux noirs. Elle ne reconnaît pas son père et le croit mort.",
+       "img": "djc/v7_0.webp",
+       "quote": {
+        "t": "— Non, mon papa était bien plus beau.",
+        "p": "p. 92"
+       }
+      },
+      {
+       "t": "Le prêtre",
+       "k": "L'AUMÔNIER DE LA PRISON",
+       "d": "Vieux, bon et charitable. Mais ses paroles sonnent comme une leçon récitée.",
+       "img": "djc/v7_1.webp",
+       "quote": {
+        "t": "— Mon fils, croyez-vous en Dieu ?",
+        "p": "p. 67"
+       }
+      },
+      {
+       "t": "Le friauche",
+       "k": "UN VIEUX BANDIT",
+       "d": "Orphelin, voleur, bagnard, assassin. C'est le « condamné du jour » qui prend sa redingote.",
+       "img": "djc/v7_2.webp",
+       "quote": {
+        "t": "Un jour, j'avais faim.",
+        "p": "p. 58"
+       }
+      }
+     ],
+     "people": true
+    },
+    {
+     "type": "cards",
+     "slide": 8,
+     "k": "LES PERSONNAGES",
+     "t": "Autour du condamné",
+     "cards": [
+      {
+       "t": "L'huissier",
+       "k": "UN EMPLOYÉ DE LA JUSTICE",
+       "d": "En habit noir, très poli et très bavard. La mort du condamné ne le touche pas.",
+       "img": "djc/v8_0.webp",
+       "quote": {
+        "t": "aurez-vous l'extrême bonté de me suivre ?",
+        "p": "p. 47"
+       }
+      },
+      {
+       "t": "Le bourreau",
+       "k": "L'EXÉCUTEUR, « MONSIEUR SAMSON »",
+       "d": "Gros, vieux, le visage rouge, un chapeau à trois cornes. Il est poli… et terrible.",
+       "img": "djc/v8_1.webp",
+       "quote": {
+        "t": "Est-ce que je vous ai fait mal ?",
+        "p": "p. 99"
+       }
+      },
+      {
+       "t": "Les gardiens",
+       "k": "GEÔLIERS, DIRECTEUR, GENDARMES",
+       "d": "Polis ou indifférents, ils font leur métier. Un vieux gendarme montre un peu d'humanité.",
+       "img": "djc/v8_2.webp",
+       "quote": {
+        "t": "c'est Bicêtre qui s'est fait homme.",
+        "p": "p. 45"
+       }
+      }
+     ],
+     "people": true
+    },
+    {
+     "type": "cards",
+     "slide": 9,
+     "t": "Trois lieux, un seul trajet",
+     "cards": [
+      {
+       "n": "1",
+       "t": "Bicêtre",
+       "k": "Prison au sud de Paris",
+       "d": "Six semaines dans un cachot. Le dernier matin : 6 h → 7 h 30.",
+       "img": "djc/v9_0.webp"
+      },
+      {
+       "n": "2",
+       "t": "La Conciergerie",
+       "k": "Au Palais de Justice, dans l'île de la Cité",
+       "d": "De 8 h 30 à 15 h : la dernière journée.",
+       "img": "djc/v9_1.webp"
+      },
+      {
+       "n": "3",
+       "t": "La place de Grève",
+       "k": "Devant l'Hôtel de Ville",
+       "d": "Le lieu des exécutions publiques. 16 h.",
+       "img": "djc/v9_2.webp"
+      }
+     ],
+     "places": true,
+     "quote": {
+      "t": "Je n'ai plus que trois pas à faire : Bicêtre, la Conciergerie, la Grève.",
+      "p": "chap. 15, p. 37"
+     }
+    },
+    {
+     "type": "steps",
+     "slide": 10,
+     "t": "Le dernier jour, heure par heure",
+     "steps": [
+      {
+       "n": "6 h",
+       "t": "Le guichetier poli",
+       "sub": "chap. 18"
+      },
+      {
+       "n": "6 h 45",
+       "t": "Le prêtre, l'huissier : « aujourd'hui »",
+       "sub": "chap. 21"
+      },
+      {
+       "n": "7 h 30",
+       "t": "Départ de Bicêtre",
+       "sub": "chap. 22"
+      },
+      {
+       "n": "8 h 30",
+       "t": "Conciergerie ; le friauche",
+       "sub": "chap. 22-23"
+      },
+      {
+       "n": "10 h",
+       "t": "Il pense à Marie",
+       "sub": "chap. 26"
+      },
+      {
+       "n": "11 h",
+       "t": "On graisse la machine",
+       "sub": "chap. 28"
+      },
+      {
+       "n": "13 h",
+       "t": "Le remords",
+       "sub": "chap. 34"
+      },
+      {
+       "n": "13 h 15",
+       "t": "Douleurs, fièvre",
+       "sub": "chap. 38"
+      },
+      {
+       "n": "après-midi",
+       "t": "Visite de Marie",
+       "sub": "chap. 43"
+      },
+      {
+       "n": "15 h",
+       "t": "La toilette, la charrette",
+       "sub": "chap. 48"
+      },
+      {
+       "n": "16 h",
+       "t": "« QUATRE HEURES »",
+       "sub": "chap. 49"
+      }
+     ],
+     "clock": true,
+     "box": {
+      "l": "Retiens",
+      "t": "Les chapitres 1 à 17 couvrent six semaines ; les chapitres 18 à 49, une seule journée."
+     }
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "letter": "I",
+   "etape": "Partie I · Bicêtre",
+   "tag": "PARTIE I · CHAPITRES 1 À 5",
+   "t": "La condamnation",
+   "short": "La condamnation",
+   "lead": "Six semaines d'attente. Le condamné attend dans un cachot de la prison de Bicêtre. Il écrit son journal. Le dernier matin, on lui annonce qu'il sera exécuté le jour même.",
+   "cover": "djc/bg11.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 12,
+     "k": "CHAPITRE I",
+     "t": "Condamné à mort !",
+     "chips": [
+      "BICÊTRE",
+      "5e semaine"
+     ],
+     "lines": [
+      "Le narrateur est en prison à Bicêtre depuis cinq semaines. Avant, il était libre et son esprit était plein de rêves. Maintenant, une seule idée le suit partout, même dans son sommeil : il est condamné à mort."
+     ],
+     "img": "djc/c12.webp",
+     "photo": true,
+     "ch": 1,
+     "quote": {
+      "t": "Mon corps est aux fers dans un cachot, mon esprit est en prison dans une idée.",
+      "p": "p. 3"
+     },
+     "pair": "Quelle est cette « idée » qui ne quitte jamais le narrateur ? Relevez deux images qui la décrivent."
+    },
+    {
+     "type": "frame",
+     "slide": 13,
+     "k": "CHAPITRE II · 1/3",
+     "t": "Le procès",
+     "chips": [
+      "PALAIS DE JUSTICE",
+      "août · souvenir"
+     ],
+     "lines": [
+      "Il se souvient du procès. Un beau matin d'août, après trois jours d'audience, le guichetier le réveille : les jurés ont fini. Il fait très beau. Les menottes aux mains, il traverse la cour et entre dans la salle des assises, pleine de monde."
+     ],
+     "img": "djc/c13.webp",
+     "photo": true,
+     "ch": 2,
+     "quote": {
+      "t": "— Oui, me répondit l'homme, on vous attend.",
+      "p": "p. 6"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 14,
+     "k": "CHAPITRE II · 2/3",
+     "t": "Le procès",
+     "chips": [
+      "PALAIS DE JUSTICE",
+      "août · souvenir"
+     ],
+     "lines": [
+      "Dans la salle, tout est lumineux. Les juges ont l'air content, les jurés ont sommeil. Il regarde une petite fleur jaune au soleil et il espère. Son avocat pense qu'il aura les travaux forcés. Le condamné refuse : il préfère mourir !"
+     ],
+     "img": "djc/c14.webp",
+     "photo": true,
+     "ch": 2,
+     "quote": {
+      "t": "— Que dites-vous là, monsieur ? répliquai-je, indigné ; plutôt cent fois la mort !",
+      "p": "p. 8"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 15,
+     "k": "CHAPITRE II · 3/3",
+     "t": "Le procès",
+     "chips": [
+      "PALAIS DE JUSTICE",
+      "août · souvenir"
+     ],
+     "lines": [
+      "Mais le président lit l'arrêt : condamné à mort ! Pour lui, tout devient pâle, couleur de linceul. En bas de l'escalier, une voiture noire l'attend. Une jeune fille bat des mains : l'exécution aura lieu dans six semaines."
+     ],
+     "img": "djc/c15.webp",
+     "photo": true,
+     "ch": 2,
+     "quote": {
+      "t": "— Bon, dit la plus jeune en battant des mains, ce sera dans six semaines !",
+      "p": "p. 9"
+     },
+     "pair": "Pourquoi le beau temps donne-t-il de l'espoir au condamné ? Que montre le geste de la jeune fille ?"
+    },
+    {
+     "type": "frame",
+     "slide": 16,
+     "k": "CHAPITRE III",
+     "t": "Tous condamnés à mort",
+     "chips": [
+      "BICÊTRE",
+      "6 semaines"
+     ],
+     "lines": [
+      "Il essaie de se consoler : tous les hommes sont condamnés à mort, un jour ou l'autre. Et sa vie en prison n'a rien de beau : pain noir, cachot sombre, gardiens brutaux. Mais la vérité est là, simple et terrible."
+     ],
+     "img": "djc/c16.webp",
+     "photo": true,
+     "ch": 3,
+     "quote": {
+      "t": "Ah, n'importe, c'est horrible !",
+      "p": "p. 10"
+     },
+     "pair": "Le condamné réussit-il à se consoler ? Justifiez avec la dernière phrase du chapitre."
+    },
+    {
+     "type": "frame",
+     "slide": 17,
+     "k": "CHAPITRE IV",
+     "t": "Bicêtre",
+     "chips": [
+      "BICÊTRE",
+      "l'arrivée"
+     ],
+     "lines": [
+      "La voiture noire l'emmène à Bicêtre, une prison au sud de Paris. De loin, l'édifice ressemble à un château de roi. De près, c'est une ruine : murs sales, fenêtres sans vitres, barreaux de fer, visages de forçats et de fous."
+     ],
+     "img": "djc/c17.webp",
+     "photo": true,
+     "ch": 4,
+     "quote": {
+      "t": "C'est la vie vue de près.",
+      "p": "p. 11"
+     },
+     "pair": "Expliquez l'opposition « de loin / de près ». Que veut dire : « C'est la vie vue de près » ?"
+    },
+    {
+     "type": "frame",
+     "slide": 18,
+     "k": "CHAPITRE V · 1/2",
+     "t": "La vie à Bicêtre",
+     "chips": [
+      "BICÊTRE",
+      "les premiers jours"
+     ],
+     "lines": [
+      "À son arrivée, on lui met la camisole de force : il ne doit pas se tuer, car il faut le garder vivant jusqu'à l'exécution. Puis, grâce à quelques mots de latin, il obtient la promenade et de quoi écrire : encre, papier, plumes et une lampe."
+     ],
+     "img": "djc/c18.webp",
+     "photo": true,
+     "ch": 5,
+     "quote": {
+      "t": "on répondait de ma vie.",
+      "p": "p. 12"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 19,
+     "k": "CHAPITRE V · 2/2",
+     "t": "La vie à Bicêtre",
+     "chips": [
+      "BICÊTRE",
+      "les premiers jours"
+     ],
+     "lines": [
+      "Le dimanche, dans la cour, les détenus lui racontent leurs crimes et lui apprennent l'argot, la langue des voleurs. Ces mots le dégoûtent. Pourtant, ces hommes sont les seuls à le plaindre. Les geôliers, eux, parlent de lui comme d'une chose."
+     ],
+     "img": "djc/c19.webp",
+     "photo": true,
+     "ch": 5,
+     "quote": {
+      "t": "Du moins, ces hommes-là me plaignent, ils sont les seuls.",
+      "p": "p. 13"
+     },
+     "pair": "Pourquoi le condamné compare-t-il l'argot à « une verrue » ? Qui le plaint vraiment ?"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "letter": "I",
+   "etape": "Partie I · Bicêtre",
+   "tag": "PARTIE I · CHAPITRES 6 À 12",
+   "t": "Écrire dans le cachot",
+   "short": "Écrire dans le cachot",
+   "lead": "Chapitres 6 à 12.",
+   "cover": "djc/c20.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 20,
+     "k": "CHAPITRE VI",
+     "t": "Pourquoi écrire ?",
+     "chips": [
+      "BICÊTRE",
+      "6 semaines"
+     ],
+     "lines": [
+      "Il décide d'écrire un journal. Raconter ses angoisses le soulagera. Et peut-être que ces pages, lues un jour par les juges, leur montreront la souffrance d'un condamné. Pour lui, la vraie douleur est morale, pas physique."
+     ],
+     "img": "djc/c20.webp",
+     "photo": true,
+     "ch": 6,
+     "quote": {
+      "t": "Qu'est-ce que la douleur physique près de la douleur morale !",
+      "p": "p. 15"
+     },
+     "pair": "Donnez les deux raisons pour lesquelles le condamné décide d'écrire."
+    },
+    {
+     "type": "frame",
+     "slide": 21,
+     "k": "CHAPITRE VII",
+     "t": "À quoi bon ?",
+     "chips": [
+      "BICÊTRE",
+      "6 semaines"
+     ],
+     "lines": [
+      "Puis il doute : à quoi bon sauver les autres, s'il meurt quand même ? Il pense au soleil, au printemps, aux fleurs, aux oiseaux, à la liberté. Tout cela n'est plus à lui. C'est lui qu'il faudrait sauver !"
+     ],
+     "img": "djc/c21.webp",
+     "photo": true,
+     "ch": 7,
+     "quote": {
+      "t": "Ah ! c'est moi qu'il faudrait sauver !",
+      "p": "p. 16"
+     },
+     "pair": "Le condamné pense-t-il encore aux autres dans ce chapitre ? Pourquoi ?"
+    },
+    {
+     "type": "frame",
+     "slide": 22,
+     "k": "CHAPITRE VIII",
+     "t": "Six semaines",
+     "chips": [
+      "BICÊTRE",
+      "6e semaine"
+     ],
+     "lines": [
+      "Il compte : le pourvoi en cassation, le ministre, la cour de cassation… Les papiers passent de bureau en bureau. En tout, six semaines : la jeune fille du procès avait raison. Or, il est à Bicêtre depuis cinq ou six semaines déjà."
+     ],
+     "img": "djc/c22.webp",
+     "photo": true,
+     "ch": 8,
+     "quote": {
+      "t": "En tout six semaines. La petite fille avait raison.",
+      "p": "p. 17"
+     },
+     "pair": "Comment Hugo montre-t-il que la justice est une machine sans cœur ? Relevez un exemple."
+    },
+    {
+     "type": "frame",
+     "slide": 23,
+     "k": "CHAPITRE IX · 1/2",
+     "t": "Le testament",
+     "chips": [
+      "BICÊTRE",
+      "6e semaine"
+     ],
+     "lines": [
+      "Il a fait son testament. Il laisse trois femmes : sa vieille mère de 64 ans, sa femme, qui est malade, et sa fille. La loi va aussi les punir : elles seront ruinées et déshonorées. Pourtant, elles sont innocentes."
+     ],
+     "img": "djc/c23.webp",
+     "photo": true,
+     "ch": 9,
+     "quote": {
+      "t": "trois veuves du fait de la loi.",
+      "p": "p. 19"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 24,
+     "k": "CHAPITRE IX · 2/2",
+     "t": "Le testament",
+     "chips": [
+      "BICÊTRE",
+      "6e semaine"
+     ],
+     "lines": [
+      "Sa mère et sa femme mourront peut-être de chagrin. Mais c'est sa fille Marie qui lui fait le plus mal : une petite fille de trois ans, douce et rose, aux grands yeux noirs, qui rit et chante sans rien savoir."
+     ],
+     "img": "djc/c24.webp",
+     "photo": true,
+     "ch": 9,
+     "quote": {
+      "t": "Mais ma fille, mon enfant, ma pauvre petite Marie, qui rit, qui joue, qui chante",
+      "p": "p. 19"
+     },
+     "pair": "Pourquoi le condamné dit-il que sa famille est aussi punie ? Que pense Hugo de cette injustice ?"
+    },
+    {
+     "type": "frame",
+     "slide": 25,
+     "k": "CHAPITRE X",
+     "t": "Le cachot",
+     "chips": [
+      "BICÊTRE",
+      "6e semaine"
+     ],
+     "lines": [
+      "Son cachot mesure huit pieds carrés (environ 2,60 m de côté). Murs de pierre, voûte noire couverte de toiles d'araignée, une botte de paille pour lit, pas de fenêtre. Un soldat le surveille nuit et jour par une petite ouverture dans la porte."
+     ],
+     "img": "djc/c25.webp",
+     "photo": true,
+     "ch": 10,
+     "quote": {
+      "t": "on suppose qu'il y a de l'air et du jour dans cette boîte de pierre.",
+      "p": "p. 21"
+     },
+     "pair": "Relevez trois détails qui montrent que le cachot ressemble à un tombeau."
+    },
+    {
+     "type": "frame",
+     "slide": 26,
+     "k": "CHAPITRE XI",
+     "t": "Les murs parlent",
+     "chips": [
+      "BICÊTRE",
+      "la nuit"
+     ],
+     "lines": [
+      "La nuit, il promène sa lampe sur les murs. Ils sont couverts de noms, de dessins, de cœurs, de phrases laissés par les anciens prisonniers. Tout à coup, il voit un dessin à la craie : l'échafaud. Il a si peur que sa lampe manque de tomber."
+     ],
+     "img": "djc/c26.webp",
+     "photo": true,
+     "ch": 11,
+     "quote": {
+      "t": "La lampe a failli me tomber des mains.",
+      "p": "p. 23"
+     },
+     "pair": "Pourquoi le dessin de l'échafaud effraie-t-il tant le condamné ?"
+    },
+    {
+     "type": "frame",
+     "slide": 27,
+     "k": "CHAPITRE XII",
+     "t": "Les spectres",
+     "chips": [
+      "BICÊTRE",
+      "la nuit"
+     ],
+     "lines": [
+      "Sous une toile d'araignée, il lit les noms de célèbres assassins exécutés avant lui. Ils ont dormi dans ce même cachot. Pris de fièvre, il croit voir des spectres qui le menacent. Une araignée qui court sur son pied le réveille."
+     ],
+     "img": "djc/c27.webp",
+     "photo": true,
+     "ch": 12,
+     "quote": {
+      "t": "La porte du tombeau ne s'ouvre pas en dedans.",
+      "p": "p. 25"
+     },
+     "pair": "Le condamné croit-il vraiment aux fantômes ? Justifiez avec le texte."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "letter": "I",
+   "etape": "Partie I · Bicêtre",
+   "tag": "PARTIE I · CHAPITRES 13 À 17",
+   "t": "Les forçats et l’infirmerie",
+   "short": "Les forçats et l’infirmerie",
+   "lead": "Chapitres 13 à 17.",
+   "cover": "djc/c28.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 28,
+     "k": "CHAPITRE XIII · 1/3",
+     "t": "Le ferrement des forçats",
+     "chips": [
+      "BICÊTRE",
+      "quelques jours plus tôt"
+     ],
+     "lines": [
+      "Un jour, un geôlier lui propose un spectacle : on va mettre les chaînes aux forçats qui partent pour le bagne de Toulon. D'une fenêtre, il voit la grande cour. Aux fenêtres, des centaines de prisonniers crient de joie."
+     ],
+     "img": "djc/c28.webp",
+     "photo": true,
+     "ch": 13,
+     "quote": {
+      "t": "Voulez-vous voir, cela vous amusera.",
+      "p": "p. 26"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 29,
+     "k": "CHAPITRE XIII · 2/3",
+     "t": "Le ferrement des forçats",
+     "chips": [
+      "BICÊTRE",
+      "quelques jours plus tôt"
+     ],
+     "lines": [
+      "Les forçats se déshabillent pour la visite. Soudain, une pluie froide d'octobre tombe. Ils grelottent dans leurs habits mouillés. Puis on les fait asseoir dans la boue et des forgerons leur rivent au cou un collier de fer, à grands coups de marteau."
+     ],
+     "img": "djc/c29.webp",
+     "photo": true,
+     "ch": 13,
+     "quote": {
+      "t": "C'est un moment affreux, où les plus hardis pâlissent.",
+      "p": "p. 30"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 30,
+     "k": "CHAPITRE XIII · 3/3",
+     "t": "Le ferrement des forçats",
+     "chips": [
+      "BICÊTRE",
+      "quelques jours plus tôt"
+     ],
+     "lines": [
+      "Ensuite, les forçats dansent une ronde en chantant. Soudain, ils l'aperçoivent : « Le condamné ! » Un jeune forçat l'envie, car lui va mourir. Terrifié, le narrateur se croit attaqué et il s'évanouit."
+     ],
+     "img": "djc/c30.webp",
+     "photo": true,
+     "ch": 13,
+     "quote": {
+      "t": "La Grève est sœur de Toulon.",
+      "p": "p. 32"
+     },
+     "pair": "Pourquoi le narrateur dit-il que la société fait du châtiment « une fête » ? Expliquez « La Grève est sœur de Toulon »."
+    },
+    {
+     "type": "frame",
+     "slide": 31,
+     "k": "CHAPITRE XIV · 1/2",
+     "t": "Le départ de la chaîne",
+     "chips": [
+      "BICÊTRE",
+      "l'infirmerie"
+     ],
+     "lines": [
+      "Il se réveille à l'infirmerie, dans un vrai lit. Les draps sont gris et rudes, la couverture est trouée, mais quel bonheur ! Pour la première fois depuis longtemps, il n'a plus froid, et il se rendort."
+     ],
+     "img": "djc/c31.webp",
+     "photo": true,
+     "ch": 14,
+     "quote": {
+      "t": "tout entier au bonheur d'être dans un lit.",
+      "p": "p. 33"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 32,
+     "k": "CHAPITRE XIV · 2/2",
+     "t": "Le départ de la chaîne",
+     "chips": [
+      "BICÊTRE",
+      "l'infirmerie"
+     ],
+     "lines": [
+      "Au matin, par la fenêtre, il voit partir les forçats, enchaînés sur cinq charrettes, sous une pluie glacée, pour un voyage de vingt-cinq jours. Il préfère mille fois la mort au bagne."
+     ],
+     "img": "djc/c32.webp",
+     "photo": true,
+     "ch": 14,
+     "quote": {
+      "t": "plutôt l'échafaud que le bagne, plutôt le néant que l'enfer",
+      "p": "p. 35"
+     },
+     "pair": "Pourquoi le condamné préfère-t-il la mort au bagne ? Êtes-vous d'accord avec lui ?"
+    },
+    {
+     "type": "frame",
+     "slide": 33,
+     "k": "CHAPITRE XV",
+     "t": "Pas malade",
+     "chips": [
+      "BICÊTRE",
+      "6e semaine"
+     ],
+     "lines": [
+      "Il retourne au cachot. Il n'est pas malade : il est jeune et fort. Sa maladie, ce sont les hommes qui l'ont faite. Il regrette de ne pas avoir fui l'infirmerie. Et la grâce ? Impossible. Il ne lui reste que trois étapes."
+     ],
+     "img": "djc/c33.webp",
+     "photo": true,
+     "ch": 15,
+     "quote": {
+      "t": "Je n'ai plus que trois pas à faire : Bicêtre, la Conciergerie, la Grève.",
+      "p": "p. 37"
+     },
+     "pair": "Quelle est cette « maladie faite de la main des hommes » ? Nommez les trois « pas » qui lui restent."
+    },
+    {
+     "type": "frame",
+     "slide": 34,
+     "k": "CHAPITRE XVI",
+     "t": "La chanson",
+     "chips": [
+      "BICÊTRE",
+      "souvenir"
+     ],
+     "lines": [
+      "À l'infirmerie, il avait demandé à Dieu un petit oiseau. Il entend la voix douce d'une jeune fille de quinze ans. Mais elle chante une chanson d'argot : l'histoire d'un voleur qui a tué un homme et qui sera pendu. La prison salit tout."
+     ],
+     "img": "djc/c34.webp",
+     "photo": true,
+     "ch": 16,
+     "quote": {
+      "t": "On eût dit la bave d'une limace sur une rose.",
+      "p": "p. 41"
+     },
+     "pair": "Expliquez la comparaison « la bave d'une limace sur une rose »."
+    },
+    {
+     "type": "frame",
+     "slide": 35,
+     "k": "CHAPITRE XVII",
+     "t": "Rêve d'évasion",
+     "chips": [
+      "BICÊTRE",
+      "la nuit"
+     ],
+     "lines": [
+      "Il rêve de s'évader : marcher lentement en chantant, déguisé en maraîcher avec un sarrau bleu, se cacher près d'Arcueil, partir en Angleterre… Mais un gendarme lui demanderait son passeport. Et il y a ce mur épais !"
+     ],
+     "img": "djc/c35.webp",
+     "photo": true,
+     "ch": 17,
+     "quote": {
+      "t": "Un gendarme passe ; il me demande mon passeport… Je suis perdu !",
+      "p": "p. 42"
+     },
+     "pair": "Pourquoi ce rêve d'évasion se termine-t-il mal ?"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "letter": "I",
+   "etape": "Partie I · Bicêtre",
+   "tag": "PARTIE I · CHAPITRES 18 À 21",
+   "t": "Le dernier matin",
+   "short": "Le dernier matin",
+   "lead": "Chapitres 18 à 21.",
+   "cover": "djc/c36.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 36,
+     "k": "CHAPITRE XVIII",
+     "t": "Six heures du matin",
+     "chips": [
+      "BICÊTRE",
+      "6 h · le dernier jour"
+     ],
+     "lines": [
+      "Le jour se lève : il est six heures. Le guichetier entre, ôte sa casquette, s'excuse de le déranger et lui demande, d'une voix douce, ce qu'il veut pour déjeuner. Cette politesse étrange le fait frissonner."
+     ],
+     "img": "djc/c36.webp",
+     "photo": true,
+     "ch": 18,
+     "quote": {
+      "t": "— Est-ce que ce serait pour aujourd'hui ?",
+      "p": "p. 43"
+     },
+     "pair": "Pourquoi la politesse du guichetier est-elle inquiétante ?"
+    },
+    {
+     "type": "frame",
+     "slide": 37,
+     "k": "CHAPITRE XIX",
+     "t": "C'est pour aujourd'hui !",
+     "chips": [
+      "BICÊTRE",
+      "peu après 6 h"
+     ],
+     "lines": [
+      "Le directeur de la prison vient lui-même le voir. Il est très aimable : il demande s'il a bien dormi et s'il n'a pas à se plaindre. En partant, il l'appelle « monsieur ». Le condamné comprend tout."
+     ],
+     "img": "djc/c37.webp",
+     "photo": true,
+     "ch": 19,
+     "quote": {
+      "t": "en me quittant, il m'a appelé monsieur !",
+      "p": "p. 44"
+     },
+     "pair": "Quel mot révèle au condamné que l'exécution est proche ? Pourquoi ?"
+    },
+    {
+     "type": "frame",
+     "slide": 38,
+     "k": "CHAPITRE XX",
+     "t": "La prison",
+     "chips": [
+      "BICÊTRE",
+      "peu après 6 h"
+     ],
+     "lines": [
+      "Le geôlier, avec son sourire doux, ses yeux qui espionnent et ses grosses mains, lui semble être la prison elle-même. Les murs, les portes, les gardiens : tout est prison. Elle le tient comme une proie."
+     ],
+     "img": "djc/c38.webp",
+     "photo": true,
+     "ch": 20,
+     "quote": {
+      "t": "c'est la prison incarnée, c'est Bicêtre qui s'est fait homme.",
+      "p": "p. 45"
+     },
+     "pair": "Expliquez l'image : « La prison est une espèce d'être horrible… moitié maison, moitié homme »."
+    },
+    {
+     "type": "frame",
+     "slide": 39,
+     "k": "CHAPITRE XXI · 1/2",
+     "t": "Le prêtre et l'huissier",
+     "chips": [
+      "BICÊTRE",
+      "6 h 45"
+     ],
+     "lines": [
+      "À six heures trois quarts, un vieux prêtre entre. « Mon fils, êtes-vous préparé ? » Le condamné répond avec courage. Mais une sueur glacée le saisit et il n'entend plus rien de ce que dit le prêtre."
+     ],
+     "img": "djc/c39.webp",
+     "photo": true,
+     "ch": 21,
+     "quote": {
+      "t": "— Je ne suis pas préparé, mais je suis prêt.",
+      "p": "p. 46"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 40,
+     "k": "CHAPITRE XXI · 2/2",
+     "t": "Le prêtre et l'huissier",
+     "chips": [
+      "BICÊTRE",
+      "6 h 45"
+     ],
+     "lines": [
+      "Un huissier en habit noir lit le rejet de son pourvoi : l'exécution aura lieu aujourd'hui, place de Grève. Départ à 7 h 30 pour la Conciergerie. Resté seul, il cherche un moyen de fuir. Impossible !"
+     ],
+     "img": "djc/c40.webp",
+     "photo": true,
+     "ch": 21,
+     "quote": {
+      "t": "— L'arrêt sera exécuté aujourd'hui en place de Grève",
+      "p": "p. 47"
+     },
+     "pair": "Pourquoi la politesse de l'huissier est-elle cruelle ? Relevez l'ironie du condamné."
+    },
+    {
+     "type": "cards",
+     "slide": 43,
+     "k": "SYNTHÈSE",
+     "t": "À retenir · Bicêtre",
+     "cards": [
+      {
+       "n": "01",
+       "t": "Le lieu",
+       "d": "Un cachot de Bicêtre, sombre et étroit, surveillé nuit et jour."
+      },
+      {
+       "n": "02",
+       "t": "L'attente",
+       "d": "Six semaines entre la condamnation et l'exécution : une torture morale."
+      },
+      {
+       "n": "03",
+       "t": "Le journal",
+       "d": "Écrire pour moins souffrir et pour faire réfléchir ceux qui jugent."
+      },
+      {
+       "n": "04",
+       "t": "La famille",
+       "d": "Une mère, une femme, une fille : trois innocentes punies par la loi."
+      },
+      {
+       "n": "05",
+       "t": "Les forçats",
+       "d": "Le bagne de Toulon : la société fait du châtiment un spectacle."
+      },
+      {
+       "n": "06",
+       "t": "L'annonce",
+       "d": "Le dernier matin, le rejet du pourvoi : « aujourd'hui en place de Grève »."
+      }
+     ],
+     "numbered": true
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "letter": "II",
+   "etape": "Partie II · La Conciergerie",
+   "tag": "PARTIE II · CHAPITRES 22 À 25",
+   "t": "Le voyage et le friauche",
+   "short": "Le voyage et le friauche",
+   "lead": "Le dernier jour, de 7 h 30 à 15 h. On le transfère à la Conciergerie, au Palais de Justice de Paris. Les heures passent : visites, souvenirs, peur, espoir. Il voit sa fille une dernière fois.",
+   "cover": "djc/bg44.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 45,
+     "k": "CHAPITRE XXII · 1/3",
+     "t": "Le voyage",
+     "chips": [
+      "BICÊTRE → CONCIERGERIE",
+      "7 h 30 → 8 h 30"
+     ],
+     "lines": [
+      "À 7 h 30, il quitte son cachot. Dans la cour, sous une pluie fine, une foule attend déjà. Il monte dans une voiture sale, coupée en deux par une grille, avec le prêtre, l'huissier et des gendarmes : huit hommes pour un seul homme."
+     ],
+     "img": "djc/c45.webp",
+     "photo": true,
+     "ch": 22,
+     "quote": {
+      "t": "Ainsi, sans le postillon, huit hommes pour un homme.",
+      "p": "p. 50"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 46,
+     "k": "CHAPITRE XXII · 2/3",
+     "t": "Le voyage",
+     "chips": [
+      "BICÊTRE → CONCIERGERIE",
+      "7 h 30 → 8 h 30"
+     ],
+     "lines": [
+      "Pendant le trajet, l'huissier bavarde : la politique, les condamnés qu'il a déjà conduits… Sa tabatière tombe : « tout mon tabac est perdu ! » Le condamné lui répond avec une ironie amère."
+     ],
+     "img": "djc/c46.webp",
+     "photo": true,
+     "ch": 22,
+     "quote": {
+      "t": "— Je perds plus que vous, ai-je répondu en souriant.",
+      "p": "p. 54"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 47,
+     "k": "CHAPITRE XXII · 3/3",
+     "t": "Le voyage",
+     "chips": [
+      "BICÊTRE → CONCIERGERIE",
+      "7 h 30 → 8 h 30"
+     ],
+     "lines": [
+      "À la barrière de Paris, les douaniers inspectent la voiture et la laissent passer. Dans les vieilles rues, les passants regardent, des enfants courent derrière. À 8 h 30, il arrive à la Conciergerie."
+     ],
+     "img": "djc/c47.webp",
+     "photo": true,
+     "ch": 22,
+     "quote": {
+      "t": "une tête humaine ne paie pas de droit.",
+      "p": "p. 54"
+     },
+     "pair": "Relevez un passage où le condamné montre que, pour les autres, sa mort est un spectacle."
+    },
+    {
+     "type": "frame",
+     "slide": 48,
+     "k": "CHAPITRE XXIII · 1/3",
+     "t": "Le friauche",
+     "chips": [
+      "CONCIERGERIE",
+      "après 8 h 30"
+     ],
+     "lines": [
+      "À la Conciergerie, on l'enferme dans un petit cabinet. Soudain, un éclat de rire : un vieux bandit en haillons est là. C'est le condamné du jour, celui qui va prendre sa place à Bicêtre. On l'appelle un « friauche »."
+     ],
+     "img": "djc/c48.webp",
+     "photo": true,
+     "ch": 23,
+     "quote": {
+      "t": "C'était l'autre condamné, le condamné du jour",
+      "p": "p. 57"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 49,
+     "k": "CHAPITRE XXIII · 2/3",
+     "t": "Le friauche",
+     "chips": [
+      "CONCIERGERIE",
+      "après 8 h 30"
+     ],
+     "lines": [
+      "Le friauche raconte sa vie : orphelin, voleur, bagnard. Libéré, son passeport jaune de forçat lui ferme toutes les portes : personne ne veut lui donner de travail. Un jour, il a faim et vole un pain : galères à vie ! Il s'évade et devient assassin."
+     ],
+     "img": "djc/c49.webp",
+     "photo": true,
+     "ch": 23,
+     "quote": {
+      "t": "Un jour, j'avais faim.",
+      "p": "p. 58"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 50,
+     "k": "CHAPITRE XXIII · 3/3",
+     "t": "Le friauche",
+     "chips": [
+      "CONCIERGERIE",
+      "après 8 h 30"
+     ],
+     "lines": [
+      "Il demande au narrateur sa belle redingote pour la vendre et lui donne sa vieille veste de laine. Il est fou de joie : il pourra acheter du tabac pour ses six semaines ! Puis les gendarmes l'emmènent à Bicêtre."
+     ],
+     "img": "djc/c50.webp",
+     "photo": true,
+     "ch": 23,
+     "quote": {
+      "t": "Quel bonheur ! du tabac pour mes six semaines !",
+      "p": "p. 60"
+     },
+     "pair": "Selon le friauche, qui est responsable de son destin ? Quelle critique de la société Hugo fait-il ici ?"
+    },
+    {
+     "type": "frame",
+     "slide": 51,
+     "k": "CHAPITRE XXIV",
+     "t": "La colère",
+     "chips": [
+      "CONCIERGERIE",
+      "le matin"
+     ],
+     "lines": [
+      "Seul, il est plein de colère : le vieux voleur lui a pris sa redingote parce qu'il était plus fort que lui. Il voudrait l'étrangler. Il se découvre méchant et il comprend pourquoi."
+     ],
+     "img": "djc/c51.webp",
+     "photo": true,
+     "ch": 24,
+     "quote": {
+      "t": "La mort rend méchant.",
+      "p": "p. 61"
+     },
+     "pair": "Pourquoi le condamné dit-il : « La mort rend méchant » ?"
+    },
+    {
+     "type": "frame",
+     "slide": 52,
+     "k": "CHAPITRE XXV",
+     "t": "La cellule",
+     "chips": [
+      "CONCIERGERIE",
+      "le matin"
+     ],
+     "lines": [
+      "On le met dans une cellule de la Conciergerie. Il demande une table, une chaise, de quoi écrire et un lit. On lui apporte un lit de sangle… et un gendarme, qui ne le quitte plus."
+     ],
+     "img": "djc/c52.webp",
+     "photo": true,
+     "ch": 25,
+     "quote": {
+      "t": "Est-ce qu'ils ont peur que je ne m'étrangle avec le matelas ?",
+      "p": "p. 62"
+     },
+     "pair": "Relevez l'ironie dans la question finale du condamné."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "letter": "II",
+   "etape": "Partie II · La Conciergerie",
+   "tag": "PARTIE II · CHAPITRES 26 À 33",
+   "t": "La matinée à la Conciergerie",
+   "short": "La matinée à la Conciergerie",
+   "lead": "Chapitres 26 à 33.",
+   "cover": "djc/c53.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 53,
+     "k": "CHAPITRE XXVI",
+     "t": "Dix heures",
+     "chips": [
+      "CONCIERGERIE",
+      "10 h"
+     ],
+     "lines": [
+      "Il est dix heures. Plus que six heures à vivre. Il pense à Marie : qui va l'aimer, jouer avec elle, la faire prier le soir ? Plus tard, elle aura honte de son nom. Les jurés auraient dû la voir !"
+     ],
+     "img": "djc/c53.webp",
+     "photo": true,
+     "ch": 26,
+     "quote": {
+      "t": "ils auraient compris qu'il ne faut pas tuer le père d'un enfant de trois ans.",
+      "p": "p. 63"
+     },
+     "pair": "Quel argument contre la peine de mort apparaît dans ce chapitre ?"
+    },
+    {
+     "type": "frame",
+     "slide": 54,
+     "k": "CHAPITRE XXVII",
+     "t": "La machine",
+     "chips": [
+      "CONCIERGERIE",
+      "après 10 h"
+     ],
+     "lines": [
+      "Il ne sait pas comment fonctionne la guillotine. Même son nom lui fait peur. Dans sa tête, il construit et démolit sans cesse la machine. Il n'ose poser aucune question."
+     ],
+     "img": "djc/c54.webp",
+     "photo": true,
+     "ch": 27,
+     "quote": {
+      "t": "Ah ! mes cheveux blanchiront avant que ma tête ne tombe !",
+      "p": "p. 65"
+     },
+     "pair": "Pourquoi le condamné ne veut-il même pas écrire le nom de la machine ?"
+    },
+    {
+     "type": "frame",
+     "slide": 55,
+     "k": "CHAPITRE XXVIII",
+     "t": "La place de Grève",
+     "chips": [
+      "CONCIERGERIE",
+      "11 h"
+     ],
+     "lines": [
+      "Un jour, en voiture, il a vu des hommes monter la guillotine sur la place de Grève. Une femme expliquait à son enfant qu'on allait graisser la rainure du couteau. Il est onze heures : on graisse sans doute la sienne."
+     ],
+     "img": "djc/c55.webp",
+     "photo": true,
+     "ch": 28,
+     "quote": {
+      "t": "Ah ! cette fois, malheureux, je ne détournerai pas la tête.",
+      "p": "p. 66"
+     },
+     "pair": "Comparez l'attitude du condamné autrefois et aujourd'hui devant l'échafaud."
+    },
+    {
+     "type": "frame",
+     "slide": 56,
+     "k": "CHAPITRE XXIX",
+     "t": "Ma grâce !",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "Il supplie : qu'on aille chercher son avocat ! Maintenant, il accepte les galères : cinq ans, vingt ans, toute la vie, avec la marque au fer rouge. Tout, mais vivre ! Un forçat, au moins, voit le soleil."
+     ],
+     "img": "djc/c56.webp",
+     "photo": true,
+     "ch": 29,
+     "quote": {
+      "t": "Un forçat, cela marche encore, cela va et vient, cela voit le soleil.",
+      "p": "p. 67"
+     },
+     "pair": "Comparez ce chapitre avec le chapitre 2 et le chapitre 14 : qu'est-ce qui a changé ?"
+    },
+    {
+     "type": "frame",
+     "slide": 57,
+     "k": "CHAPITRE XXX · 1/2",
+     "t": "Le prêtre revient",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "Le prêtre revient. C'est un homme bon, mais ses paroles sont toujours les mêmes, comme une leçon récitée. Elles ne touchent pas le cœur du condamné. Il rêve d'un autre prêtre, qui pleurerait avec lui."
+     ],
+     "img": "djc/c57.webp",
+     "photo": true,
+     "ch": 30,
+     "quote": {
+      "t": "il avait l'air de réciter une leçon déjà vingt fois récitée",
+      "p": "p. 68"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 58,
+     "k": "CHAPITRE XXX · 2/2",
+     "t": "Le prêtre revient",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "On lui apporte un bon repas, un poulet et d'autres plats délicats. Il essaie de manger. Mais à la première bouchée, tout lui semble amer. Il ne peut rien avaler."
+     ],
+     "img": "djc/c58.webp",
+     "photo": true,
+     "ch": 30,
+     "quote": {
+      "t": "à la première bouchée, tout est tombé de ma bouche",
+      "p": "p. 70"
+     },
+     "pair": "Pourquoi les paroles du prêtre ne consolent-elles pas le condamné ?"
+    },
+    {
+     "type": "frame",
+     "slide": 59,
+     "k": "CHAPITRE XXXI",
+     "t": "L'architecte",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "Un architecte entre, le chapeau sur la tête. Il mesure les murs et parle très fort : dans six mois, la prison sera mieux ! Le vieux gendarme lui fait la leçon. Le condamné, lui, se sent comme une pierre."
+     ],
+     "img": "djc/c59.webp",
+     "photo": true,
+     "ch": 31,
+     "quote": {
+      "t": "— Monsieur, lui a-t-il dit, on ne parle pas si haut dans la chambre d'un mort.",
+      "p": "p. 71"
+     },
+     "pair": "Qui montre le plus d'humanité dans ce chapitre ? Justifiez."
+    },
+    {
+     "type": "frame",
+     "slide": 60,
+     "k": "CHAPITRE XXXII · 1/2",
+     "t": "Le gendarme et la loterie",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "Un nouveau gendarme, l'air bête, joue à la loterie. Il demande au condamné une chose incroyable : revenir après sa mort lui donner trois bons numéros !"
+     ],
+     "img": "djc/c60.webp",
+     "photo": true,
+     "ch": 32,
+     "quote": {
+      "t": "me donner trois numéros, trois bons. Hein ?",
+      "p": "p. 73"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 61,
+     "k": "CHAPITRE XXXII · 2/2",
+     "t": "Le gendarme et la loterie",
+     "chips": [
+      "CONCIERGERIE",
+      "fin de matinée"
+     ],
+     "lines": [
+      "Le condamné a une idée : changer d'habits avec lui pour s'évader. Le gendarme commence à déboutonner son uniforme… puis il comprend. Les numéros ne seront bons que si le condamné est mort !"
+     ],
+     "img": "djc/c61.webp",
+     "photo": true,
+     "ch": 32,
+     "quote": {
+      "t": "Pour qu'ils soient bons, il faut que vous soyez mort.",
+      "p": "p. 74"
+     },
+     "pair": "Ce chapitre est-il comique ou tragique ? Justifiez votre réponse."
+    },
+    {
+     "type": "frame",
+     "slide": 62,
+     "k": "CHAPITRE XXXIII",
+     "t": "Souvenirs d'enfance",
+     "chips": [
+      "CONCIERGERIE",
+      "souvenir"
+     ],
+     "lines": [
+      "Il ferme les yeux et se souvient de son enfance heureuse : il court avec ses frères dans un grand jardin, près du dôme du Val-de-Grâce. Plus tard, il s'y promène avec Pepa, une jeune Espagnole. C'est un souvenir de bonheur parfait."
+     ],
+     "img": "djc/c62.webp",
+     "photo": true,
+     "ch": 33,
+     "quote": {
+      "t": "J'avais le paradis dans le cœur.",
+      "p": "p. 77"
+     },
+     "pair": "Pourquoi le condamné se réfugie-t-il dans ses souvenirs d'enfance ?"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "letter": "II",
+   "etape": "Partie II · La Conciergerie",
+   "tag": "PARTIE II · CHAPITRES 34 À 41",
+   "t": "Une heure de l’après-midi",
+   "short": "Une heure de l’après-midi",
+   "lead": "Chapitres 34 à 41.",
+   "cover": "djc/c63.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 63,
+     "k": "CHAPITRE XXXIV",
+     "t": "Le remords",
+     "chips": [
+      "CONCIERGERIE",
+      "13 h"
+     ],
+     "lines": [
+      "Une heure sonne. Dans ses souvenirs, il retrouve son crime avec horreur. Il voudrait se repentir davantage. Il y a un an, il était libre et marchait dans les feuilles d'automne. Entre ce temps heureux et aujourd'hui, il y a du sang."
+     ],
+     "img": "djc/c63.webp",
+     "photo": true,
+     "ch": 34,
+     "quote": {
+      "t": "il y a une rivière de sang, le sang de l'autre et le mien.",
+      "p": "p. 78"
+     },
+     "pair": "Le condamné regrette-t-il son crime ? Relevez une phrase qui le montre."
+    },
+    {
+     "type": "frame",
+     "slide": 64,
+     "k": "CHAPITRE XXXV",
+     "t": "Paris vit",
+     "chips": [
+      "CONCIERGERIE",
+      "13 h"
+     ],
+     "lines": [
+      "Pendant ce temps, tout Paris vit normalement : on rit, on lit le journal, les marchands vendent, les jeunes filles préparent leur robe de bal, les mères jouent avec leurs enfants. Personne ne pense à lui."
+     ],
+     "img": "djc/c64.webp",
+     "photo": true,
+     "ch": 35,
+     "quote": {
+      "t": "des mères qui jouent avec leurs enfants !",
+      "p": "p. 79"
+     },
+     "pair": "Quel contraste ce court chapitre met-il en évidence ?"
+    },
+    {
+     "type": "frame",
+     "slide": 65,
+     "k": "CHAPITRE XXXVI",
+     "t": "Le bourdon de Notre-Dame",
+     "chips": [
+      "CONCIERGERIE",
+      "souvenir"
+     ],
+     "lines": [
+      "Enfant, il est monté voir le bourdon, la grosse cloche de Notre-Dame. La cloche a sonné, la tour a tremblé : il a eu peur de tomber dans le vide. Aujourd'hui, il ressent le même vertige."
+     ],
+     "img": "djc/c65.webp",
+     "photo": true,
+     "ch": 36,
+     "quote": {
+      "t": "il me semble que je suis encore dans la tour du bourdon.",
+      "p": "p. 80"
+     },
+     "pair": "Expliquez la comparaison entre le vertige de l'enfant et la situation du condamné."
+    },
+    {
+     "type": "frame",
+     "slide": 66,
+     "k": "CHAPITRE XXXVII",
+     "t": "L'Hôtel de Ville",
+     "chips": [
+      "CONCIERGERIE",
+      "après 13 h"
+     ],
+     "lines": [
+      "L'Hôtel de Ville domine la place de Grève. Il est vieux, noir, sinistre. Les jours d'exécution, des gendarmes sortent de toutes ses portes, et toutes ses fenêtres regardent le condamné."
+     ],
+     "img": "djc/c66.webp",
+     "photo": true,
+     "ch": 37,
+     "quote": {
+      "t": "si noir qu'il est noir au soleil.",
+      "p": "p. 82"
+     },
+     "pair": "Relevez les mots qui font de l'Hôtel de Ville un personnage menaçant."
+    },
+    {
+     "type": "frame",
+     "slide": 67,
+     "k": "CHAPITRE XXXVIII",
+     "t": "Une heure et quart",
+     "chips": [
+      "CONCIERGERIE",
+      "13 h 15"
+     ],
+     "lines": [
+      "Il est une heure et quart. Il a mal à la tête, il a froid et chaud à la fois, ses mains tremblent, la plume lui tombe des mains. Avec une ironie amère, il dit qu'il sera bientôt « guéri »."
+     ],
+     "img": "djc/c67.webp",
+     "photo": true,
+     "ch": 38,
+     "quote": {
+      "t": "Encore deux heures et quarante-cinq minutes, et je serai guéri.",
+      "p": "p. 83"
+     },
+     "pair": "Que signifie le mot « guéri » dans la dernière phrase ? Quelle figure de style est-ce ?"
+    },
+    {
+     "type": "frame",
+     "slide": 68,
+     "k": "CHAPITRE XXXIX",
+     "t": "On ne souffre pas ?",
+     "chips": [
+      "CONCIERGERIE",
+      "après 13 h 15"
+     ],
+     "lines": [
+      "On dit que la guillotine ne fait pas souffrir, que c'est rapide. Mais qu'en savent-ils ? Aucun mort n'est revenu le dire. Et ces six semaines d'agonie, cette journée de torture, ce n'est pas souffrir ?"
+     ],
+     "img": "djc/c68.webp",
+     "photo": true,
+     "ch": 39,
+     "quote": {
+      "t": "Qu'est-ce que cette échelle de tortures qui aboutit à l'échafaud ?",
+      "p": "p. 84"
+     },
+     "pair": "Quel argument des partisans de la guillotine le condamné réfute-t-il ? Comment ?"
+    },
+    {
+     "type": "frame",
+     "slide": 69,
+     "k": "CHAPITRE XL",
+     "t": "Le roi",
+     "chips": [
+      "CONCIERGERIE",
+      "après 13 h 15"
+     ],
+     "lines": [
+      "Il pense sans cesse au roi, qui vit tout près, dans un palais, au milieu de l'or et de la soie. Il suffirait que le roi signe son nom pour le sauver. Le roi est bon… mais il ne le fera pas."
+     ],
+     "img": "djc/c69.webp",
+     "photo": true,
+     "ch": 40,
+     "quote": {
+      "t": "il suffirait qu'il écrivît avec cette plume les sept lettres de son nom",
+      "p": "p. 85"
+     },
+     "pair": "Expliquez l'opposition entre le roi et le condamné."
+    },
+    {
+     "type": "frame",
+     "slide": 70,
+     "k": "CHAPITRE XLI",
+     "t": "La mort en face",
+     "chips": [
+      "CONCIERGERIE",
+      "après 13 h 15"
+     ],
+     "lines": [
+      "Il veut regarder la mort en face. Après le coup, que verra-t-il ? Une grande lumière ? Un gouffre noir ? Les morts reviennent-ils ? Il a peur. Il réclame un prêtre et un crucifix."
+     ],
+     "img": "djc/c70.webp",
+     "photo": true,
+     "ch": 41,
+     "quote": {
+      "t": "Je veux un prêtre, et un crucifix à baiser !",
+      "p": "p. 87"
+     },
+     "pair": "Quelles images de la mort le condamné imagine-t-il ? Laquelle vous frappe le plus ?"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "letter": "II",
+   "etape": "Partie II · La Conciergerie",
+   "tag": "PARTIE II · CHAPITRES 42 À 47",
+   "t": "Marie",
+   "short": "Marie",
+   "lead": "Chapitres 42 à 47.",
+   "cover": "djc/c71.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 71,
+     "k": "CHAPITRE XLII · 1/2",
+     "t": "Le cauchemar",
+     "chips": [
+      "CONCIERGERIE",
+      "après une heure de sommeil"
+     ],
+     "lines": [
+      "Il s'endort et fait un cauchemar : chez lui, la nuit, avec des amis, il découvre une petite vieille cachée derrière la porte d'une armoire, immobile, les yeux fermés. Il approche une bougie : elle souffle la flamme et le mord."
+     ],
+     "img": "djc/c71.webp",
+     "photo": true,
+     "ch": 42,
+     "quote": {
+      "t": "j'ai senti trois dents aiguës s'imprimer sur ma main, dans les ténèbres.",
+      "p": "p. 90"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 72,
+     "k": "CHAPITRE XLII · 2/2",
+     "t": "Le cauchemar",
+     "chips": [
+      "CONCIERGERIE",
+      "après une heure de sommeil"
+     ],
+     "lines": [
+      "Il se réveille en sueur. L'aumônier, assis au pied du lit, lit des prières. Il a dormi une heure. Le prêtre lui annonce une nouvelle : on a amené sa fille !"
+     ],
+     "img": "djc/c72.webp",
+     "photo": true,
+     "ch": 42,
+     "quote": {
+      "t": "— Oh ! ai-je crié, ma fille, qu'on m'amène ma fille !",
+      "p": "p. 90"
+     },
+     "pair": "Que peut symboliser la « petite vieille » du cauchemar ?"
+    },
+    {
+     "type": "frame",
+     "slide": 73,
+     "k": "CHAPITRE XLIII · 1/2",
+     "t": "Marie",
+     "chips": [
+      "CONCIERGERIE",
+      "l'après-midi"
+     ],
+     "lines": [
+      "Marie est là, fraîche et rose, dans une jolie robe. Il la prend sur ses genoux et l'embrasse. Mais elle ne le reconnaît pas : avec sa barbe et sa pâleur, il est pour elle « un monsieur ». Elle dit que son papa est mort."
+     ],
+     "img": "djc/c73.webp",
+     "photo": true,
+     "ch": 43,
+     "quote": {
+      "t": "— Si, a-t-elle dit. Un monsieur.",
+      "p": "p. 92"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 74,
+     "k": "CHAPITRE XLIII · 2/2",
+     "t": "Marie",
+     "chips": [
+      "CONCIERGERIE",
+      "l'après-midi"
+     ],
+     "lines": [
+      "Marie veut lire un papier qu'elle tient à la main. Elle épelle : « ARRÊT ». C'est l'arrêt de mort de son père ! Il le lui arrache, puis la rend à sa bonne. Son cœur est brisé."
+     ],
+     "img": "djc/c74.webp",
+     "photo": true,
+     "ch": 43,
+     "quote": {
+      "t": "C'est ma sentence de mort qu'elle me lisait.",
+      "p": "p. 93"
+     },
+     "pair": "Pourquoi cette scène est-elle la plus pathétique du roman ?"
+    },
+    {
+     "type": "frame",
+     "slide": 75,
+     "k": "CHAPITRE XLIV",
+     "t": "Une heure encore",
+     "chips": [
+      "CONCIERGERIE",
+      "« encore une heure »"
+     ],
+     "lines": [
+      "Le prêtre et le gendarme ont pleuré quand il a demandé qu'on emporte sa fille. Maintenant, il doit penser au bourreau, à la charrette, à la foule. Il lui reste une heure."
+     ],
+     "img": "djc/c75.webp",
+     "photo": true,
+     "ch": 44,
+     "quote": {
+      "t": "Je crois que j'ai encore une heure pour m'habituer à tout cela.",
+      "p": "p. 94"
+     },
+     "pair": "Comment le condamné essaie-t-il de se préparer ? Y parvient-il ?"
+    },
+    {
+     "type": "frame",
+     "slide": 76,
+     "k": "CHAPITRE XLV",
+     "t": "La foule",
+     "chips": [
+      "CONCIERGERIE",
+      "l'après-midi"
+     ],
+     "lines": [
+      "Toute la foule va rire et applaudir. Pourtant, dans cette foule, certains finiront eux aussi sur l'échafaud : la place de Grève les attire comme un piège."
+     ],
+     "img": "djc/c76.webp",
+     "photo": true,
+     "ch": 45,
+     "quote": {
+      "t": "Plus d'un qui y vient pour moi y viendra pour soi.",
+      "p": "p. 95"
+     },
+     "pair": "Selon le condamné, pourquoi certains spectateurs finiront-ils comme lui ?"
+    },
+    {
+     "type": "frame",
+     "slide": 77,
+     "k": "CHAPITRE XLVI",
+     "t": "Pour Marie",
+     "chips": [
+      "CONCIERGERIE",
+      "l'après-midi"
+     ],
+     "lines": [
+      "On a ramené Marie jouer. Elle regarde la foule par la portière d'une voiture et l'a déjà oublié. Il veut écrire son histoire pour elle, pour qu'elle sache un jour pourquoi son nom est sanglant."
+     ],
+     "img": "djc/c77.webp",
+     "photo": true,
+     "ch": 46,
+     "quote": {
+      "t": "il faut qu'elle sache par moi mon histoire",
+      "p": "p. 96"
+     },
+     "pair": "Pourquoi le condamné veut-il que Marie connaisse son histoire ?"
+    },
+    {
+     "type": "frame",
+     "slide": 78,
+     "k": "CHAPITRE XLVII",
+     "t": "Mon histoire",
+     "chips": [
+      "CONCIERGERIE",
+      "l'après-midi"
+     ],
+     "lines": [
+      "« Mon histoire » : le chapitre est vide. Une note de l'éditeur dit qu'on n'a pas retrouvé ces pages : le condamné n'a sans doute pas eu le temps de les écrire. Nous ne saurons jamais son nom ni son crime."
+     ],
+     "img": "djc/c78.webp",
+     "photo": true,
+     "ch": 47,
+     "quote": {
+      "t": "Note de l'éditeur — On n'a pu encore retrouver les feuillets qui se rattachaient à celui-ci.",
+      "p": "p. 97"
+     },
+     "pair": "Pourquoi Hugo ne nous dit-il pas quel crime a commis le condamné ?"
+    },
+    {
+     "type": "cards",
+     "slide": 80,
+     "k": "SYNTHÈSE",
+     "t": "À retenir · La Conciergerie",
+     "cards": [
+      {
+       "n": "01",
+       "t": "Le temps",
+       "d": "Les heures sonnent : 10 h, 11 h, 13 h, 13 h 15… La peur grandit."
+      },
+      {
+       "n": "02",
+       "t": "Le friauche",
+       "d": "Une critique sociale : la misère et le bagne fabriquent des criminels."
+      },
+      {
+       "n": "03",
+       "t": "La solitude",
+       "d": "Personne ne comprend le condamné : ni le prêtre, ni les gendarmes."
+      },
+      {
+       "n": "04",
+       "t": "Les souvenirs",
+       "d": "L'enfance heureuse s'oppose à l'horreur du présent."
+      },
+      {
+       "n": "05",
+       "t": "Marie",
+       "d": "La scène la plus pathétique : sa fille ne le reconnaît pas."
+      },
+      {
+       "n": "06",
+       "t": "Le silence",
+       "d": "« Mon histoire » reste vide : nous ne saurons jamais son crime."
+      }
+     ],
+     "numbered": true
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "letter": "III",
+   "etape": "Partie III · La place de Grève",
+   "tag": "PARTIE III · CHAPITRES 48 ET 49",
+   "t": "La toilette, la charrette, quatre heures",
+   "short": "La place de Grève",
+   "lead": "De 15 h à 16 h. La toilette du condamné, la charrette, la foule. Arrivé devant la guillotine, il demande une dernière fois sa grâce, à l'Hôtel de Ville.",
+   "cover": "djc/bg81.webp",
+   "pages": [
+    {
+     "type": "frame",
+     "slide": 82,
+     "k": "CHAPITRE XLVIII · 1/3",
+     "t": "La toilette et la charrette",
+     "chips": [
+      "HÔTEL DE VILLE",
+      "15 h"
+     ],
+     "lines": [
+      "À trois heures, on vient le chercher. Dans une salle sombre, le bourreau et ses deux valets lui coupent les cheveux, lui attachent les mains derrière le dos et coupent le col de sa chemise. C'est « la toilette du condamné »."
+     ],
+     "img": "djc/c82.webp",
+     "photo": true,
+     "ch": 48,
+     "quote": {
+      "t": "— La toilette du condamné, a répondu l'autre.",
+      "p": "p. 99"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 83,
+     "k": "CHAPITRE XLVIII · 2/3",
+     "t": "La toilette et la charrette",
+     "chips": [
+      "HÔTEL DE VILLE",
+      "15 h"
+     ],
+     "lines": [
+      "Il monte dans la charrette, dos au cheval, avec le prêtre. Une foule immense crie et applaudit. On loue des places aux fenêtres. « Chapeaux bas ! » crie la foule, comme pour le roi. Le condamné répond par un mot terrible."
+     ],
+     "img": "djc/c83.webp",
+     "photo": true,
+     "ch": 48,
+     "quote": {
+      "t": "— Eux les chapeaux, moi la tête.",
+      "p": "p. 101"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 84,
+     "k": "CHAPITRE XLVIII · 3/3",
+     "t": "La toilette et la charrette",
+     "chips": [
+      "HÔTEL DE VILLE",
+      "15 h"
+     ],
+     "lines": [
+      "Sur le Pont-au-Change, il a peur de s'évanouir. Il embrasse le crucifix. La charrette s'arrête : entre deux lanternes du quai, il voit la guillotine. Il crie qu'il a une dernière déclaration à faire : on le monte à l'Hôtel de Ville."
+     ],
+     "img": "djc/c84.webp",
+     "photo": true,
+     "ch": 48,
+     "quote": {
+      "t": "Oh ! c'était la réalité !",
+      "p": "p. 103"
+     },
+     "pair": "Relevez deux détails qui montrent que l'exécution est un spectacle. Que dénonce Hugo ?"
+    },
+    {
+     "type": "frame",
+     "slide": 85,
+     "k": "CHAPITRE XLIX · 1/2",
+     "t": "Quatre heures",
+     "chips": [
+      "HÔTEL DE VILLE",
+      "16 h"
+     ],
+     "lines": [
+      "À l'Hôtel de Ville, il supplie un juge à genoux : sa grâce, ou cinq minutes encore ! Le juge sourit. Le bourreau vient dire qu'il est l'heure, et qu'il pleut. Resté seul avec deux gendarmes, il espère encore…"
+     ],
+     "img": "djc/c85.webp",
+     "photo": true,
+     "ch": 49,
+     "quote": {
+      "t": "Il est impossible qu'on ne me fasse pas grâce !",
+      "p": "p. 105"
+     }
+    },
+    {
+     "type": "frame",
+     "slide": 86,
+     "k": "CHAPITRE XLIX · 2/2",
+     "t": "Quatre heures",
+     "chips": [
+      "HÔTEL DE VILLE",
+      "16 h"
+     ],
+     "lines": [
+      "Mais il entend monter l'escalier. Le journal s'arrête sur deux mots : « QUATRE HEURES ». Le lecteur comprend que l'exécution a lieu. Le livre se termine dans le silence."
+     ],
+     "img": "djc/c86.webp",
+     "photo": true,
+     "ch": 49,
+     "quote": {
+      "t": "Ah ! les misérables ! il me semble qu'on monte l'escalier.",
+      "p": "p. 105"
+     },
+     "pair": "Pourquoi le roman se termine-t-il sur l'heure, sans décrire l'exécution ?"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "letter": "",
+   "etape": "Synthèse",
+   "tag": "SYNTHÈSE",
+   "t": "Thèmes, registres et thèse",
+   "short": "Synthèse",
+   "lead": "Ce qu’il faut retenir du roman, la thèse de Victor Hugo et des questions pour réfléchir, débattre et écrire.",
+   "cover": "djc/p91.webp",
+   "pages": [
+    {
+     "type": "cards",
+     "slide": 89,
+     "k": "SYNTHÈSE",
+     "t": "Thèmes et registres",
+     "groups": [
+      {
+       "t": "Les thèmes",
+       "cards": [
+        {
+         "t": "La peine de mort",
+         "d": "une torture morale, injuste et inutile"
+        },
+        {
+         "t": "Le temps",
+         "d": "un compte à rebours oppressant"
+        },
+        {
+         "t": "L'enfermement",
+         "d": "le cachot, le corps et l'esprit prisonniers"
+        },
+        {
+         "t": "La famille",
+         "d": "des innocents punis avec le coupable"
+        },
+        {
+         "t": "La foule",
+         "d": "l'exécution devient un spectacle"
+        },
+        {
+         "t": "La société",
+         "d": "la misère conduit au crime"
+        }
+       ]
+      },
+      {
+       "t": "Les registres",
+       "cards": [
+        {
+         "t": "Pathétique",
+         "d": "Marie qui ne reconnaît pas son père."
+        },
+        {
+         "t": "Tragique",
+         "d": "la mort est certaine dès la première page."
+        },
+        {
+         "t": "Ironique",
+         "d": "« Encore deux heures… et je serai guéri. »"
+        },
+        {
+         "t": "Fantastique",
+         "d": "les spectres, le cauchemar de la vieille."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "frame",
+     "slide": 90,
+     "k": "SYNTHÈSE",
+     "t": "La thèse de Victor Hugo",
+     "sub": "Un plaidoyer contre la peine de mort",
+     "lines": [
+      "La peine de mort fait souffrir l'esprit plus que le corps.",
+      "Elle punit aussi la famille, qui est innocente.",
+      "Elle ne corrige pas : elle fait de la mort un spectacle.",
+      "La société crée elle-même ses criminels (le friauche)."
+     ],
+     "numbered": true,
+     "img": "djc/p90.webp",
+     "photo": true
+    },
+    {
+     "type": "discuss",
+     "slide": 88,
+     "t": "Pour aller plus loin",
+     "sub": "Réfléchir, débattre, écrire",
+     "qs": [
+      {
+       "l": "Comprendre",
+       "q": "Pourquoi Hugo ne donne-t-il ni le nom ni le crime du condamné ?"
+      },
+      {
+       "l": "Argumenter",
+       "q": "Relevez trois arguments du roman contre la peine de mort."
+      },
+      {
+       "l": "Analyser",
+       "q": "Six semaines, puis un jour, puis des heures : quel effet ce compte à rebours produit-il sur le lecteur ?"
+      },
+      {
+       "l": "Débattre",
+       "q": "La foule de la place de Grève est-elle seulement spectatrice ou aussi complice ?"
+      },
+      {
+       "l": "Écrire",
+       "q": "Marie a dix-huit ans. Elle lit enfin le journal de son père. Écrivez la lettre qu'elle lui adresse (15 lignes)."
+      }
+     ],
+     "img": "djc/p88.webp"
+    },
+    {
+     "type": "frame",
+     "slide": 91,
+     "k": null,
+     "t": "« QUATRE HEURES »",
+     "lines": [
+      "Le journal s'arrête. Le lecteur, lui, doit continuer à penser."
+     ],
+     "sub": "Victor Hugo, Le Dernier Jour d'un condamné, 1829",
+     "img": "djc/p91.webp",
+     "wide": true
+    }
+   ]
+  }
+ ],
+ "characters": [
+  {
+   "id": "condamne",
+   "name": "Le condamné",
+   "role": "Le narrateur, héros du roman",
+   "facts": [],
+   "rows": [
+    [
+     "Nom",
+     "Inconnu : Hugo ne le donne jamais."
+    ],
+    [
+     "Âge",
+     "Il est jeune, « sain et fort »."
+    ],
+    [
+     "Éducation",
+     "Il est instruit : il parle latin et lit beaucoup."
+    ],
+    [
+     "Famille",
+     "Sa vieille mère, sa femme malade et Marie, sa fille de trois ans."
+    ],
+    [
+     "Crime",
+     "Un crime de sang, jamais raconté."
+    ],
+    [
+     "Rôle",
+     "Il écrit son journal jusqu'à la dernière minute."
+    ]
+   ],
+   "img": "djc/p6.webp",
+   "quote": {
+    "t": "misérable qui ai commis un véritable crime, qui ai versé du sang !",
+    "p": "chap. 11, p. 23"
+   }
+  },
+  {
+   "id": "marie",
+   "name": "Marie",
+   "role": "Sa fille, trois ans",
+   "facts": [
+    "Douce, rose, aux grands yeux noirs. Elle ne reconnaît pas son père et le croit mort."
+   ],
+   "img": "djc/v7_0.webp",
+   "quote": {
+    "t": "— Non, mon papa était bien plus beau.",
+    "p": "p. 92"
+   }
+  },
+  {
+   "id": "leprtre",
+   "name": "Le prêtre",
+   "role": "L'aumônier de la prison",
+   "facts": [
+    "Vieux, bon et charitable. Mais ses paroles sonnent comme une leçon récitée."
+   ],
+   "img": "djc/v7_1.webp",
+   "quote": {
+    "t": "— Mon fils, croyez-vous en Dieu ?",
+    "p": "p. 67"
+   }
+  },
+  {
+   "id": "lefriauche",
+   "name": "Le friauche",
+   "role": "Un vieux bandit",
+   "facts": [
+    "Orphelin, voleur, bagnard, assassin. C'est le « condamné du jour » qui prend sa redingote."
+   ],
+   "img": "djc/v7_2.webp",
+   "quote": {
+    "t": "Un jour, j'avais faim.",
+    "p": "p. 58"
+   }
+  },
+  {
+   "id": "lhuissier",
+   "name": "L'huissier",
+   "role": "Un employé de la justice",
+   "facts": [
+    "En habit noir, très poli et très bavard. La mort du condamné ne le touche pas."
+   ],
+   "img": "djc/v8_0.webp",
+   "quote": {
+    "t": "aurez-vous l'extrême bonté de me suivre ?",
+    "p": "p. 47"
+   }
+  },
+  {
+   "id": "lebourreau",
+   "name": "Le bourreau",
+   "role": "L'exécuteur, « monsieur samson »",
+   "facts": [
+    "Gros, vieux, le visage rouge, un chapeau à trois cornes. Il est poli… et terrible."
+   ],
+   "img": "djc/v8_1.webp",
+   "quote": {
+    "t": "Est-ce que je vous ai fait mal ?",
+    "p": "p. 99"
+   }
+  },
+  {
+   "id": "lesgardiens",
+   "name": "Les gardiens",
+   "role": "Geôliers, directeur, gendarmes",
+   "facts": [
+    "Polis ou indifférents, ils font leur métier. Un vieux gendarme montre un peu d'humanité."
+   ],
+   "img": "djc/v8_2.webp",
+   "quote": {
+    "t": "c'est Bicêtre qui s'est fait homme.",
+    "p": "p. 45"
+   }
+  }
+ ],
+ "quizzes": [
+  {
+   "n": 1,
+   "after": 5,
+   "title": "Partie I : Bicêtre",
+   "cover": "djc/c28.webp",
+   "units": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? Bicêtre (chapitres 1 à 21)",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Le condamné est à Bicêtre depuis environ six semaines.",
+       "a": true,
+       "ref": [
+        3,
+        3
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le procès a lieu un jour de pluie, en hiver.",
+       "a": false,
+       "ref": [
+        2,
+        2
+       ],
+       "ex": "C’est un beau matin d’août : il fait très beau."
+      },
+      {
+       "type": "vf",
+       "q": "L’avocat espère pour lui les travaux forcés à perpétuité.",
+       "a": true,
+       "ref": [
+        2,
+        3
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le condamné laisse deux fils.",
+       "a": false,
+       "ref": [
+        3,
+        4
+       ],
+       "ex": "Il laisse trois femmes : sa vieille mère, sa femme et sa fille Marie."
+      },
+      {
+       "type": "vf",
+       "q": "Sa fille Marie a trois ans.",
+       "a": true,
+       "ref": [
+        3,
+        5
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Les forçats partent pour le bagne de Toulon.",
+       "a": true,
+       "ref": [
+        4,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le directeur l’appelle « monsieur » : c’est un mauvais signe.",
+       "a": true,
+       "ref": [
+        5,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Son pourvoi en cassation est accepté.",
+       "a": false,
+       "ref": [
+        5,
+        5
+       ],
+       "ex": "Il est rejeté : l’exécution aura lieu le jour même, place de Grève."
+      }
+     ]
+    },
+    {
+     "label": "QCM",
+     "title": "QCM : Bicêtre",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Pourquoi le condamné écrit-il son journal ?",
+       "opts": [
+        "Pour gagner de l’argent",
+        "Pour moins souffrir et faire réfléchir les juges",
+        "Pour préparer son évasion"
+       ],
+       "a": 1,
+       "ref": [
+        3,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que voit-il dessiné à la craie sur le mur ?",
+       "opts": [
+        "Un bateau",
+        "L’échafaud",
+        "Le portrait de sa fille"
+       ],
+       "a": 1,
+       "ref": [
+        3,
+        7
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Où se réveille-t-il après son évanouissement ?",
+       "opts": [
+        "À l’infirmerie",
+        "Au tribunal",
+        "Chez lui"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        4
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quelle chanson la jeune fille chante-t-elle ?",
+       "opts": [
+        "Un cantique",
+        "Une chanson d’argot",
+        "Une berceuse"
+       ],
+       "a": 1,
+       "ref": [
+        4,
+        7
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quelles sont les trois étapes qui lui restent ?",
+       "opts": [
+        "Bicêtre, la Conciergerie, la Grève",
+        "Toulon, Paris, Versailles",
+        "Arcueil, Vincennes, Arpajon"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        6
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui lui annonce le rejet de son pourvoi ?",
+       "opts": [
+        "Son avocat",
+        "Un huissier",
+        "Le roi"
+       ],
+       "a": 1,
+       "ref": [
+        5,
+        5
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Quand ?",
+     "title": "Au procès, pendant les six semaines ou le dernier matin ?",
+     "type": "sort",
+     "cats": [
+      "Au procès",
+      "Les six semaines à Bicêtre",
+      "Le dernier matin"
+     ],
+     "hint": "Le procès : chapitre 2. Les six semaines : chapitres 3 à 17. Le dernier jour commence au chapitre 18, à six heures du matin.",
+     "items": [
+      [
+       "Une petite fleur jaune au soleil",
+       0
+      ],
+      [
+       "On lui met la camisole de force",
+       1
+      ],
+      [
+       "Le guichetier lui demande ce qu’il veut pour déjeuner",
+       2
+      ],
+      [
+       "Une jeune fille bat des mains",
+       0
+      ],
+      [
+       "Le dessin de l’échafaud sur le mur",
+       1
+      ],
+      [
+       "Le directeur l’appelle « monsieur »",
+       2
+      ],
+      [
+       "Le ferrement des forçats",
+       1
+      ],
+      [
+       "L’huissier lit le rejet du pourvoi",
+       2
+      ]
+     ],
+     "ref": [
+      5,
+      1
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Le lieu",
+     "d": "Un cachot de Bicêtre, sombre et étroit, surveillé nuit et jour."
+    },
+    {
+     "t": "L'attente",
+     "d": "Six semaines entre la condamnation et l'exécution : une torture morale."
+    },
+    {
+     "t": "Le journal",
+     "d": "Écrire pour moins souffrir et pour faire réfléchir ceux qui jugent."
+    },
+    {
+     "t": "La famille",
+     "d": "Une mère, une femme, une fille : trois innocentes punies par la loi."
+    },
+    {
+     "t": "Les forçats",
+     "d": "Le bagne de Toulon : la société fait du châtiment un spectacle."
+    },
+    {
+     "t": "L'annonce",
+     "d": "Le dernier matin, le rejet du pourvoi : « aujourd'hui en place de Grève »."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "after": 9,
+   "title": "Partie II : la Conciergerie",
+   "cover": "djc/c73.webp",
+   "units": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "sections": [
+    {
+     "label": "Qui a dit… ?",
+     "title": "Qui a dit… ?",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "« Ah ! savez-vous la grande nouvelle de Paris, aujourd’hui ? »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 1,
+       "ref": [
+        6,
+        2
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Donnez-la-moi, je la vendrai pour avoir du tabac. »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 0,
+       "ref": [
+        6,
+        6
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Mon bon ami, dans six mois cette prison sera beaucoup mieux. »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 2,
+       "ref": [
+        7,
+        7
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Pour qu’ils soient bons, il faut que vous soyez mort. »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 3,
+       "ref": [
+        7,
+        9
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Mon fils, croyez-vous en Dieu ? »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 4,
+       "ref": [
+        7,
+        5
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Non, mon papa était bien plus beau. »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 5,
+       "ref": [
+        9,
+        3
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Eux les chapeaux, moi la tête. »",
+       "opts": [
+        "Le friauche",
+        "L’huissier",
+        "L’architecte",
+        "Le gendarme",
+        "Le prêtre",
+        "Marie",
+        "Le condamné"
+       ],
+       "a": 6,
+       "ref": [
+        10,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Combien d’hommes accompagnent le condamné dans la voiture ?",
+       "opts": [
+        "Deux",
+        "Huit",
+        "Vingt"
+       ],
+       "a": 1,
+       "ref": [
+        6,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi le friauche a-t-il été envoyé aux galères à vie ?",
+       "opts": [
+        "Il avait faim et il a volé un pain",
+        "Il a tué un gendarme",
+        "Il s’est évadé de Bicêtre"
+       ],
+       "a": 0,
+       "ref": [
+        6,
+        5
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que propose le condamné au gendarme de la loterie ?",
+       "opts": [
+        "De lui donner sa redingote",
+        "De changer d’habits avec lui",
+        "D’écrire au roi"
+       ],
+       "a": 1,
+       "ref": [
+        7,
+        9
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Avec qui se promène-t-il dans ses souvenirs de jeunesse ?",
+       "opts": [
+        "Marie",
+        "Sa mère",
+        "Pepa, une jeune Espagnole"
+       ],
+       "a": 2,
+       "ref": [
+        7,
+        10
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que lit Marie sur le papier qu’elle tient ?",
+       "opts": [
+        "Une lettre de sa mère",
+        "« ARRÊT » : l’arrêt de mort de son père",
+        "Un conte pour enfants"
+       ],
+       "a": 1,
+       "ref": [
+        9,
+        4
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que contient le chapitre « Mon histoire » ?",
+       "opts": [
+        "Rien : une note dit que les pages n’ont pas été retrouvées",
+        "Le récit de son crime",
+        "Une lettre au roi"
+       ],
+       "a": 0,
+       "ref": [
+        9,
+        8
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Quelle heure ?",
+     "title": "Quelle heure est-il ?",
+     "type": "sort",
+     "cats": [
+      "10 h",
+      "11 h",
+      "13 h",
+      "13 h 15"
+     ],
+     "hint": "L’heure est écrite en haut de chaque chapitre : 10 h (chapitre 26), 11 h (chapitre 28), 13 h (chapitres 34 et 35), 13 h 15 (chapitre 38).",
+     "items": [
+      [
+       "Il pense à Marie : plus que six heures à vivre",
+       0
+      ],
+      [
+       "On graisse sans doute la rainure du couteau",
+       1
+      ],
+      [
+       "Une heure sonne : il retrouve son crime avec horreur",
+       2
+      ],
+      [
+       "Tout Paris vit normalement",
+       2
+      ],
+      [
+       "Il a froid et chaud, la plume lui tombe des mains",
+       3
+      ]
+     ],
+     "ref": [
+      7,
+      1
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Le temps",
+     "d": "Les heures sonnent : 10 h, 11 h, 13 h, 13 h 15… La peur grandit."
+    },
+    {
+     "t": "Le friauche",
+     "d": "Une critique sociale : la misère et le bagne fabriquent des criminels."
+    },
+    {
+     "t": "La solitude",
+     "d": "Personne ne comprend le condamné : ni le prêtre, ni les gendarmes."
+    },
+    {
+     "t": "Les souvenirs",
+     "d": "L'enfance heureuse s'oppose à l'horreur du présent."
+    },
+    {
+     "t": "Marie",
+     "d": "La scène la plus pathétique : sa fille ne le reconnaît pas."
+    },
+    {
+     "t": "Le silence",
+     "d": "« Mon histoire » reste vide : nous ne saurons jamais son crime."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "after": 11,
+   "title": "Toute l’œuvre",
+   "cover": "djc/c83.webp",
+   "units": [
+    10,
+    11
+   ],
+   "sections": [
+    {
+     "label": "Remets dans l’ordre",
+     "title": "Remets les événements dans l’ordre",
+     "type": "order",
+     "hint": "Suis le trajet du condamné : Bicêtre (chapitres 1 à 21), puis la Conciergerie (22 à 47), puis la place de Grève (48 et 49).",
+     "items": [
+      {
+       "t": "Le friauche prend la redingote du condamné.",
+       "img": "djc/o0.webp",
+       "ch": 23
+      },
+      {
+       "t": "La toilette du condamné : on lui coupe les cheveux.",
+       "img": "djc/o1.webp",
+       "ch": 48
+      },
+      {
+       "t": "L’huissier lit le rejet du pourvoi.",
+       "img": "djc/o2.webp",
+       "ch": 21
+      },
+      {
+       "t": "Marie ne reconnaît pas son père.",
+       "img": "djc/o3.webp",
+       "ch": 43
+      },
+      {
+       "t": "Le gendarme demande trois numéros de loterie.",
+       "img": "djc/o4.webp",
+       "ch": 32
+      },
+      {
+       "t": "Le départ en voiture pour la Conciergerie.",
+       "img": "djc/o5.webp",
+       "ch": 22
+      },
+      {
+       "t": "Le condamné supplie un juge à l’Hôtel de Ville.",
+       "img": "djc/o6.webp",
+       "ch": 49
+      },
+      {
+       "t": "Le ferrement des forçats dans la cour de Bicêtre.",
+       "img": "djc/o7.webp",
+       "ch": 13
+      }
+     ],
+     "answer": [
+      7,
+      2,
+      5,
+      0,
+      4,
+      3,
+      1,
+      6
+     ],
+     "ref": [
+      1,
+      8
+     ]
+    },
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ? La place de Grève",
+     "items": [
+      {
+       "type": "vf",
+       "q": "On coupe les cheveux du condamné : c’est « la toilette du condamné ».",
+       "a": true,
+       "ref": [
+        10,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Dans la charrette, le condamné est assis face au cheval.",
+       "a": false,
+       "ref": [
+        10,
+        2
+       ],
+       "ex": "Il est assis dos au cheval, avec le prêtre."
+      },
+      {
+       "type": "vf",
+       "q": "La foule crie « Chapeaux bas ! », comme pour le roi.",
+       "a": true,
+       "ref": [
+        10,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "À l’Hôtel de Ville, le juge lui accorde sa grâce.",
+       "a": false,
+       "ref": [
+        10,
+        4
+       ],
+       "ex": "Le juge sourit : il n’y a pas de grâce."
+      },
+      {
+       "type": "vf",
+       "q": "Le roman décrit l’exécution en détail.",
+       "a": false,
+       "ref": [
+        10,
+        5
+       ],
+       "ex": "Le journal s’arrête sur deux mots : « QUATRE HEURES »."
+      },
+      {
+       "type": "vf",
+       "q": "Le livre paraît d’abord sans nom d’auteur.",
+       "a": true,
+       "ref": [
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Les registres",
+     "title": "Pathétique, tragique, ironique ou fantastique ?",
+     "type": "sort",
+     "cats": [
+      "Pathétique",
+      "Tragique",
+      "Ironique",
+      "Fantastique"
+     ],
+     "hint": "Revois la page « Thèmes et registres » de la synthèse : chaque registre y a un exemple.",
+     "items": [
+      [
+       "Marie ne reconnaît pas son père",
+       0
+      ],
+      [
+       "La mort est certaine dès la première page",
+       1
+      ],
+      [
+       "« Encore deux heures… et je serai guéri. »",
+       2
+      ],
+      [
+       "Les spectres du cachot",
+       3
+      ],
+      [
+       "Marie épelle « ARRÊT »",
+       0
+      ],
+      [
+       "« Je perds plus que vous », dit-il à l’huissier",
+       2
+      ],
+      [
+       "Le cauchemar de la petite vieille",
+       3
+      ]
+     ],
+     "ref": [
+      11,
+      1
+     ]
+    }
+   ],
+   "retenir": [
+    {
+     "t": "Argument 1",
+     "d": "La peine de mort fait souffrir l'esprit plus que le corps."
+    },
+    {
+     "t": "Argument 2",
+     "d": "Elle punit aussi la famille, qui est innocente."
+    },
+    {
+     "t": "Argument 3",
+     "d": "Elle ne corrige pas : elle fait de la mort un spectacle."
+    },
+    {
+     "t": "Argument 4",
+     "d": "La société crée elle-même ses criminels (le friauche)."
+    }
+   ]
+  }
+ ]
+}
