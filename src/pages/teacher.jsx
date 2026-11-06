@@ -1,12 +1,18 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, PE, UNIT_WORKS, activityDone } from '../lib/items'
+import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, RW_LIST, UNIT_WORKS, activityDone } from '../lib/items'
 import { Modal, pct } from '../components/ui'
 
 const DAY = 86400000
 const fmtDate = (d) => new Date(d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })
-const GRID = PE.themes[0].n5.grille
+// Grille de correction de la production (elle dépend du kit et du thème)
+function gridFor(activity) {
+  const w = RW_LIST.find((x) => activity?.startsWith(`${x.prefix}.pe.`)) || RW_LIST[0]
+  const m = /\.pe\.t(\d+)\./.exec(activity || '')
+  return (w.K.themes[(m ? Number(m[1]) : 1) - 1] || w.K.themes[0]).n5.grille
+}
+const GRID_MAX = Math.max(...RW_LIST.flatMap((w) => w.K.themes.map((t) => t.n5.grille.length)))
 const SCALE = [['Non', 0], ['En partie', 1], ['Oui', 2]]
 
 function fnv(s) {
@@ -251,13 +257,15 @@ function Assignments({ st, cls, api, reload }) {
     setF({ ...f, title: '', note: '', acts: [] }); reload()
   }
   const groups = [
-    ['La Boîte à merveilles · chapitres', CATALOG.activities.filter((a) => a.kind === 'chapter')],
-    ['La Boîte à merveilles · quiz', CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === 'bam')],
+    ...RW_LIST.flatMap((w) => [
+      [`${w.D.shortTitle} · chapitres`, CATALOG.activities.filter((a) => a.kind === 'chapter' && a.work === w.id)],
+      [`${w.D.shortTitle} · quiz`, CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === w.id)],
+    ]),
     ...Object.values(UNIT_WORKS).flatMap((w) => [
       [`${w.data.title} · ${w.unitsWord}`, CATALOG.activities.filter((a) => a.kind === 'unit' && a.work === w.id)],
       [`${w.data.title} · quiz`, CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === w.id)],
     ]),
-    ...PE.themes.map((t) => [`Écriture · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.theme === t.n)]),
+    ...RW_LIST.flatMap((w) => w.K.themes.map((t) => [`Écriture ${w.D.shortTitle} · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.work === w.id && a.theme === t.n)])),
   ]
   return (
     <div className="grid g2" style={{ alignItems: 'start' }}>
@@ -309,8 +317,9 @@ function Productions({ data, api, reload }) {
   const [comment, setComment] = useState('')
   const names = Object.fromEntries(data.students.map((s) => [s.id, s.display_name]))
   const list = [...data.submissions].sort((a, b) => (a.status === 'graded') - (b.status === 'graded') || new Date(b.created_at) - new Date(a.created_at))
-  const openSub = (s) => { setCur(s); setG(s.grades || GRID.map(() => null)); setComment(s.comment || '') }
-  const score = g.every((x) => x != null) ? Math.round((g.reduce((s, x) => s + x, 0) / (GRID.length * 2)) * 10 * 4) / 4 : null
+  const GRID = gridFor(cur?.activity)
+  const openSub = (s) => { setCur(s); setG(s.grades || gridFor(s.activity).map(() => null)); setComment(s.comment || '') }
+  const score = g.length && g.every((x) => x != null) ? Math.round((g.reduce((s, x) => s + x, 0) / (g.length * 2)) * 10 * 4) / 4 : null
   const save = async () => { await api.adapter.gradeSubmission(cur.id, { grades: g, score, comment }); setCur(null); reload() }
   return (
     <div className="card">
@@ -370,8 +379,9 @@ function Research({ data, st, cls }) {
     download(`reponses_${cls.code}.csv`, csv(rows))
   }
   const exportSubs = () => {
-    const rows = [['eleve', 'classe', 'activite', 'niveau', 'nb_mots', 'statut', 'note_sur_10', ...GRID.map((_, i) => `critere_${i + 1}`), 'date', 'texte']]
-    data.submissions.filter((s) => ok.has(s.student_id)).forEach((s) => rows.push([code(s.student_id), cls.code, s.activity, s.level, s.text.trim().split(/\s+/).length, s.status, s.score, ...GRID.map((_, i) => s.grades?.[i] ?? ''), s.created_at, s.text]))
+    const cols = Array.from({ length: GRID_MAX }, (_, i) => i)
+    const rows = [['eleve', 'classe', 'activite', 'niveau', 'nb_mots', 'statut', 'note_sur_10', ...cols.map((i) => `critere_${i + 1}`), 'date', 'texte']]
+    data.submissions.filter((s) => ok.has(s.student_id)).forEach((s) => rows.push([code(s.student_id), cls.code, s.activity, s.level, s.text.trim().split(/\s+/).length, s.status, s.score, ...cols.map((i) => s.grades?.[i] ?? ''), s.created_at, s.text]))
     download(`productions_${cls.code}.csv`, csv(rows))
   }
   return (

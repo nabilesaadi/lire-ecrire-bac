@@ -31,6 +31,7 @@ export function Header() {
               <NavLink to="/oeuvre/bam">Boîte à merveilles</NavLink>
               <NavLink to="/oeuvre/antigone">Antigone</NavLink>
               <NavLink to="/oeuvre/djc">Le Dernier Jour</NavLink>
+              <NavLink to="/oeuvre/candide">Candide</NavLink>
               {p.role === 'student' && <NavLink to="/mes-travaux">Mes travaux</NavLink>}
             </nav>
           )}
@@ -40,6 +41,7 @@ export function Header() {
               <NavLink to="/oeuvre/bam/lecture">Boîte à merveilles</NavLink>
               <NavLink to="/oeuvre/antigone/lecture">Antigone</NavLink>
               <NavLink to="/oeuvre/djc/lecture">Le Dernier Jour</NavLink>
+              <NavLink to="/oeuvre/candide/lecture">Candide</NavLink>
             </nav>
           )}
           <div className="grow" />
@@ -85,7 +87,7 @@ export function Footer() {
     <footer className="foot">
       <div className="wrap row spread">
         <span>{SITE} · conçu par Nabil Saadi, professeur de français · Tétouan</span>
-        <span>Illustrations : résumés illustrés de <i>La Boîte à merveilles</i> (A. Sefrioui) , d’<i>Antigone</i> (J. Anouilh) et du <i>Dernier Jour d’un condamné</i> (V. Hugo)</span>
+        <span>Illustrations : résumés illustrés de <i>La Boîte à merveilles</i> (A. Sefrioui) , d’<i>Antigone</i> (J. Anouilh), du <i>Dernier Jour d’un condamné</i> (V. Hugo) et de <i>Candide</i> (Voltaire)</span>
       </div>
     </footer>
   )

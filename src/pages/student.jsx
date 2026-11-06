@@ -1,19 +1,19 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { ACTIVITY_BY_ID, LEVELS, PATHS, PE, UNIT_WORKS, WORK, WORKS, activityDone } from '../lib/items'
+import { ACTIVITY_BY_ID, LEVELS, PATHS, RES_WORKS, RW_LIST, UNIT_WORKS, WORKS, activityDone } from '../lib/items'
 import { Star } from '../components/ui'
+import { useRW } from './rwscope'
 
 const img = (f) => `${import.meta.env.BASE_URL}img/${f}`
 
 export function activityLink(id) {
   const a = ACTIVITY_BY_ID[id]
   if (!a) return '/eleve'
-  if (a.kind === 'chapter') return `/oeuvre/bam/chapitre/${id.split('.')[2]}`
+  if (a.kind === 'chapter') return `/oeuvre/${a.work}/chapitre/${a.n}`
   if (a.kind === 'unit') return `/oeuvre/${a.work}/etape/${a.n}`
-  if (a.kind === 'quiz' && a.work !== 'bam') return `/oeuvre/${a.work}/quiz/${a.n}`
-  if (a.kind === 'quiz') return `/oeuvre/bam/quiz/${id.split('.')[2]}`
-  return `/oeuvre/bam/ecriture/theme/${a.theme}?niveau=${a.level}`
+  if (a.kind === 'quiz') return `/oeuvre/${a.work}/quiz/${a.n}`
+  return `/oeuvre/${a.work}/ecriture/theme/${a.theme}?niveau=${a.level}`
 }
 
 export function useProgress() {
@@ -22,10 +22,19 @@ export function useProgress() {
     const byAct = {}
     api.attempts.forEach((a) => { (byAct[a.activity] ||= []).push(a) })
     const done = (id) => activityDone(id, byAct, api.submissions)
-    const chapters = WORK.chapters.filter((c) => done(`bam.ch.${c.n}`)).length
-    const quizzes = WORK.quizzes.filter((q) => done(`bam.quiz.${q.n}`)).length
-    let pe = 0
-    PE.themes.forEach((t) => { for (let n = 0; n <= 5; n++) if (done(`bam.pe.t${t.n}.n${n}`)) pe++ })
+    const rw = Object.fromEntries(RW_LIST.map((w) => {
+      let pe = 0
+      w.K.themes.forEach((t) => { for (let n = 0; n <= 5; n++) if (done(`${w.prefix}.pe.t${t.n}.n${n}`)) pe++ })
+      return [w.id, {
+        chapters: w.D.chapters.filter((c) => done(`${w.prefix}.ch.${c.n}`)).length,
+        quizzes: w.D.quizzes.filter((q) => done(`${w.prefix}.quiz.${q.n}`)).length,
+        pe,
+      }]
+    }))
+    const sum = (k) => Object.values(rw).reduce((t, x) => t + x[k], 0)
+    const chapters = sum('chapters')
+    const quizzes = sum('quizzes')
+    const pe = sum('pe')
     const uw = Object.fromEntries(Object.values(UNIT_WORKS).map((w) => [w.id, {
       units: w.data.units.filter((u) => done(`${w.prefix}.u.${u.n}`)).length,
       quizzes: w.data.quizzes.filter((q) => done(`${w.prefix}.quiz.${q.n}`)).length,
@@ -36,7 +45,7 @@ export function useProgress() {
     const allQuizzes = Object.values(uw).reduce((t, x) => t + x.quizzes, 0)
     const firstOk = api.attempts.filter((a) => a.item !== 'lu')
     const rate = firstOk.length ? firstOk.filter((a) => a.correct_first).length / firstOk.length : null
-    return { byAct, done, chapters, quizzes, pe, unitsDone, quizzesDone, allUnits, allQuizzes, rate }
+    return { byAct, done, rw, chapters, quizzes, pe, unitsDone, quizzesDone, allUnits, allQuizzes, rate }
   }, [api.attempts, api.submissions])
 }
 
@@ -47,7 +56,10 @@ export function StudentHome() {
   const [devoirs, setDevoirs] = useState([])
   const [cls, setCls] = useState(null)
   useEffect(() => { api.assignments().then(setDevoirs).catch(() => {}); api.myClass().then(setCls).catch(() => {}) }, [api.profile]) // eslint-disable-line
-  const nextChap = WORK.chapters.find((c) => !pr.done(`bam.ch.${c.n}`))
+  const nextChaps = RW_LIST.filter((w) => w.level === level).map((w) => ({ w, c: w.D.chapters.find((c) => !pr.done(`${w.prefix}.ch.${c.n}`)) })).filter((o) => o.c)
+  const totCh = RW_LIST.reduce((t, w) => t + w.D.chapters.length, 0)
+  const totQz = RW_LIST.reduce((t, w) => t + w.D.quizzes.length, 0)
+  const totPe = RW_LIST.reduce((t, w) => t + w.K.themes.length * 6, 0)
   const nexts = Object.values(UNIT_WORKS).map((w) => ({ w, x: PATHS[w.id].find((x) => !pr.done(x.id)) })).filter((o) => o.x)
   const totalUnits = Object.values(UNIT_WORKS).reduce((t, w) => t + w.data.units.length, 0)
   const totalQuizzes = Object.values(UNIT_WORKS).reduce((t, w) => t + w.data.quizzes.length, 0)
@@ -65,9 +77,9 @@ export function StudentHome() {
 
       <div className="kpis" style={{ marginTop: 18 }}>
         <div className="kpi"><b style={{ color: 'var(--gold)' }}><Star size={22} /> {api.points}</b><span>points gagnés</span></div>
-        <div className="kpi"><b>{pr.chapters + pr.allUnits}/{WORK.chapters.length + totalUnits}</b><span>chapitres et étapes lus</span></div>
-        <div className="kpi"><b>{pr.quizzes + pr.allQuizzes}/{WORK.quizzes.length + totalQuizzes}</b><span>quiz terminés</span></div>
-        <div className="kpi"><b>{pr.pe}/36</b><span>niveaux d’écriture terminés</span></div>
+        <div className="kpi"><b>{pr.chapters + pr.allUnits}/{totCh + totalUnits}</b><span>chapitres et étapes lus</span></div>
+        <div className="kpi"><b>{pr.quizzes + pr.allQuizzes}/{totQz + totalQuizzes}</b><span>quiz terminés</span></div>
+        <div className="kpi"><b>{pr.pe}/{totPe}</b><span>niveaux d’écriture terminés</span></div>
       </div>
 
       {devoirs.length > 0 && (
@@ -120,16 +132,16 @@ export function StudentHome() {
         ))}
       </div>
 
-      {level === '1bac' && nextChap && (
-        <div className="card" style={{ marginTop: 22, display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
-          <img src={img(nextChap.cover)} alt="" style={{ width: 140, borderRadius: 12, aspectRatio: '16/10', objectFit: 'cover' }} />
+      {nextChaps.map(({ w, c }, i) => (
+        <div key={w.id} className="card" style={{ marginTop: i ? 12 : 22, display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
+          <img src={img(c.cover)} alt="" style={{ width: 140, borderRadius: 12, aspectRatio: '16/10', objectFit: 'cover' }} />
           <div style={{ flex: 1, minWidth: 220 }}>
-            <div className="eyebrow">À lire maintenant</div>
-            <h3 style={{ margin: 0 }}>Chapitre {nextChap.n} · {nextChap.title}</h3>
+            <div className="eyebrow">{w.D.shortTitle} · à lire maintenant</div>
+            <h3 style={{ margin: 0 }}>Chapitre {c.n} · {c.title}</h3>
           </div>
-          <Link className="btn btn-primary" to={`/oeuvre/bam/chapitre/${nextChap.n}`}>Lire</Link>
+          <Link className="btn btn-primary" to={`${w.base}/chapitre/${c.n}`}>Lire</Link>
         </div>
-      )}
+      ))}
       {level === '1bac' && nexts.map(({ w, x }) => {
         const D = w.data
         const u = x.kind === 'unit' ? D.units[x.n - 1] : null
@@ -150,30 +162,33 @@ export function StudentHome() {
 }
 
 export function WorkHub() {
+  const { id, D: WORK, K, base } = useRW()
   const pr = useProgress()
+  const me = pr.rw[id]
+  const H = WORK.hub || {}
   return (
     <>
       <section className="hero">
         <img className="bg" src={img(WORK.cover)} alt="" />
         <div className="wrap">
-          <div className="eyebrow">{WORK.author} · {WORK.year} · 1re année du baccalauréat</div>
+          <div className="eyebrow">{WORK.author} · {WORK.year} · {WORK.levelLabel}</div>
           <h1>{WORK.title}</h1>
           <p className="lead">Choisis ton activité.</p>
         </div>
       </section>
       <div className="wrap section">
         <div className="grid g2">
-          <Link to="/oeuvre/bam/lecture" className="card card-link">
-            <img src={img('ch01_i4.webp')} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
+          <Link to={`${base}/lecture`} className="card card-link">
+            <img src={img(H.lectureImg || WORK.chapters[0].ideas[3]?.img || WORK.cover)} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
             <h2 style={{ marginTop: 14 }}>Lecture et compréhension</h2>
-            <p className="muted">Les 12 chapitres en images, les personnages et les lieux, puis 4 quiz.</p>
-            <div className="row"><span className="tag teal">{pr.chapters}/12 chapitres lus</span><span className="tag teal">{pr.quizzes}/4 quiz</span></div>
+            <p className="muted">Les {WORK.chapters.length} chapitres en images, les personnages et les lieux, puis {WORK.quizzes.length} quiz.</p>
+            <div className="row"><span className="tag teal">{me.chapters}/{WORK.chapters.length} chapitres lus</span><span className="tag teal">{me.quizzes}/{WORK.quizzes.length} quiz</span></div>
           </Link>
-          <Link to="/oeuvre/bam/ecriture" className="card card-link">
-            <img src={img('ch12_i5.webp')} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
+          <Link to={`${base}/ecriture`} className="card card-link">
+            <img src={img(K.hero)} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
             <h2 style={{ marginTop: 14 }}>Production écrite</h2>
-            <p className="muted">Comprendre la structure du texte argumentatif, puis 6 thèmes en 6 niveaux.</p>
-            <div className="row"><span className="tag teal">{pr.pe}/36 niveaux terminés</span></div>
+            <p className="muted">Comprendre la structure du texte argumentatif, puis {K.themes.length} thèmes en 6 niveaux.</p>
+            <div className="row"><span className="tag teal">{me.pe}/{K.themes.length * 6} niveaux terminés</span></div>
           </Link>
         </div>
       </div>

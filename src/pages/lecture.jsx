@@ -1,26 +1,41 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { WORK, POINTS } from '../lib/items'
+import { POINTS, quizRange } from '../lib/items'
 import { ChoiceItem, SortBoard } from '../components/interactive'
 import { Modal, Star } from '../components/ui'
 import { useProgress } from './student'
+import { useRW } from './rwscope'
 
 const img = (f) => `${import.meta.env.BASE_URL}img/${f}`
-const GROUPS = { famille: 'La famille de Sidi Mohammed', voisins: 'Les voisins de Dar Chouafa', aicha: 'Le monde de Lalla Aïcha', dehors: 'Hors de la maison' }
+const quizAfter = (D, n) => D.quizzes.find((q) => quizRange(q)[1] === n)
+
+function Portraits({ list, onPick }) {
+  return (
+    <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))' }}>
+      {list.map((c) => (
+        <button key={c.id} className="portrait" onClick={() => onPick(c)}>
+          <img src={img(c.img)} alt={c.name} loading="lazy" />
+          <b>{c.name}</b><small>{c.role}</small>
+        </button>
+      ))}
+    </div>
+  )
+}
 
 export function Lecture() {
+  const { D: WORK, base, prefix } = useRW()
   const pr = useProgress()
   const [who, setWho] = useState(null)
   const [zoom, setZoom] = useState(null)
   return (
     <>
       <section className="hero">
-        <img className="bg" src={img('bref.webp')} alt="" />
+        <img className="bg" src={img(WORK.hero)} alt="" />
         <div className="wrap">
           <div className="eyebrow">Lecture et compréhension</div>
           <h1>{WORK.title}</h1>
-          <p className="lead">Découvre l’œuvre, ses personnages et ses lieux, puis lis les douze chapitres et teste-toi avec les quiz.</p>
+          <p className="lead">{WORK.lectureLead}</p>
           <div className="row"><a className="btn btn-gold" href="#chapitres">Aller aux chapitres</a></div>
         </div>
       </section>
@@ -28,47 +43,38 @@ export function Lecture() {
         <div className="grid g2" style={{ alignItems: 'center' }}>
           <div>
             <div className="eyebrow">L’œuvre en bref</div>
-            <h2>Un roman d’enfance à Fès</h2>
+            <h2>{WORK.brefTitle}</h2>
             <table className="t"><tbody>
               {WORK.bref.rows.map(([k, v]) => <tr key={k}><th style={{ width: 130 }}>{k}</th><td>{v}</td></tr>)}
             </tbody></table>
           </div>
-          <img src={img(WORK.bref.img)} alt="Un enfant seul dans une ruelle de la médina de Fès" style={{ borderRadius: 18, boxShadow: 'var(--shadow)' }} />
+          <img src={img(WORK.bref.img)} alt={WORK.bref_alt || ''} style={{ borderRadius: 18, boxShadow: 'var(--shadow)' }} />
         </div>
 
         <div className="section">
           <div className="eyebrow">Les personnages</div>
           <h2>Qui est qui ?</h2>
           <p className="muted">Touche un portrait pour en savoir plus.</p>
-          {Object.entries(GROUPS).map(([g, label]) => (
+          {WORK.groups ? WORK.groups.map(([g, label]) => (
             <div key={g} style={{ marginTop: 18 }}>
               <h3 className="muted" style={{ fontFamily: 'var(--sans)', fontSize: '1rem' }}>{label}</h3>
-              <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))' }}>
-                {WORK.characters.filter((c) => c.group === g).map((c) => (
-                  <button key={c.id} className="portrait" onClick={() => setWho(c)}>
-                    <img src={img(c.img)} alt={c.name} loading="lazy" />
-                    <b>{c.name}</b><small>{c.role}</small>
-                  </button>
-                ))}
-              </div>
+              <Portraits list={WORK.characters.filter((c) => c.group === g)} onPick={setWho} />
             </div>
-          ))}
+          )) : <Portraits list={WORK.characters} onPick={setWho} />}
         </div>
 
-        <div className="grid g2">
-          <button className="card card-link" style={{ textAlign: 'left', cursor: 'zoom-in' }} onClick={() => setZoom({ src: img(WORK.liens), alt: 'Schéma des liens entre les personnages' })}>
-            <div className="eyebrow">Schéma</div><h3>Les liens entre les personnages</h3>
-            <img src={img(WORK.liens)} alt="Schéma des liens entre les personnages" style={{ borderRadius: 12 }} loading="lazy" />
-          </button>
-          <button className="card card-link" style={{ textAlign: 'left', cursor: 'zoom-in' }} onClick={() => setZoom({ src: img(WORK.dar), alt: 'Coupe de Dar Chouafa : qui habite à chaque étage' })}>
-            <div className="eyebrow">Schéma</div><h3>Dar Chouafa : qui habite où ?</h3>
-            <img src={img(WORK.dar)} alt="Coupe de Dar Chouafa" style={{ borderRadius: 12 }} loading="lazy" />
-          </button>
+        <div className={`grid ${WORK.schemas.length > 1 ? 'g2' : ''}`}>
+          {WORK.schemas.map((sc) => (
+            <button key={sc.img} className="card card-link" style={{ textAlign: 'left', cursor: 'zoom-in' }} onClick={() => setZoom({ src: img(sc.img), alt: sc.alt })}>
+              <div className="eyebrow">Schéma</div><h3>{sc.t}</h3>
+              <img src={img(sc.img)} alt={sc.alt} style={{ borderRadius: 12 }} loading="lazy" />
+            </button>
+          ))}
         </div>
 
         <div className="section">
           <div className="eyebrow">Les lieux</div>
-          <h2>Les lieux du roman à Fès</h2>
+          <h2>{WORK.placesTitle}</h2>
           <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))' }}>
             {WORK.places.map((l) => (
               <div key={l.name} className="center">
@@ -81,28 +87,38 @@ export function Lecture() {
         </div>
 
         <div id="chapitres" className="section">
-          <div className="eyebrow">Les 12 chapitres et les 4 quiz</div>
+          <div className="eyebrow">Les {WORK.chapters.length} chapitres et les {WORK.quizzes.length} quiz</div>
           <h2>Lis chapitre par chapitre</h2>
           <div className="grid g3">
             {WORK.chapters.map((c) => {
-              const q = c.n % 3 === 0 ? WORK.quizzes[c.n / 3 - 1] : null
+              const q = quizAfter(WORK, c.n)
               return [
-                <Link key={c.n} to={`/oeuvre/bam/chapitre/${c.n}`} className="tile">
+                <Link key={c.n} to={`${base}/chapitre/${c.n}`} className="tile">
                   <img src={img(c.cover)} alt="" loading="lazy" />
-                  {pr.done(`bam.ch.${c.n}`) && <span className="badge tag ok">✓ Lu</span>}
+                  {pr.done(`${prefix}.ch.${c.n}`) && <span className="badge tag ok">✓ Lu</span>}
                   <div className="lab"><small>CHAPITRE {c.n}</small><b>{c.title}</b></div>
                 </Link>,
                 q && (
-                  <Link key={`q${q.n}`} to={`/oeuvre/bam/quiz/${q.n}`} className="tile" style={{ outline: '3px solid var(--gold-2)', outlineOffset: -3 }}>
+                  <Link key={`q${q.n}`} to={`${base}/quiz/${q.n}`} className="tile" style={{ outline: '3px solid var(--gold-2)', outlineOffset: -3 }}>
                     <img src={img(q.cover)} alt="" loading="lazy" />
-                    <span className={`badge tag ${pr.done(`bam.quiz.${q.n}`) ? 'ok' : 'gold'}`}>{pr.done(`bam.quiz.${q.n}`) ? '✓ Terminé' : 'Quiz'}</span>
-                    <div className="lab"><small>QUIZ {q.n} · CHAPITRES {q.chapters[0]} À {q.chapters[2]}</small><b>Vrai ou faux, QCM, tableau, pour aller plus loin</b></div>
+                    <span className={`badge tag ${pr.done(`${prefix}.quiz.${q.n}`) ? 'ok' : 'gold'}`}>{pr.done(`${prefix}.quiz.${q.n}`) ? '✓ Terminé' : 'Quiz'}</span>
+                    <div className="lab"><small>QUIZ {q.n} · CHAPITRES {quizRange(q)[0]} À {quizRange(q)[1]}</small><b>{WORK.quizTile}</b></div>
                   </Link>
                 ),
               ]
             })}
           </div>
         </div>
+        {WORK.finale && (
+          <div className="card" style={{ display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap', background: 'var(--night)', color: '#fbf3e4', marginBottom: 30 }}>
+            <img src={img(WORK.finale.img)} alt="" style={{ width: 200, borderRadius: 12, aspectRatio: '4/3', objectFit: 'cover' }} loading="lazy" />
+            <div style={{ flex: 1, minWidth: 220 }}>
+              <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>La leçon finale</div>
+              <h2 style={{ color: '#fff', margin: '4px 0' }}>{WORK.finale.t}</h2>
+              <p style={{ margin: 0 }}>{WORK.finale.d}</p>
+            </div>
+          </div>
+        )}
       </div>
       {who && (
         <Modal onClose={() => setWho(null)} label={who.name}>
@@ -111,7 +127,7 @@ export function Lecture() {
             <div>
               <h2 style={{ marginBottom: 2 }}>{who.name}</h2>
               <p className="muted">{who.role}</p>
-              <ul>{who.facts.map((f) => <li key={f} style={{ marginBottom: 6 }}>{f}</li>)}</ul>
+              {who.facts?.length > 0 && <ul>{who.facts.map((f) => <li key={f} style={{ marginBottom: 6 }}>{f}</li>)}</ul>}
               {who.quote && <p className="quote">{who.quote}</p>}
             </div>
           </div>
@@ -123,22 +139,23 @@ export function Lecture() {
 }
 
 export function Chapter() {
+  const { D: WORK, base, prefix } = useRW()
   const { n } = useParams()
   const api = useApi()
   const pr = useProgress()
   const c = WORK.chapters[Number(n) - 1]
   if (!c) return <div className="wrap section">Chapitre introuvable.</div>
-  const id = `bam.ch.${c.n}`
+  const id = `${prefix}.ch.${c.n}`
   const read = pr.done(id)
   const duo = c.ideas.find((i) => i.duo)?.duo
   const markRead = () => api.record({ activity: id, item: 'lu', competence: 'Lecture', correct_first: true, correct: true, tries: 1, answer: '', points: POINTS.read })
-  const quizN = c.n % 3 === 0 ? c.n / 3 : null
+  const quizN = quizAfter(WORK, c.n)?.n
   return (
     <>
       <section className="chap-hero">
         <img src={img(c.cover)} alt="" />
         <div className="wrap">
-          <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>Chapitre {c.n} sur 12</div>
+          <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>Chapitre {c.n} sur {WORK.chapters.length}</div>
           <h1>{c.title}</h1>
           {c.phrase && <div className="phrase">{c.phrase}</div>}
         </div>
@@ -165,9 +182,9 @@ export function Chapter() {
             <button className="btn btn-gold" onClick={markRead}><Star size={16} /> J’ai lu ce chapitre (+{POINTS.read} points)</button>
           )}
           <div className="row">
-            {c.n > 1 && <Link className="btn btn-ghost" to={`/oeuvre/bam/chapitre/${c.n - 1}`}>← Chapitre {c.n - 1}</Link>}
-            {quizN ? <Link className="btn btn-primary" to={`/oeuvre/bam/quiz/${quizN}`}>Faire le quiz {quizN} →</Link>
-              : c.n < 12 && <Link className="btn btn-primary" to={`/oeuvre/bam/chapitre/${c.n + 1}`}>Chapitre {c.n + 1} →</Link>}
+            {c.n > 1 && <Link className="btn btn-ghost" to={`${base}/chapitre/${c.n - 1}`}>← Chapitre {c.n - 1}</Link>}
+            {quizN ? <Link className="btn btn-primary" to={`${base}/quiz/${quizN}`}>Faire le quiz {quizN} →</Link>
+              : c.n < WORK.chapters.length && <Link className="btn btn-primary" to={`${base}/chapitre/${c.n + 1}`}>Chapitre {c.n + 1} →</Link>}
           </div>
         </div>
       </div>
@@ -184,12 +201,13 @@ function IdeaRef({ refx, onOpen }) {
 }
 
 export function Quiz() {
+  const { D: WORK, base, prefix } = useRW()
   const { n } = useParams()
   const api = useApi()
   const q = WORK.quizzes[Number(n) - 1]
   const [step, setStep] = useState(0)
   const [look, setLook] = useState(null)
-  const act = `bam.quiz.${q?.n}`
+  const act = `${prefix}.quiz.${q?.n}`
   const score = useMemo(() => {
     const rows = api.attempts.filter((a) => a.activity === act)
     return { pts: rows.reduce((s, a) => s + (a.points || 0), 0), n: new Set(rows.map((a) => a.item)).size }
@@ -198,13 +216,14 @@ export function Quiz() {
   const total = q.sections.reduce((s, x) => s + x.items.length, 0)
   const sec = q.sections[step]
   const idea = (r) => WORK.chapters[r[0] - 1].ideas[r[1] - 1]
-  const labels = ['Vrai ou faux ?', 'Choisis la bonne réponse', 'Complète le tableau', 'Pour aller plus loin', 'À retenir']
+  const labels = [...q.sections.map((x) => x.label || x.title), 'À retenir']
+  const [c0, c1] = quizRange(q)
   return (
     <>
       <section className="chap-hero" style={{ minHeight: 240 }}>
         <img src={img(q.cover)} alt="" />
         <div className="wrap">
-          <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>Chapitres {q.chapters[0]} à {q.chapters[2]}</div>
+          <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>{WORK.shortTitle} · chapitres {c0} à {c1}</div>
           <h1>Quiz {q.n}</h1>
           <div className="row"><span className="pts"><Star size={15} /> {score.pts} points dans ce quiz</span><span className="tag">{score.n}/{total} réponses</span></div>
         </div>
@@ -221,7 +240,7 @@ export function Quiz() {
           {step < 4 && <h2>{sec.title}</h2>}
           {step < 4 && sec.type === 'sort' && (
             <SortBoard key={step} activity={act} itemPrefix={`s${step}.`} competence="Repérage" cats={sec.cats} items={sec.items}
-              hintFor={() => `Relis le titre des colonnes : « ${sec.cats.join(' », « ')} ». Pense au chapitre où ce mot apparaît.`} />
+              hintFor={() => sec.hint || `Relis le titre des colonnes : « ${sec.cats.join(' », « ')} ». Pense au chapitre où ce mot apparaît.`} />
           )}
           {step < 4 && sec.type !== 'sort' && sec.items.map((it, ii) => (
             <ChoiceItem key={`${step}.${ii}`} activity={act} item={`s${step}.${ii}`}
@@ -243,8 +262,8 @@ export function Quiz() {
           <div className="row spread" style={{ marginTop: 22 }}>
             {step > 0 ? <button className="btn btn-ghost" onClick={() => setStep(step - 1)}>← Précédent</button> : <span />}
             {step < 4 ? <button className="btn btn-primary" onClick={() => setStep(step + 1)}>{step === 3 ? 'À retenir →' : 'Niveau suivant →'}</button>
-              : q.n < 4 ? <Link className="btn btn-primary" to={`/oeuvre/bam/chapitre/${q.chapters[2] + 1}`}>Chapitre {q.chapters[2] + 1} →</Link>
-                : <Link className="btn btn-primary" to="/oeuvre/bam/ecriture">Passer à la production écrite →</Link>}
+              : c1 < WORK.chapters.length ? <Link className="btn btn-primary" to={`${base}/chapitre/${c1 + 1}`}>Chapitre {c1 + 1} →</Link>
+                : <Link className="btn btn-primary" to={`${base}/ecriture`}>Passer à la production écrite →</Link>}
           </div>
         </div>
       </div>

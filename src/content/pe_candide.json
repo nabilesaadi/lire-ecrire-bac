@@ -1,0 +1,2137 @@
+{
+ "id": "candide",
+ "title": "Production écrite argumentative — Candide",
+ "level": "2e année du baccalauréat",
+ "hero": "cand/ch30_i3.webp",
+ "examIntro": "À l’examen national, on te demande de donner ton avis sur une question liée à l’œuvre, avec des arguments et des exemples. Voici comment construire ton texte.",
+ "vfHint": "Pense à ce que tu sais du roman : les personnages, les lieux et les aventures de Candide.",
+ "semestre": "Les sept thèmes du premier semestre",
+ "themes": [
+  {
+   "n": 1,
+   "title": "La liberté des jeunes face aux parents",
+   "img": "cand/ch01_i4.webp",
+   "episode": "Candide chassé du château",
+   "oeuvre": {
+    "chapitres": "Chapitres 1, 15 et 30",
+    "texte": "Au début du roman, Candide est un jeune homme qui vit dans le château du baron. Il aime Cunégonde, la fille du baron. Un jour, le baron les voit s’embrasser : il chasse Candide du château à coups de pied (chapitre 1). Plus tard, le frère de Cunégonde refuse aussi leur mariage, parce que Candide n’est pas noble (chapitre 15). Il faut attendre la fin du roman pour que Candide épouse enfin Cunégonde (chapitre 30). Dans Candide, ce sont les parents et la famille qui décident à la place des jeunes. Et toi, es-tu libre de choisir ta vie ?"
+   },
+   "objectif": {
+    "name": "Donner mon avis",
+    "rows": [
+     "Donner mon avis"
+    ],
+    "expressions": [
+     "À mon avis,",
+     "Je pense que",
+     "Selon moi,",
+     "Je suis convaincu(e) que"
+    ],
+    "examples": [
+     "À mon avis, les jeunes doivent choisir leurs études.",
+     "Je pense que les parents donnent souvent de bons conseils."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "La liberté",
+      "L’autorité",
+      "Un conseil",
+      "Chasser"
+     ],
+     "defs": [
+      "le pouvoir de commander et de se faire obéir",
+      "obliger quelqu’un à partir d’un lieu",
+      "le droit de choisir et d’agir sans être obligé",
+      "une idée qu’on donne à quelqu’un pour l’aider à décider"
+     ],
+     "answer": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "vf": [
+     {
+      "q": "Candide aime Cunégonde, la fille du baron.",
+      "a": true
+     },
+     {
+      "q": "Le baron accepte que Candide épouse sa fille.",
+      "a": false
+     },
+     {
+      "q": "Le baron chasse Candide du château.",
+      "a": true
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Liberté",
+      "options": [
+       "choix",
+       "prison",
+       "droit",
+       "indépendance",
+       "chaussette",
+       "décider",
+       "frigo",
+       "autonomie"
+      ],
+      "answer": [
+       "choix",
+       "droit",
+       "indépendance",
+       "décider",
+       "autonomie"
+      ]
+     },
+     {
+      "mot": "Parents",
+      "options": [
+       "protection",
+       "autoroute",
+       "conseil",
+       "amour",
+       "piscine",
+       "éducation",
+       "ciseaux",
+       "autorité"
+      ],
+      "answer": [
+       "protection",
+       "conseil",
+       "amour",
+       "éducation",
+       "autorité"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "Ensuite, les jeunes ont le droit de choisir leur vie. Dans Candide, le baron chasse Candide du château parce qu’il aime Cunégonde : les jeunes amoureux ne sont pas libres.",
+     "Aujourd’hui, beaucoup de jeunes veulent choisir seuls leurs études, leurs amis et leur avenir. Mais les parents veulent souvent décider pour eux. Qui doit choisir : les parents ou les jeunes ?",
+     "En conclusion, les parents doivent conseiller leurs enfants, mais ils doivent aussi respecter leurs choix.",
+     "D’abord, les parents ont de l’expérience. Ils connaissent la vie et ils peuvent donner de bons conseils à leurs enfants pour éviter les erreurs."
+    ],
+    "answer": [
+     1,
+     3,
+     0,
+     2
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "Beaucoup de jeunes veulent être libres de choisir leur vie. [[1]], les jeunes doivent avoir le droit de décider de leurs études. [[2]], dans Candide, le baron chasse Candide du château parce qu’il aime Cunégonde. [[3]], les parents ont de l’expérience et leurs conseils sont utiles. [[4]], les jeunes et les parents doivent discuter ensemble pour prendre les bonnes décisions.",
+    "holes": [
+     {
+      "opts": [
+       "Par exemple",
+       "À mon avis",
+       "En conclusion"
+      ],
+      "a": 1,
+      "hint": "Ce trou introduit ton avis."
+     },
+     {
+      "opts": [
+       "Par exemple",
+       "Cependant",
+       "En conclusion"
+      ],
+      "a": 0,
+      "hint": "La phrase qui suit donne un exemple tiré de Candide."
+     },
+     {
+      "opts": [
+       "D’abord",
+       "Par exemple",
+       "Cependant"
+      ],
+      "a": 2,
+      "hint": "La phrase qui suit apporte une idée opposée."
+     },
+     {
+      "opts": [
+       "Par exemple",
+       "En conclusion",
+       "D’abord"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Classe-les dans le tableau en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "Les jeunes doivent choisir",
+      "Les parents doivent décider"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "Les jeunes connaissent mieux que personne leurs goûts et leurs rêves.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "Les parents ont plus d’expérience de la vie.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Un jeune qui choisit seul devient plus responsable.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "À 17 ans, on peut faire des erreurs graves.",
+       "cat": 1
+      },
+      {
+       "l": "e",
+       "t": "Les jeunes Marocains aiment beaucoup le football.",
+       "cat": -1
+      },
+      {
+       "l": "f",
+       "t": "Les parents veulent protéger leurs enfants des dangers.",
+       "cat": 1
+      },
+      {
+       "l": "g",
+       "t": "Choisir ses études, c’est choisir sa vie : c’est au jeune de décider.",
+       "cat": 0
+      }
+     ],
+     "intrus_why": "Elle parle de football, pas de la liberté des jeunes face aux parents."
+    },
+    "good": {
+     "opts": [
+      "Le Maroc exporte beaucoup d’oranges.",
+      "Les jeunes doivent pouvoir choisir leurs études avec l’aide de leurs parents.",
+      "La mer Méditerranée est très belle en été.",
+      "Les téléphones coûtent de plus en plus cher."
+     ],
+     "a": 1
+    }
+   },
+   "n3": [
+    {
+     "s1": "Les jeunes doivent être libres de choisir leurs études.",
+     "s3": "Ainsi, ils travailleront avec plaisir et motivation.",
+     "opts": [
+      "En effet, ils connaissent mieux que personne leurs goûts et leurs rêves.",
+      "La pluie tombe souvent en hiver à Tétouan.",
+      "Les jeunes ne savent jamais ce qu’ils aiment."
+     ],
+     "a": 0
+    },
+    {
+     "s1": "Dans Candide, les jeunes amoureux ne sont pas libres.",
+     "s3": "Les jeunes ne peuvent pas choisir la personne qu’ils aiment.",
+     "opts": [
+      "Le thé à la menthe est une boisson marocaine.",
+      "Le baron organise une grande fête pour le mariage de Candide et Cunégonde.",
+      "Par exemple, le baron chasse Candide du château parce qu’il a embrassé Cunégonde."
+     ],
+     "a": 2
+    },
+    {
+     "s1": "Cependant, les parents ont souvent raison de donner leur avis.",
+     "s3": "C’est pourquoi les jeunes doivent écouter leurs conseils.",
+     "opts": [
+      "Les parents ne connaissent rien à la vie.",
+      "Ils ont de l’expérience et ils veulent protéger leurs enfants.",
+      "Les avions sont plus rapides que les trains."
+     ],
+     "a": 1
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « La liberté des jeunes face aux parents ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (À mon avis, Je pense que, Selon moi, Je suis convaincu(e) que).",
+    "aide": {
+     "level": "forte",
+     "desc": "Commence tes phrases avec les débuts proposés sur les lignes.",
+     "ideas": [
+      "l’expérience des parents",
+      "le droit de choisir sa vie",
+      "Candide chassé du château",
+      "devenir responsable"
+     ],
+     "starters": [
+      "À mon avis,",
+      "D’abord,",
+      "Par exemple,",
+      "Ensuite,",
+      "En conclusion,"
+     ]
+    }
+   },
+   "n5": {
+    "sujet": "Les parents doivent-ils décider à la place de leurs enfants ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : donner mon avis.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "title": "Les réseaux sociaux : vie réelle ou vie parfaite ?",
+   "img": "cand/ch01_i2.webp",
+   "episode": "Pangloss et son optimisme",
+   "oeuvre": {
+    "chapitres": "Chapitres 1, 3 et 5",
+    "texte": "Pangloss, le professeur de Candide, répète que tout va bien dans le monde (chapitre 1). Pourtant, pendant son voyage, Candide voit la guerre (chapitre 3) et le terrible tremblement de terre de Lisbonne (chapitre 5). Pangloss ne veut pas voir la réalité. Aujourd’hui, sur Instagram ou TikTok, beaucoup de gens font comme Pangloss : ils montrent une vie toujours parfaite, avec des voyages, des fêtes et des sourires, et ils cachent leurs problèmes. Et toi, crois-tu tout ce que tu vois sur les réseaux sociaux ?"
+   },
+   "objectif": {
+    "name": "Présenter et ajouter des arguments",
+    "rows": [
+     "Présenter et ajouter un argument"
+    ],
+    "expressions": [
+     "D’abord,",
+     "Ensuite,",
+     "De plus,",
+     "Enfin,"
+    ],
+    "examples": [
+     "D’abord, les réseaux sociaux nous permettent de parler avec nos amis.",
+     "De plus, ils montrent souvent une vie trop parfaite."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "Un abonné",
+      "Les apparences",
+      "Optimiste",
+      "Un filtre"
+     ],
+     "defs": [
+      "ce que l’on montre aux autres, et qui n’est pas toujours la vérité",
+      "qui pense que tout va bien ou que tout ira bien",
+      "un effet qui change et embellit une photo",
+      "une personne qui suit ton compte sur un réseau social"
+     ],
+     "answer": [
+      3,
+      0,
+      1,
+      2
+     ]
+    },
+    "vf": [
+     {
+      "q": "Pangloss pense que le monde est très mauvais.",
+      "a": false
+     },
+     {
+      "q": "Pangloss est le professeur de Candide.",
+      "a": true
+     },
+     {
+      "q": "Pendant son voyage, Candide voit la guerre et beaucoup de malheurs.",
+      "a": true
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Réseaux sociaux",
+      "options": [
+       "like",
+       "brouette",
+       "abonné",
+       "partage",
+       "chameau",
+       "photo",
+       "encrier",
+       "vidéo"
+      ],
+      "answer": [
+       "like",
+       "abonné",
+       "partage",
+       "photo",
+       "vidéo"
+      ]
+     },
+     {
+      "mot": "Vie réelle",
+      "options": [
+       "travail",
+       "filtre",
+       "famille",
+       "problèmes",
+       "licorne",
+       "efforts",
+       "baguette magique",
+       "quotidien"
+      ],
+      "answer": [
+       "travail",
+       "famille",
+       "problèmes",
+       "efforts",
+       "quotidien"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "En conclusion, les réseaux sociaux ne montrent pas toute la réalité. Il faut les utiliser avec intelligence et garder les yeux ouverts sur la vraie vie.",
+     "D’abord, beaucoup de gens montrent seulement les bons moments : les voyages, les fêtes, les beaux vêtements. Ils cachent leurs problèmes et leurs moments tristes.",
+     "Aujourd’hui, presque tous les jeunes utilisent Instagram ou TikTok. Sur ces réseaux, la vie des autres semble toujours parfaite. Mais est-ce la vraie vie ?",
+     "Ensuite, cette vie parfaite peut rendre les jeunes tristes. Ils comparent leur vie avec celle des autres. Ils oublient que beaucoup de gens disent, comme Pangloss dans Candide, que tout va bien alors que ce n’est pas vrai."
+    ],
+    "answer": [
+     2,
+     1,
+     3,
+     0
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "Les réseaux sociaux occupent une grande place dans la vie des jeunes. [[1]], ils permettent de parler avec ses amis et de partager des photos. [[2]], ils donnent beaucoup d’informations et d’idées. [[3]], ils montrent souvent une vie trop parfaite, comme Pangloss qui répète que tout va bien. [[4]], il faut les utiliser sans oublier la vie réelle.",
+    "holes": [
+     {
+      "opts": [
+       "En conclusion",
+       "D’abord",
+       "Cependant"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce le premier argument."
+     },
+     {
+      "opts": [
+       "De plus",
+       "En conclusion",
+       "D’abord"
+      ],
+      "a": 0,
+      "hint": "Ce trou ajoute un deuxième argument."
+     },
+     {
+      "opts": [
+       "D’abord",
+       "Par exemple",
+       "Cependant"
+      ],
+      "a": 2,
+      "hint": "La phrase qui suit apporte une idée opposée."
+     },
+     {
+      "opts": [
+       "Par exemple",
+       "D’abord",
+       "Pour conclure"
+      ],
+      "a": 2,
+      "hint": "Ce trou annonce la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent les avantages des réseaux sociaux, d’autres montrent leurs dangers. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "Avantages",
+      "Dangers"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "Ils permettent de garder le contact avec la famille qui vit à l’étranger.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "Ils montrent une vie trop parfaite qui rend certains jeunes tristes.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "On peut apprendre beaucoup de choses grâce aux vidéos éducatives.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "Les jeunes passent trop de temps sur leur téléphone et dorment mal.",
+       "cat": 1
+      },
+      {
+       "l": "e",
+       "t": "Le couscous se mange souvent le vendredi au Maroc.",
+       "cat": -1
+      },
+      {
+       "l": "f",
+       "t": "Ils aident les artistes et les petits commerçants à se faire connaître.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "Des inconnus peuvent voler nos photos et nos informations.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle du couscous, pas des réseaux sociaux."
+    },
+    "good": {
+     "opts": [
+      "Les plages d’Agadir attirent beaucoup de touristes.",
+      "Le prix de la viande augmente pendant les fêtes.",
+      "Le basket est un sport d’équipe.",
+      "Sur les réseaux sociaux, les gens montrent souvent une vie plus belle que la réalité."
+     ],
+     "a": 3
+    }
+   },
+   "n3": [
+    {
+     "s1": "Les réseaux sociaux ne montrent pas toujours la vérité.",
+     "s3": "Les autres voient donc une image fausse de leur vie.",
+     "opts": [
+      "Le chameau peut marcher longtemps dans le désert.",
+      "En effet, beaucoup de gens publient seulement leurs plus belles photos, avec des filtres.",
+      "Tout ce qu’on voit sur Instagram est toujours vrai."
+     ],
+     "a": 1
+    },
+    {
+     "s1": "Dans Candide, Pangloss refuse de voir la réalité.",
+     "s3": "Il ne voit pas les malheurs qui sont devant ses yeux.",
+     "opts": [
+      "Par exemple, il répète que tout va bien, même après la guerre et le tremblement de terre.",
+      "Les oranges de Berkane sont très sucrées.",
+      "Il dit que le monde est rempli de malheurs."
+     ],
+     "a": 0
+    },
+    {
+     "s1": "De plus, cette vie parfaite peut rendre les jeunes malheureux.",
+     "s3": "C’est pourquoi il faut se rappeler que personne n’a une vie parfaite.",
+     "opts": [
+      "Les jeunes ne regardent jamais les photos des autres.",
+      "Le train relie Tanger à Casablanca.",
+      "Ils comparent leur vie avec celle des autres et se sentent nuls."
+     ],
+     "a": 2
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « Les réseaux sociaux : vie réelle ou vie parfaite ? ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (D’abord, Ensuite, De plus, Enfin).",
+    "aide": {
+     "level": "forte",
+     "desc": "Commence tes phrases avec les débuts proposés sur les lignes.",
+     "ideas": [
+      "les photos avec filtres",
+      "se comparer aux autres",
+      "Pangloss dit que tout va bien",
+      "garder le contact avec la famille"
+     ],
+     "starters": [
+      "À mon avis,",
+      "D’abord,",
+      "De plus,",
+      "Par exemple,",
+      "En conclusion,"
+     ]
+    }
+   },
+   "n5": {
+    "sujet": "Les réseaux sociaux montrent-ils la vraie vie ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : présenter et ajouter des arguments.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "title": "L’émigration : rêve ou illusion ?",
+   "img": "cand/ch10_i3.webp",
+   "episode": "Le départ pour l’Amérique",
+   "oeuvre": {
+    "chapitres": "Chapitres 10 à 19",
+    "texte": "Chassé de son pays, Candide voyage beaucoup. Avec Cunégonde et la vieille, il prend le bateau à Cadix pour aller en Amérique (chapitres 10 à 13). Il croit que, dans le Nouveau Monde, tout ira mieux qu’en Europe. Mais en Amérique, il rencontre aussi la violence, l’esclavage et des voleurs (chapitres 14 à 19). Comme Candide, beaucoup de jeunes rêvent aujourd’hui de partir à l’étranger pour trouver une vie meilleure. Et toi, voudrais-tu partir vivre à l’étranger ?"
+   },
+   "objectif": {
+    "name": "Donner un exemple",
+    "rows": [
+     "Donner un exemple"
+    ],
+    "expressions": [
+     "Par exemple,",
+     "Prenons l’exemple de",
+     "Comme",
+     "Ainsi,"
+    ],
+    "examples": [
+     "Par exemple, Candide part en Amérique pour trouver un monde meilleur.",
+     "Prenons l’exemple de mon cousin : il travaille en Espagne et aide sa famille."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "Émigrer",
+      "Une illusion",
+      "Le mal du pays",
+      "Un visa"
+     ],
+     "defs": [
+      "la tristesse d’être loin de son pays et de sa famille",
+      "quitter son pays pour aller vivre dans un autre pays",
+      "un document qui permet d’entrer dans un pays étranger",
+      "une idée fausse qui semble vraie"
+     ],
+     "answer": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "vf": [
+     {
+      "q": "Candide prend le bateau pour aller en Amérique.",
+      "a": true
+     },
+     {
+      "q": "Cunégonde et la vieille partent aussi pour l’Amérique.",
+      "a": true
+     },
+     {
+      "q": "Candide voyage toujours seul, sans aucun compagnon.",
+      "a": false
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Émigration",
+      "options": [
+       "voyage",
+       "crayon",
+       "frontière",
+       "valise",
+       "girafe",
+       "départ",
+       "carotte",
+       "étranger"
+      ],
+      "answer": [
+       "voyage",
+       "frontière",
+       "valise",
+       "départ",
+       "étranger"
+      ]
+     },
+     {
+      "mot": "Rêve",
+      "options": [
+       "espoir",
+       "ciment",
+       "avenir",
+       "poubelle",
+       "réussite",
+       "ambition",
+       "embouteillage",
+       "désir"
+      ],
+      "answer": [
+       "espoir",
+       "avenir",
+       "réussite",
+       "ambition",
+       "désir"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "D’abord, l’émigration peut changer la vie. Prenons l’exemple des jeunes qui partent étudier à l’étranger : ils trouvent souvent un bon travail et ils aident leur famille.",
+     "En conclusion, l’émigration peut être une chance, mais il faut bien la préparer et ne pas croire que tout sera facile.",
+     "Ensuite, la vie à l’étranger est souvent difficile. Dans Candide, le héros part en Amérique pour trouver un monde meilleur, mais il y trouve aussi la violence et l’injustice.",
+     "Chaque année, beaucoup de jeunes Marocains rêvent de partir vivre en Europe ou au Canada. Ils pensent trouver là-bas une vie meilleure. Mais l’émigration est-elle toujours un rêve ?"
+    ],
+    "answer": [
+     3,
+     0,
+     2,
+     1
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "Beaucoup de jeunes pensent que la vie est plus facile à l’étranger. [[1]], dans Candide, le héros prend le bateau pour l’Amérique parce qu’il croit que le Nouveau Monde est meilleur. [[2]], il y rencontre la violence, l’esclavage et des voleurs. [[3]], de nombreux émigrés vivent loin de leur famille et souffrent du mal du pays. [[4]], il faut bien réfléchir avant de partir.",
+    "holes": [
+     {
+      "opts": [
+       "Cependant",
+       "Par exemple",
+       "En conclusion"
+      ],
+      "a": 1,
+      "hint": "La phrase qui suit donne un exemple tiré de Candide."
+     },
+     {
+      "opts": [
+       "Pourtant",
+       "Par exemple",
+       "D’abord"
+      ],
+      "a": 0,
+      "hint": "La phrase qui suit montre le contraire de ce que Candide croyait."
+     },
+     {
+      "opts": [
+       "En conclusion",
+       "Cependant",
+       "De plus"
+      ],
+      "a": 2,
+      "hint": "Ce trou ajoute une autre difficulté."
+     },
+     {
+      "opts": [
+       "D’abord",
+       "C’est pourquoi",
+       "Par exemple"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce la conséquence : la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent que l’émigration est une chance, d’autres montrent qu’elle est difficile. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "C’est une chance",
+      "C’est difficile"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "On peut trouver un meilleur travail et un meilleur salaire.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "L’émigré se sent souvent seul, loin de sa famille.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Les études à l’étranger ouvrent de nouvelles portes.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "Les dromadaires vivent dans le désert.",
+       "cat": -1
+      },
+      {
+       "l": "e",
+       "t": "Certains émigrés vivent dans la pauvreté et subissent le racisme.",
+       "cat": 1
+      },
+      {
+       "l": "f",
+       "t": "On découvre une nouvelle culture et une nouvelle langue.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "Le voyage clandestin en mer est très dangereux.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle des dromadaires, pas de l’émigration."
+    },
+    "good": {
+     "opts": [
+      "Les émigrés envoient souvent de l’argent pour aider leur famille au Maroc.",
+      "Le tennis se joue avec une raquette.",
+      "Les roses fleurissent au printemps.",
+      "La lune tourne autour de la Terre."
+     ],
+     "a": 0
+    }
+   },
+   "n3": [
+    {
+     "s1": "L’émigration peut être une vraie chance.",
+     "s3": "Ainsi, ils peuvent aider leur famille restée au pays.",
+     "opts": [
+      "Les émigrés ne trouvent jamais de travail.",
+      "Par exemple, beaucoup d’émigrés trouvent un bon travail et gagnent bien leur vie.",
+      "Le Rif est une région montagneuse."
+     ],
+     "a": 1
+    },
+    {
+     "s1": "Dans Candide, le héros croit que le Nouveau Monde est meilleur que l’Europe.",
+     "s3": "Son rêve devient une déception.",
+     "opts": [
+      "Le thé se boit avec beaucoup de sucre.",
+      "En Amérique, il ne rencontre que des gens honnêtes.",
+      "Pourtant, en Amérique, il rencontre aussi la violence, l’esclavage et des voleurs."
+     ],
+     "a": 2
+    },
+    {
+     "s1": "Cependant, la vie à l’étranger n’est pas toujours facile.",
+     "s3": "C’est pourquoi il faut bien préparer son départ.",
+     "opts": [
+      "L’émigré doit apprendre une nouvelle langue et vivre loin des siens.",
+      "Les pommes sont rouges ou vertes.",
+      "Tous les émigrés sont riches et heureux."
+     ],
+     "a": 0
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « L’émigration : rêve ou illusion ? ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (Par exemple, Prenons l’exemple de, Comme, Ainsi).",
+    "aide": {
+     "level": "forte",
+     "desc": "Commence tes phrases avec les débuts proposés sur les lignes.",
+     "ideas": [
+      "trouver un bon travail",
+      "le mal du pays",
+      "Candide en Amérique",
+      "préparer son départ"
+     ],
+     "starters": [
+      "À mon avis,",
+      "D’abord,",
+      "Par exemple,",
+      "Ensuite,",
+      "En conclusion,"
+     ]
+    }
+   },
+   "n5": {
+    "sujet": "L’émigration est-elle toujours la solution pour réussir sa vie ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : donner un exemple.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "title": "Parler de ses malheurs : faiblesse ou force ?",
+   "img": "cand/ch10_i4.webp",
+   "episode": "L’histoire de la vieille",
+   "oeuvre": {
+    "chapitres": "Chapitres 10, 11 et 12",
+    "texte": "Sur le bateau qui va en Amérique, Cunégonde se plaint : elle pense que personne n’a souffert autant qu’elle (chapitre 10). Alors, la vieille raconte toute l’histoire de sa vie : elle aussi a connu de très grands malheurs (chapitres 11 et 12). À la fin de son récit, elle dit que chaque passager du bateau a souffert dans sa vie. En écoutant la vieille, Cunégonde comprend qu’elle n’est pas la seule à souffrir. Et toi, parles-tu de tes problèmes, ou préfères-tu te taire ?"
+   },
+   "objectif": {
+    "name": "Expliquer",
+    "rows": [
+     "Expliquer"
+    ],
+    "expressions": [
+     "car",
+     "parce que",
+     "en effet,",
+     "puisque"
+    ],
+    "examples": [
+     "Il faut parler de ses problèmes, car on se sent mieux après.",
+     "En effet, une personne qui nous écoute peut nous aider."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "Une souffrance",
+      "Se confier",
+      "Le soulagement",
+      "La pudeur"
+     ],
+     "defs": [
+      "raconter ses problèmes à une personne de confiance",
+      "la gêne de montrer ses sentiments ou sa vie privée",
+      "une douleur du corps ou du cœur",
+      "le sentiment d’aller mieux après une douleur"
+     ],
+     "answer": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "vf": [
+     {
+      "q": "La vieille refuse de raconter sa vie.",
+      "a": false
+     },
+     {
+      "q": "Cunégonde pense que personne n’a souffert autant qu’elle.",
+      "a": true
+     },
+     {
+      "q": "La vieille a connu de très grands malheurs.",
+      "a": true
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Écouter",
+      "options": [
+       "attention",
+       "marteau",
+       "silence",
+       "conseil",
+       "autoroute",
+       "oreille",
+       "aspirateur",
+       "patience"
+      ],
+      "answer": [
+       "attention",
+       "silence",
+       "conseil",
+       "oreille",
+       "patience"
+      ]
+     },
+     {
+      "mot": "Souffrance",
+      "options": [
+       "douleur",
+       "bonbon",
+       "tristesse",
+       "larmes",
+       "trottinette",
+       "blessure",
+       "sandwich",
+       "peine"
+      ],
+      "answer": [
+       "douleur",
+       "tristesse",
+       "larmes",
+       "blessure",
+       "peine"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "Ensuite, certaines personnes n’aiment pas parler de leur vie privée. Elles ont peur d’être jugées ou que leurs problèmes soient répétés à tout le monde.",
+     "En conclusion, il est utile de parler de ses souffrances, mais il faut bien choisir la personne à qui on se confie.",
+     "Quand on est triste ou qu’on a un problème, on peut choisir de se taire ou d’en parler. Beaucoup de jeunes cachent leurs souffrances. Faut-il en parler ?",
+     "D’abord, parler de ses souffrances fait du bien, car on se sent moins seul. Dans Candide, la vieille raconte ses malheurs à Cunégonde, qui comprend alors qu’elle n’est pas la seule à souffrir."
+    ],
+    "answer": [
+     2,
+     3,
+     0,
+     1
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "Beaucoup de jeunes gardent leurs problèmes pour eux. Pourtant, il est important d’en parler, [[1]] on se sent souvent mieux après. [[2]], une personne qui nous écoute peut nous donner des conseils et du courage. Dans Candide, la vieille raconte ses malheurs à Cunégonde [[3]] elle veut lui montrer qu’elle n’est pas la seule à souffrir. [[4]], parler de ses souffrances n’est pas une faiblesse, mais une force.",
+    "holes": [
+     {
+      "opts": [
+       "par exemple",
+       "car",
+       "en conclusion"
+      ],
+      "a": 1,
+      "hint": "La suite explique pourquoi il est important d’en parler."
+     },
+     {
+      "opts": [
+       "En effet",
+       "Cependant",
+       "En conclusion"
+      ],
+      "a": 0,
+      "hint": "La phrase qui suit explique et précise l’idée précédente."
+     },
+     {
+      "opts": [
+       "mais",
+       "donc",
+       "parce qu’"
+      ],
+      "a": 2,
+      "hint": "La suite donne la raison (la cause) du récit de la vieille."
+     },
+     {
+      "opts": [
+       "Parce que",
+       "En conclusion",
+       "Par exemple"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent qu’il faut parler de ses malheurs, d’autres qu’il vaut mieux se taire. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "Il faut en parler",
+      "Il vaut mieux se taire"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "On se sent moins seul quand quelqu’un nous écoute.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "Certaines personnes répètent nos problèmes à tout le monde.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Un ami ou un professionnel peut nous donner de bons conseils.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "On a peur d’être jugé ou de paraître faible.",
+       "cat": 1
+      },
+      {
+       "l": "e",
+       "t": "Le printemps commence au mois de mars.",
+       "cat": -1
+      },
+      {
+       "l": "f",
+       "t": "Garder sa tristesse pour soi peut rendre malade.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "Certains problèmes sont trop personnels pour être racontés.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle du printemps, pas de nos malheurs."
+    },
+    "good": {
+     "opts": [
+      "Les voitures rouges sont plus belles que les voitures bleues.",
+      "L’eau bout à cent degrés.",
+      "Parler de ses problèmes à une personne de confiance aide à aller mieux.",
+      "Les bibliothèques ferment le dimanche."
+     ],
+     "a": 2
+    }
+   },
+   "n3": [
+    {
+     "s1": "Parler de ses souffrances fait du bien.",
+     "s3": "On se sent alors plus léger et moins seul.",
+     "opts": [
+      "En effet, quand quelqu’un nous écoute, notre tristesse diminue.",
+      "Les poissons vivent dans l’eau.",
+      "Parler de ses problèmes rend toujours plus triste."
+     ],
+     "a": 0
+    },
+    {
+     "s1": "Dans Candide, Cunégonde croit que personne n’a souffert autant qu’elle.",
+     "s3": "Cunégonde comprend alors qu’elle n’est pas la seule à souffrir.",
+     "opts": [
+      "La vieille refuse de lui parler.",
+      "Les marchés sont pleins de monde le dimanche.",
+      "Alors, la vieille lui raconte tous les malheurs de sa vie."
+     ],
+     "a": 2
+    },
+    {
+     "s1": "Cependant, certaines personnes préfèrent se taire.",
+     "s3": "C’est pourquoi il faut choisir une personne de confiance.",
+     "opts": [
+      "Le soleil se couche le soir.",
+      "Elles ont peur que leurs problèmes soient répétés à tout le monde.",
+      "Tout le monde aime raconter sa vie à des inconnus."
+     ],
+     "a": 1
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « Parler de ses malheurs : faiblesse ou force ? ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (car, parce que, en effet, puisque).",
+    "aide": {
+     "level": "moyenne",
+     "desc": "Commence tes phrases avec les débuts proposés sur les lignes. Cherche tes idées dans les niveaux 2 et 3.",
+     "ideas": [],
+     "starters": [
+      "À mon avis,",
+      "D’abord,",
+      "En effet,",
+      "Ensuite,",
+      "En conclusion,"
+     ]
+    }
+   },
+   "n5": {
+    "sujet": "Faut-il parler de ses souffrances ou les garder pour soi ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : expliquer.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "title": "L’argent fait-il le bonheur ?",
+   "img": "cand/ch17_i2.webp",
+   "episode": "L’Eldorado, pays de l’or",
+   "oeuvre": {
+    "chapitres": "Chapitres 17, 18 et 19",
+    "texte": "En Amérique, Candide et son valet Cacambo découvrent un pays extraordinaire : l’Eldorado (chapitres 17 et 18). Là-bas, l’or et les pierres précieuses sont partout : les enfants jouent même avec de l’or comme avec des cailloux ! Les habitants vivent en paix et sont heureux. Pourtant, Candide quitte ce pays avec des moutons chargés d’or : il veut être riche et retrouver Cunégonde. Mais en route, il perd presque tous ses moutons, et sa richesse attire les voleurs et les menteurs (chapitre 19). Et toi, penses-tu que l’argent rend heureux ?"
+   },
+   "objectif": {
+    "name": "Opposer deux idées",
+    "rows": [
+     "Opposer"
+    ],
+    "expressions": [
+     "mais",
+     "cependant,",
+     "pourtant,",
+     "toutefois,"
+    ],
+    "examples": [
+     "L’argent est utile, mais il ne suffit pas pour être heureux.",
+     "Candide est très riche. Pourtant, il n’est pas heureux."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "La richesse",
+      "Le bonheur",
+      "Avide",
+      "Une utopie"
+     ],
+     "defs": [
+      "qui veut toujours plus d’argent",
+      "le fait d’avoir beaucoup d’argent et de biens",
+      "un pays ou un monde parfait qui n’existe pas",
+      "un état de joie et de satisfaction qui dure"
+     ],
+     "answer": [
+      1,
+      3,
+      0,
+      2
+     ]
+    },
+    "vf": [
+     {
+      "q": "En Eldorado, les enfants jouent avec de l’or et des pierres précieuses.",
+      "a": true
+     },
+     {
+      "q": "Candide reste toute sa vie en Eldorado.",
+      "a": false
+     },
+     {
+      "q": "Candide quitte l’Eldorado avec des moutons chargés d’or.",
+      "a": true
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Argent",
+      "options": [
+       "salaire",
+       "arc-en-ciel",
+       "richesse",
+       "banque",
+       "pantoufle",
+       "dépenser",
+       "escargot",
+       "économies"
+      ],
+      "answer": [
+       "salaire",
+       "richesse",
+       "banque",
+       "dépenser",
+       "économies"
+      ]
+     },
+     {
+      "mot": "Bonheur",
+      "options": [
+       "joie",
+       "dispute",
+       "sourire",
+       "paix",
+       "parking",
+       "amour",
+       "robinet",
+       "satisfaction"
+      ],
+      "answer": [
+       "joie",
+       "sourire",
+       "paix",
+       "amour",
+       "satisfaction"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "En conclusion, l’argent aide à vivre, mais le vrai bonheur vient aussi de l’amour, de l’amitié et de la santé.",
+     "Beaucoup de gens pensent que l’argent est la clé du bonheur. Ils travaillent jour et nuit pour devenir riches. Mais l’argent rend-il vraiment heureux ?",
+     "Ensuite, l’argent ne suffit pas pour être heureux. Dans Candide, le héros devient très riche grâce à l’or de l’Eldorado. Pourtant, il n’est pas heureux : il est loin de Cunégonde et des voleurs lui prennent son argent.",
+     "D’abord, l’argent est nécessaire. Il permet de manger, de se soigner, d’étudier et d’aider sa famille. Sans argent, la vie est très difficile."
+    ],
+    "answer": [
+     1,
+     3,
+     2,
+     0
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "L’argent occupe une grande place dans notre vie. [[1]], il permet d’acheter les choses nécessaires. [[2]], il ne peut pas acheter l’amour ni l’amitié. Dans Candide, le héros quitte l’Eldorado avec des moutons chargés d’or ; [[3]], il ne trouve pas le bonheur. [[4]], l’argent est utile, mais il ne fait pas tout.",
+    "holes": [
+     {
+      "opts": [
+       "Pourtant",
+       "D’abord",
+       "En conclusion"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce le premier argument."
+     },
+     {
+      "opts": [
+       "Par exemple",
+       "D’abord",
+       "Cependant"
+      ],
+      "a": 2,
+      "hint": "La phrase qui suit dit le contraire : l’argent ne peut pas tout acheter."
+     },
+     {
+      "opts": [
+       "pourtant",
+       "par exemple",
+       "d’abord"
+      ],
+      "a": 0,
+      "hint": "Candide est riche… mais il n’est pas heureux : c’est une opposition."
+     },
+     {
+      "opts": [
+       "Cependant",
+       "En définitive",
+       "Par exemple"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent que l’argent fait le bonheur, d’autres montrent le contraire. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "L’argent fait le bonheur",
+      "L’argent ne fait pas le bonheur"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "L’argent permet de se soigner quand on est malade.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "Beaucoup de riches sont seuls et malheureux.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Avec de l’argent, on peut aider sa famille et les pauvres.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "Les girafes ont un très long cou.",
+       "cat": -1
+      },
+      {
+       "l": "e",
+       "t": "L’argent attire les faux amis et les voleurs.",
+       "cat": 1
+      },
+      {
+       "l": "f",
+       "t": "Avec de l’argent, les jeunes peuvent faire de longues études.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "L’amour et la santé ne s’achètent pas.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle des girafes, pas de l’argent ni du bonheur."
+    },
+    "good": {
+     "opts": [
+      "Les étoiles brillent la nuit.",
+      "Une personne riche n’est pas toujours une personne heureuse.",
+      "Les trains partent souvent en retard.",
+      "Le chocolat se fabrique avec du cacao."
+     ],
+     "a": 1
+    }
+   },
+   "n3": [
+    {
+     "s1": "L’argent est important dans la vie.",
+     "s3": "Sans lui, la vie devient très difficile.",
+     "opts": [
+      "L’argent ne sert absolument à rien.",
+      "Il permet de manger, de se loger et de se soigner.",
+      "Les mouettes volent au-dessus du port."
+     ],
+     "a": 1
+    },
+    {
+     "s1": "Dans Candide, en Eldorado, l’or est partout.",
+     "s3": "Pour les habitants, l’or n’a presque aucune valeur.",
+     "opts": [
+      "Le couscous se prépare avec de la semoule.",
+      "Les habitants se battent tous les jours pour avoir plus d’or.",
+      "Par exemple, les enfants jouent avec de l’or et des pierres précieuses comme avec des cailloux."
+     ],
+     "a": 2
+    },
+    {
+     "s1": "Cependant, l’argent ne suffit pas pour être heureux.",
+     "s3": "Le bonheur vient donc aussi de l’amour et de l’amitié.",
+     "opts": [
+      "On peut être très riche et se sentir seul et triste.",
+      "Les hôpitaux soignent les malades.",
+      "Tous les riches ont beaucoup de vrais amis."
+     ],
+     "a": 0
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « L’argent fait-il le bonheur ? ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (mais, cependant, pourtant, toutefois).",
+    "aide": {
+     "level": "moyenne",
+     "desc": "Commence tes phrases avec les débuts proposés sur les lignes. Cherche tes idées dans les niveaux 2 et 3.",
+     "ideas": [],
+     "starters": [
+      "À mon avis,",
+      "D’abord,",
+      "Cependant,",
+      "Par exemple,",
+      "En conclusion,"
+     ]
+    }
+   },
+   "n5": {
+    "sujet": "L’argent fait-il le bonheur ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : opposer deux idées.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 6,
+   "title": "Devons-nous raconter nos secrets à nos amis ?",
+   "img": "cand/ch19_i4.webp",
+   "episode": "Cacambo et l’abbé de Paris",
+   "oeuvre": {
+    "chapitres": "Chapitres 19 et 22",
+    "texte": "Cacambo est le valet de Candide, mais il devient son véritable ami. Au Surinam, Candide lui confie une grande partie de sa richesse et une mission très importante : aller chercher Cunégonde à Buenos Aires (chapitre 19). Cacambo reste fidèle à son maître. Au contraire, à Paris, Candide raconte son histoire d’amour à un abbé qu’il connaît à peine. L’abbé utilise ce secret pour le tromper : il lui présente une fausse Cunégonde, et Candide lui donne des diamants et de l’or (chapitre 22). Et toi, à qui racontes-tu tes secrets ?"
+   },
+   "objectif": {
+    "name": "Exprimer une conséquence",
+    "rows": [
+     "Exprimer une conséquence"
+    ],
+    "expressions": [
+     "donc",
+     "c’est pourquoi",
+     "alors",
+     "par conséquent,"
+    ],
+    "examples": [
+     "Mon ami est fidèle, donc je lui confie mes secrets.",
+     "Certains amis parlent trop. C’est pourquoi il faut être prudent."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "Un secret",
+      "La confiance",
+      "Trahir",
+      "Fidèle"
+     ],
+     "defs": [
+      "faire du mal à une personne qui nous faisait confiance",
+      "le sentiment qu’on peut compter sur quelqu’un",
+      "qui reste toujours loyal envers ses amis",
+      "une information qu’on ne veut pas dire à tout le monde"
+     ],
+     "answer": [
+      3,
+      1,
+      0,
+      2
+     ]
+    },
+    "vf": [
+     {
+      "q": "Cacambo est le valet de Candide.",
+      "a": true
+     },
+     {
+      "q": "À Paris, un abbé malhonnête trompe Candide.",
+      "a": true
+     },
+     {
+      "q": "Cacambo vole la richesse de Candide et disparaît pour toujours.",
+      "a": false
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Ami",
+      "options": [
+       "confiance",
+       "lavabo",
+       "fidélité",
+       "aide",
+       "tondeuse",
+       "partage",
+       "trahison",
+       "écoute"
+      ],
+      "answer": [
+       "confiance",
+       "fidélité",
+       "aide",
+       "partage",
+       "écoute"
+      ]
+     },
+     {
+      "mot": "Secret",
+      "options": [
+       "cacher",
+       "haut-parleur",
+       "confier",
+       "silence",
+       "autobus",
+       "intime",
+       "pastèque",
+       "mystère"
+      ],
+      "answer": [
+       "cacher",
+       "confier",
+       "silence",
+       "intime",
+       "mystère"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "D’abord, un vrai ami garde nos secrets et peut nous aider. Dans Candide, Candide confie sa richesse à Cacambo pour aller chercher Cunégonde. Cacambo reste fidèle : il ne trahit pas son maître.",
+     "Ensuite, certains amis ne savent pas garder un secret. Ils le racontent à d’autres personnes, et on se sent trahi. C’est pourquoi il faut être prudent.",
+     "En conclusion, on peut confier ses secrets à un ami, mais seulement à un ami fidèle qui mérite notre confiance.",
+     "Tout le monde a des secrets. À l’adolescence, on a souvent envie de les partager avec ses amis. Mais faut-il vraiment tout raconter à ses amis ?"
+    ],
+    "answer": [
+     3,
+     0,
+     1,
+     2
+    ],
+    "help": "D’abord, Ensuite, En conclusion"
+   },
+   "n2": {
+    "text": "Les adolescents aiment partager leurs secrets avec leurs amis. Un vrai ami écoute et ne juge pas, [[1]] on se sent en confiance avec lui. Dans Candide, Cacambo est un valet fidèle ; [[2]] Candide lui confie une grande partie de sa richesse. [[3]], certains faux amis répètent nos secrets à tout le monde. [[4]], il faut bien choisir l’ami à qui on raconte sa vie.",
+    "holes": [
+     {
+      "opts": [
+       "mais",
+       "donc",
+       "par exemple"
+      ],
+      "a": 1,
+      "hint": "La suite est une conséquence : il écoute, alors on a confiance."
+     },
+     {
+      "opts": [
+       "cependant",
+       "d’abord",
+       "c’est pourquoi"
+      ],
+      "a": 2,
+      "hint": "Cacambo est fidèle : la suite en est la conséquence."
+     },
+     {
+      "opts": [
+       "Cependant",
+       "Donc",
+       "Par conséquent"
+      ],
+      "a": 0,
+      "hint": "La phrase qui suit apporte une idée opposée."
+     },
+     {
+      "opts": [
+       "Mais",
+       "Par exemple",
+       "Par conséquent"
+      ],
+      "a": 2,
+      "hint": "Ce trou annonce la conséquence finale : la conclusion."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent qu’on peut raconter ses secrets à ses amis, d’autres qu’il vaut mieux les garder. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "Oui, je raconte mes secrets",
+      "Non, je garde mes secrets"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "Un ami peut nous donner des conseils utiles.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "Un secret répété peut créer de graves problèmes.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Partager un secret renforce l’amitié.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "Les pommes de terre poussent sous la terre.",
+       "cat": -1
+      },
+      {
+       "l": "e",
+       "t": "Un ami d’aujourd’hui peut devenir un ennemi demain.",
+       "cat": 1
+      },
+      {
+       "l": "f",
+       "t": "Garder seul un secret trop lourd rend triste.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "Sur les réseaux sociaux, un secret peut circuler en quelques minutes.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle des pommes de terre, pas des secrets entre amis."
+    },
+    "good": {
+     "opts": [
+      "Un ami fidèle sait garder les secrets qu’on lui confie.",
+      "Les lions vivent en Afrique.",
+      "Le stylo bleu écrit mieux que le stylo noir.",
+      "La neige tombe en hiver dans l’Atlas."
+     ],
+     "a": 0
+    }
+   },
+   "n3": [
+    {
+     "s1": "Un ami fidèle est précieux.",
+     "s3": "C’est pourquoi on peut lui confier ses secrets.",
+     "opts": [
+      "Les fourmis travaillent beaucoup.",
+      "Il écoute sans juger et ne répète rien aux autres.",
+      "Il raconte nos secrets à toute la classe."
+     ],
+     "a": 1
+    },
+    {
+     "s1": "Dans Candide, Cacambo est un valet fidèle.",
+     "s3": "Il ne trahit jamais son maître.",
+     "opts": [
+      "Par exemple, Candide lui confie une grande partie de sa richesse, et Cacambo ne la vole pas.",
+      "Cacambo s’enfuit avec la richesse de Candide.",
+      "Le port de Tanger Med est très grand."
+     ],
+     "a": 0
+    },
+    {
+     "s1": "Cependant, il faut parfois garder ses secrets pour soi.",
+     "s3": "Donc, il vaut mieux être prudent.",
+     "opts": [
+      "Tous les amis gardent toujours les secrets.",
+      "Les voitures roulent à droite au Maroc.",
+      "Un faux ami peut utiliser notre secret contre nous, comme l’abbé qui trompe Candide à Paris."
+     ],
+     "a": 2
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « Devons-nous raconter nos secrets à nos amis ? ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (donc, c’est pourquoi, alors, par conséquent).",
+    "aide": {
+     "level": "légère",
+     "desc": "Mon plan : ① mon avis → ② argument 1 + exemple → ③ argument 2 → ④ conclusion. Cette fois, tu écris seul(e), sans débuts de phrases !",
+     "ideas": [],
+     "starters": []
+    }
+   },
+   "n5": {
+    "sujet": "Devons-nous raconter nos secrets à nos amis ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : exprimer une conséquence.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  },
+  {
+   "n": 7,
+   "title": "Le travail des femmes",
+   "img": "cand/ch30_i5.webp",
+   "episode": "Les femmes et le jardin",
+   "oeuvre": {
+    "chapitres": "Chapitres 8, 11, 12 et 30",
+    "texte": "Dans Candide, les femmes ont une vie très difficile et elles dépendent toujours des hommes. Cunégonde est vendue et achetée par plusieurs hommes (chapitre 8). La vieille, fille d’une princesse, devient servante (chapitres 11 et 12). Paquette, la servante du château, devient très pauvre. Mais à la fin du roman, dans la petite ferme, tout le monde travaille : Cunégonde devient une excellente pâtissière, Paquette fait de la broderie et la vieille s’occupe du linge (chapitre 30). Le travail leur donne enfin une place utile. Et toi, que penses-tu du travail des femmes ?"
+   },
+   "objectif": {
+    "name": "Nuancer et conclure",
+    "rows": [
+     "Nuancer",
+     "Conclure"
+    ],
+    "expressions": [
+     "Il est vrai que…, mais…",
+     "Certes…, mais…",
+     "En conclusion,",
+     "En définitive,"
+    ],
+    "examples": [
+     "Il est vrai que le travail est fatigant, mais il rend la femme indépendante.",
+     "En définitive, chaque femme doit pouvoir choisir sa vie."
+    ]
+   },
+   "n0": {
+    "vocab": {
+     "words": [
+      "Indépendante",
+      "Un salaire",
+      "L’égalité",
+      "Dépendre de"
+     ],
+     "defs": [
+      "l’argent qu’on reçoit pour son travail",
+      "avoir besoin de quelqu’un pour vivre",
+      "qui n’a pas besoin des autres pour vivre",
+      "le fait d’avoir les mêmes droits que les autres"
+     ],
+     "answer": [
+      2,
+      0,
+      3,
+      1
+     ]
+    },
+    "vf": [
+     {
+      "q": "Dans le roman, les femmes ont une vie facile et heureuse.",
+      "a": false
+     },
+     {
+      "q": "À la fin du roman, Cunégonde devient pâtissière.",
+      "a": true
+     },
+     {
+      "q": "Dans la petite ferme, la vieille s’occupe du linge.",
+      "a": true
+     }
+    ],
+    "conno": [
+     {
+      "mot": "Travail",
+      "options": [
+       "métier",
+       "sieste",
+       "salaire",
+       "effort",
+       "toboggan",
+       "bureau",
+       "flamant rose",
+       "compétence"
+      ],
+      "answer": [
+       "métier",
+       "salaire",
+       "effort",
+       "bureau",
+       "compétence"
+      ]
+     },
+     {
+      "mot": "Femme",
+      "options": [
+       "mère",
+       "nuage",
+       "courage",
+       "dignité",
+       "cactus",
+       "intelligence",
+       "autoroute",
+       "force"
+      ],
+      "answer": [
+       "mère",
+       "courage",
+       "dignité",
+       "intelligence",
+       "force"
+      ]
+     }
+    ]
+   },
+   "n1": {
+    "paras": [
+     "En définitive, chaque femme doit être libre de choisir son métier et sa vie, et la société doit l’aider.",
+     "Ensuite, il est vrai que le travail peut être fatigant pour une femme qui s’occupe aussi de sa maison et de ses enfants. Mais les tâches de la maison peuvent être partagées avec le mari.",
+     "Aujourd’hui, au Maroc, beaucoup de femmes travaillent : elles sont professeures, médecins, ingénieures ou commerçantes. Pourtant, certaines personnes pensent encore que la femme doit rester à la maison. Qu’en penser ?",
+     "D’abord, le travail rend la femme indépendante. Avec son salaire, elle ne dépend plus des autres. Dans Candide, au contraire, Cunégonde dépend toujours des hommes, qui la vendent et l’achètent comme un objet."
+    ],
+    "answer": [
+     2,
+     3,
+     1,
+     0
+    ],
+    "help": "D’abord, Ensuite, En définitive"
+   },
+   "n2": {
+    "text": "Le travail des femmes est un sujet qui provoque encore des débats. [[1]], le travail rend la femme indépendante grâce à son salaire. [[2]], à la fin de Candide, les femmes trouvent une place utile grâce au travail : Cunégonde devient pâtissière et la vieille s’occupe du linge. [[3]], certaines femmes sont très fatiguées par le travail et par la maison, mais ce problème peut être réglé si les tâches sont partagées. [[4]], chaque femme doit pouvoir choisir sa vie.",
+    "holes": [
+     {
+      "opts": [
+       "En définitive",
+       "Tout d’abord",
+       "Par exemple"
+      ],
+      "a": 1,
+      "hint": "Ce trou annonce le premier argument."
+     },
+     {
+      "opts": [
+       "Certes",
+       "Par exemple",
+       "En définitive"
+      ],
+      "a": 1,
+      "hint": "La phrase qui suit donne un exemple tiré de Candide."
+     },
+     {
+      "opts": [
+       "Par exemple",
+       "En définitive",
+       "Certes"
+      ],
+      "a": 2,
+      "hint": "Certes… mais… : on reconnaît une difficulté avant de la discuter."
+     },
+     {
+      "opts": [
+       "Certes",
+       "Par exemple",
+       "En définitive"
+      ],
+      "a": 2,
+      "hint": "Ce trou annonce la conclusion du texte."
+     }
+    ],
+    "b": {
+     "title": "Classer les arguments",
+     "consigne": "Lis les phrases. Certaines phrases montrent les avantages du travail des femmes, d’autres montrent ses difficultés. Classe-les en écrivant leur lettre. Attention : une phrase est un intrus, elle n’a aucun rapport avec le thème.",
+     "cats": [
+      "Les avantages",
+      "Les difficultés"
+     ],
+     "args": [
+      {
+       "l": "a",
+       "t": "Le travail donne à la femme un salaire et l’indépendance.",
+       "cat": 0
+      },
+      {
+       "l": "b",
+       "t": "La femme qui travaille a moins de temps pour ses enfants.",
+       "cat": 1
+      },
+      {
+       "l": "c",
+       "t": "Le pays se développe quand les femmes participent au travail.",
+       "cat": 0
+      },
+      {
+       "l": "d",
+       "t": "Travailler et s’occuper de la maison, c’est très fatigant.",
+       "cat": 1
+      },
+      {
+       "l": "e",
+       "t": "Les dauphins sont des animaux intelligents.",
+       "cat": -1
+      },
+      {
+       "l": "f",
+       "t": "Une femme qui travaille est un modèle pour ses enfants.",
+       "cat": 0
+      },
+      {
+       "l": "g",
+       "t": "Certains métiers sont encore difficiles d’accès pour les femmes.",
+       "cat": 1
+      }
+     ],
+     "intrus_why": "Elle parle des dauphins, pas du travail des femmes."
+    },
+    "good": {
+     "opts": [
+      "Le Sahara est un très grand désert.",
+      "Les lunettes de soleil protègent les yeux.",
+      "La musique gnaoua est connue dans le monde entier.",
+      "Les femmes doivent avoir les mêmes chances que les hommes dans le travail."
+     ],
+     "a": 3
+    }
+   },
+   "n3": [
+    {
+     "s1": "Le travail est important pour la femme.",
+     "s3": "Ainsi, elle ne dépend plus de personne.",
+     "opts": [
+      "La femme qui travaille ne gagne jamais d’argent.",
+      "Les cigognes construisent leurs nids sur les toits.",
+      "Grâce à son salaire, elle peut décider seule de sa vie."
+     ],
+     "a": 2
+    },
+    {
+     "s1": "Dans Candide, les femmes souffrent beaucoup.",
+     "s3": "Elles n’ont presque aucune liberté.",
+     "opts": [
+      "Par exemple, Cunégonde est vendue et achetée par plusieurs hommes.",
+      "Cunégonde choisit librement toute sa vie.",
+      "Le pain se cuit au four."
+     ],
+     "a": 0
+    },
+    {
+     "s1": "Certes, travailler et s’occuper de la maison est fatigant.",
+     "s3": "En définitive, le travail reste une chance pour la femme.",
+     "opts": [
+      "Les tortues marchent lentement.",
+      "Mais le mari et les enfants peuvent partager les tâches de la maison.",
+      "C’est pourquoi les femmes ne doivent jamais travailler."
+     ],
+     "a": 1
+    }
+   ],
+   "n4": {
+    "consigne": "Rédige un paragraphe argumentatif de 8 à 10 lignes sur le thème « Le travail des femmes ». Donne ton opinion, présente au moins deux arguments et un exemple, et relie tes idées avec des connecteurs. Utilise au moins deux expressions de l’objectif du thème (Il est vrai que…, mais…, Certes…, mais…, En conclusion, En définitive).",
+    "aide": {
+     "level": "légère",
+     "desc": "Mon plan : ① mon avis → ② argument 1 + exemple → ③ argument 2 → ④ conclusion. Cette fois, tu écris seul(e), sans débuts de phrases !",
+     "ideas": [],
+     "starters": []
+    }
+   },
+   "n5": {
+    "sujet": "Le travail est-il une chance pour la femme d’aujourd’hui ? Rédigez un texte argumentatif dans lequel vous exprimerez votre point de vue en vous appuyant sur des arguments et des exemples précis.",
+    "grille": [
+     "Mon introduction présente le sujet et pose une question.",
+     "J’ai exprimé clairement mon opinion (ma thèse).",
+     "J’ai donné au moins deux arguments.",
+     "Chaque argument est illustré par un exemple.",
+     "J’ai relié mes idées avec des connecteurs logiques.",
+     "J’ai utilisé l’objectif du thème : nuancer et conclure.",
+     "Ma conclusion résume mon avis.",
+     "Mes phrases sont complètes (sujet + verbe + complément).",
+     "J’ai vérifié l’orthographe, les accents et la ponctuation."
+    ]
+   }
+  }
+ ],
+ "expressions": [
+  [
+   "Donner mon avis",
+   "À mon avis… / Je pense que… / Je suis convaincu(e) que…"
+  ],
+  [
+   "Présenter et ajouter un argument",
+   "D’abord… / Ensuite… / De plus… / Enfin…"
+  ],
+  [
+   "Donner un exemple",
+   "Par exemple… / Prenons l’exemple de… / Comme dans…"
+  ],
+  [
+   "Expliquer",
+   "car… / parce que… / en effet…"
+  ],
+  [
+   "Opposer",
+   "mais… / cependant… / pourtant… / toutefois…"
+  ],
+  [
+   "Exprimer une conséquence",
+   "donc… / c’est pourquoi… / par conséquent…"
+  ],
+  [
+   "Nuancer",
+   "Il est vrai que…, mais… / Certes…, mais…"
+  ],
+  [
+   "Conclure",
+   "En conclusion… / En définitive… / Pour conclure…"
+  ]
+ ],
+ "connecteurs": [
+  [
+   "Introduire",
+   "D’abord, Premièrement, Tout d’abord"
+  ],
+  [
+   "Ajouter",
+   "De plus, Ensuite, En outre, Par ailleurs, Enfin"
+  ],
+  [
+   "Illustrer",
+   "Par exemple, Ainsi, Notamment, Comme"
+  ],
+  [
+   "Expliquer",
+   "En effet, Car, Parce que, Puisque"
+  ],
+  [
+   "Opposer",
+   "Mais, Cependant, Pourtant, Néanmoins, Toutefois"
+  ],
+  [
+   "Nuancer",
+   "Il est vrai que…, mais… / Certes…, mais…"
+  ],
+  [
+   "Conséquence",
+   "Donc, C’est pourquoi, Par conséquent, Alors"
+  ],
+  [
+   "Conclure",
+   "En conclusion, En somme, En définitive, Pour conclure"
+  ]
+ ],
+ "structure": [
+  [
+   "Introduction",
+   "Je présente le sujet et je pose la question du débat."
+  ],
+  [
+   "Thèse",
+   "Je donne clairement mon opinion : « À mon avis… »."
+  ],
+  [
+   "Argument 1 + exemple",
+   "D’abord… + un exemple précis (tiré de Candide ou de la vie)."
+  ],
+  [
+   "Argument 2 + exemple",
+   "Ensuite… / De plus… + un exemple."
+  ],
+  [
+   "Avis opposé (facultatif)",
+   "Il est vrai que… / Certains pensent que… Cependant…"
+  ],
+  [
+   "Conclusion",
+   "En conclusion… : je résume mon avis et j’élargis la réflexion."
+  ]
+ ],
+ "candideExamples": [
+  "Dans Candide, Voltaire montre que…",
+  "Prenons l’exemple de Candide, qui…",
+  "Comme Candide quand il quitte l’Eldorado, …",
+  "Le personnage de Cacambo (de la vieille, de Pangloss…) montre que…"
+ ],
+ "model": {
+  "sujet": "Les parents doivent-ils décider à la place de leurs enfants ?",
+  "parts": [
+   {
+    "part": "Introduction",
+    "segs": [
+     [
+      "intro",
+      "Aujourd’hui, beaucoup de jeunes veulent choisir seuls leurs études, leurs amis et leur avenir. "
+     ],
+     [
+      "intro",
+      "Les parents doivent-ils décider à la place de leurs enfants ? "
+     ],
+     [
+      "these",
+      "À mon avis, les parents doivent conseiller leurs enfants, mais ce sont les jeunes qui doivent choisir leur vie."
+     ]
+    ]
+   },
+   {
+    "part": "Argument 1",
+    "segs": [
+     [
+      "conn",
+      "D’abord"
+     ],
+     [
+      "arg",
+      ", les jeunes connaissent mieux que personne leurs goûts et leurs rêves : choisir ses études, c’est choisir sa vie. "
+     ],
+     [
+      "conn",
+      "Par exemple"
+     ],
+     [
+      "ex",
+      ", dans Candide, le baron chasse Candide du château parce qu’il a embrassé Cunégonde : les jeunes amoureux ne sont pas libres."
+     ]
+    ]
+   },
+   {
+    "part": "Argument 2",
+    "segs": [
+     [
+      "conn",
+      "De plus"
+     ],
+     [
+      "arg",
+      ", un jeune qui choisit seul devient plus responsable. "
+     ],
+     [
+      "ex",
+      "Un élève qui a choisi sa filière travaille avec plaisir et motivation."
+     ]
+    ]
+   },
+   {
+    "part": "Nuance",
+    "segs": [
+     [
+      "conn",
+      "Cependant"
+     ],
+     [
+      "arg",
+      ", les parents ont de l’expérience et ils veulent protéger leurs enfants des dangers. "
+     ],
+     [
+      "ex",
+      "À 17 ans, on peut faire des erreurs graves."
+     ]
+    ]
+   },
+   {
+    "part": "Conclusion",
+    "segs": [
+     [
+      "conn",
+      "En conclusion"
+     ],
+     [
+      "concl",
+      ", les parents doivent conseiller leurs enfants, mais ils doivent aussi respecter leurs choix."
+     ]
+    ]
+   }
+  ]
+ }
+}

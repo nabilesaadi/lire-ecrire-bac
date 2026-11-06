@@ -1,14 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { PE, WORK } from '../lib/items'
 import { ChoiceItem, MultiSelect, OrderParas } from '../components/interactive'
 import { useProgress } from './student'
+import { useRW } from './rwscope'
 
 const img = (f) => `${import.meta.env.BASE_URL}img/${f}`
 const LEVEL_NAMES = ['Échauffement', 'Reconnaissance', 'Manipulation', 'Production guidée', 'Production semi-libre', 'Production complète']
 const LEVEL_MIN = [10, 15, 20, 20, 25, 45]
-const THEME_IMG = ['ch01_i1.webp', 'ch02_i3.webp', 'ch06_i3.webp', 'ch03_i5.webp', 'ch12_i3.webp', 'ch03_i4.webp']
 
 const C = {
   intro: { bg: '#f4e7c8', bd: '#b9842a', label: 'Introduction' },
@@ -19,43 +18,36 @@ const C = {
   concl: { bg: '#e6e1d8', bd: '#5b4a3a', label: 'Conclusion' },
 }
 
-// Texte modèle annoté (sujet du thème 1)
-const MODEL = [
-  { part: 'Introduction', segs: [['intro', 'Beaucoup d’enfants passent de longs moments seuls, même au milieu de leur famille. '], ['intro', 'La solitude est-elle toujours un mal pour l’enfant ? '], ['these', 'À mon avis, elle peut être utile, à condition de ne pas durer trop longtemps.']] },
-  { part: 'Argument 1', segs: [['conn', 'D’abord'], ['arg', ', la solitude développe l’imagination. Quand il est seul, l’enfant invente des histoires et des jeux. '], ['conn', 'Par exemple'], ['ex', ', dans La Boîte à merveilles, Sidi Mohammed transforme les objets de sa boîte en amis et en héros.']] },
-  { part: 'Argument 2', segs: [['conn', 'De plus'], ['arg', ', l’enfant seul apprend à être autonome : il réfléchit calmement et trouve lui-même des solutions. '], ['ex', 'C’est le cas d’un élève qui fait ses devoirs sans aide et prend confiance en lui.']] },
-  { part: 'Nuance', segs: [['conn', 'Cependant'], ['arg', ', une solitude trop longue rend l’enfant triste et renfermé. '], ['ex', 'Sidi Mohammed s’évanouit de peur pendant la dispute de sa mère et de Rahma : personne n’est là pour le rassurer.']] },
-  { part: 'Conclusion', segs: [['conn', 'En conclusion'], ['concl', ', la solitude n’est pas toujours un mal : elle peut aider l’enfant à grandir. Mais les parents doivent rester attentifs, car un enfant a aussi besoin d’amis et d’affection.']] },
-]
-
 export function Writing() {
+  const { K: PE, base, prefix } = useRW()
   const pr = useProgress()
   return (
     <>
       <section className="hero">
-        <img className="bg" src={img('ch12_i5.webp')} alt="" />
+        <img className="bg" src={img(PE.hero)} alt="" />
         <div className="wrap">
           <div className="eyebrow">Production écrite argumentative · examen régional</div>
           <h1>Apprendre à argumenter, pas à pas</h1>
           <p className="lead">Commence par comprendre comment un texte argumentatif est construit. Ensuite, choisis un thème et monte les six niveaux, du plus facile au plus difficile.</p>
-          <div className="row"><Link className="btn btn-gold" to="/oeuvre/bam/ecriture/structure">1. Comprendre la structure</Link></div>
+          <div className="row"><Link className="btn btn-gold" to={`${base}/ecriture/structure`}>1. Comprendre la structure</Link></div>
         </div>
       </section>
       <div className="wrap section">
-        <h2>2. Les six thèmes du premier semestre</h2>
+        <h2>2. {PE.semestre}</h2>
         <p className="muted">Chaque thème se travaille en six niveaux. Ne saute pas d’étape : si un niveau te semble difficile, refais le précédent.</p>
         <div className="grid g3">
-          {PE.themes.map((t, i) => {
-            const n = [0, 1, 2, 3, 4, 5].filter((l) => pr.done(`bam.pe.t${t.n}.n${l}`)).length
+          {PE.themes.map((t) => {
+            const n = [0, 1, 2, 3, 4, 5].filter((l) => pr.done(`${prefix}.pe.t${t.n}.n${l}`)).length
             return (
-              <Link key={t.n} to={`/oeuvre/bam/ecriture/theme/${t.n}`} className="card card-link" style={{ padding: 0, overflow: 'hidden' }}>
-                <img src={img(THEME_IMG[i])} alt="" style={{ aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} loading="lazy" />
+              <Link key={t.n} to={`${base}/ecriture/theme/${t.n}`} className="card card-link" style={{ padding: 0, overflow: 'hidden' }}>
+                <img src={img(t.img)} alt="" style={{ aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} loading="lazy" />
                 <div style={{ padding: 16 }}>
-                  <div className="eyebrow">Thème {t.n}</div>
+                  <div className="eyebrow">Thème {t.n}{t.episode ? ` · ${t.episode}` : ''}</div>
                   <h3>{t.title}</h3>
+                  {t.objectif && <p className="small muted" style={{ marginTop: -4 }}>Objectif : {t.objectif.name.toLowerCase()} · aide {t.n4.aide.level}</p>}
                   <div className="row small" style={{ gap: 6 }}>
                     {[0, 1, 2, 3, 4, 5].map((l) => (
-                      <span key={l} title={`Niveau ${l}`} style={{ width: 26, height: 8, borderRadius: 4, background: pr.done(`bam.pe.t${t.n}.n${l}`) ? 'var(--teal)' : 'var(--paper-2)' }} />
+                      <span key={l} title={`Niveau ${l}`} style={{ width: 26, height: 8, borderRadius: 4, background: pr.done(`${prefix}.pe.t${t.n}.n${l}`) ? 'var(--teal)' : 'var(--paper-2)' }} />
                     ))}
                     <span className="muted" style={{ marginLeft: 6 }}>{n}/6</span>
                   </div>
@@ -70,6 +62,8 @@ export function Writing() {
 }
 
 export function Structure() {
+  const { K: PE, base } = useRW()
+  const MODEL = PE.model.parts
   const [on, setOn] = useState(null)
   const hl = (k) => {
     if (!on) return { background: C[k].bg }
@@ -79,7 +73,7 @@ export function Structure() {
     <div className="wrap section">
       <div className="eyebrow">Production écrite · comprendre avant d’écrire</div>
       <h1>La structure du texte argumentatif</h1>
-      <p className="muted" style={{ maxWidth: '68ch' }}>À l’examen régional, la production écrite est notée sur 10 points. On te demande de donner ton avis sur une question liée à l’œuvre, avec des arguments et des exemples. Voici comment construire ton texte.</p>
+      <p className="muted" style={{ maxWidth: '68ch' }}>{PE.examIntro}</p>
 
       <h2 style={{ marginTop: 26 }}>Schéma 1 · Trois parties, toujours dans le même ordre</h2>
       <div className="grid g3" style={{ marginTop: 12 }}>
@@ -109,7 +103,7 @@ export function Structure() {
       </div>
 
       <h2 style={{ marginTop: 34 }}>Schéma 2 · Un texte modèle, partie par partie</h2>
-      <p className="muted">Sujet : <i>La solitude est-elle toujours un mal pour l’enfant ?</i> Touche une couleur pour voir où se trouve chaque élément.</p>
+      <p className="muted">Sujet : <i>{PE.model.sujet}</i> Touche une couleur pour voir où se trouve chaque élément.</p>
       <div className="anat">
         <div className="card txt">
           {MODEL.map((p) => (
@@ -160,7 +154,13 @@ export function Structure() {
           </div>
         ))}
       </div>
-      <div className="row" style={{ marginTop: 24 }}><Link className="btn btn-primary" to="/oeuvre/bam/ecriture">Choisir un thème →</Link></div>
+      {PE.candideExamples && (
+        <div className="card" style={{ marginTop: 24 }}>
+          <h3>Comment utiliser Candide comme exemple ?</h3>
+          <ul style={{ margin: 0 }}>{PE.candideExamples.map((x) => <li key={x}>{x}</li>)}</ul>
+        </div>
+      )}
+      <div className="row" style={{ marginTop: 24 }}><Link className="btn btn-primary" to={`${base}/ecriture`}>Choisir un thème →</Link></div>
     </div>
   )
 }
@@ -177,8 +177,9 @@ function Chrono({ minutes }) {
   return <span className={`tag ${left === 0 ? 'red' : 'teal'}`}>⏱ {left === 0 ? 'Temps écoulé' : `${m}:${String(s).padStart(2, '0')}`}</span>
 }
 
-const CONNS = PE.connecteurs.flatMap(([, l]) => l.split(', ')).concat(['À mon avis', 'Je pense que', 'Je suis convaincu', 'Premièrement', 'Il est vrai que'])
-function analyse(text) {
+const connsOf = (PE) => PE.connecteurs.flatMap(([, l]) => l.split(/, | \/ /)).map((c) => c.replace(/…,? ?mais…|…/g, '').trim()).filter(Boolean)
+  .concat(['À mon avis', 'Je pense que', 'Je suis convaincu', 'Selon moi', 'Premièrement', 'Il est vrai que', 'Certes'])
+function analyse(text, CONNS) {
   const words = text.trim() ? text.trim().split(/\s+/).length : 0
   const found = CONNS.filter((c) => new RegExp(`(^|[^\\p{L}])${c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^\\p{L}]|$)`, 'iu').test(text))
   const opinion = /(à mon avis|je pense|je crois|je suis convaincu|selon moi)/i.test(text)
@@ -187,8 +188,10 @@ function analyse(text) {
 }
 
 function Production({ theme, level }) {
+  const { K: PE, prefix } = useRW()
+  const CONNS = useMemo(() => [...new Set(connsOf(PE))], [PE])
   const api = useApi()
-  const activity = `bam.pe.t${theme.n}.n${level}`
+  const activity = `${prefix}.pe.t${theme.n}.n${level}`
   const mine = api.submissions.filter((s) => s.activity === activity)
   const key = `lb_draft_${activity}`
   const [text, setText] = useState(() => { try { return localStorage.getItem(key) || '' } catch (e) { return '' } })
@@ -197,7 +200,8 @@ function Production({ theme, level }) {
   const [sent, setSent] = useState(false)
   const [busy, setBusy] = useState(false)
   useEffect(() => { try { localStorage.setItem(key, text) } catch (e) { /* */ } }, [text, key])
-  const a = analyse(text)
+  const a = analyse(text, CONNS)
+  const aide = theme.n4.aide
   const send = async () => {
     setBusy(true)
     try {
@@ -210,7 +214,18 @@ function Production({ theme, level }) {
     <div className="prod">
       <div className="stack" style={{ minWidth: 0 }}>
         {level === 4 ? (
-          <div className="note">{theme.n4.consigne}</div>
+          <>
+            <div className="note">{theme.n4.consigne}</div>
+            {aide && (
+              <div className="card">
+                <div className="row spread"><h3 style={{ margin: 0 }}>Aide {aide.level}</h3>
+                  {aide.starters.length > 0 && !text.trim() && <button className="btn btn-ghost btn-sm" onClick={() => setText(aide.starters.join('\n\n'))}>Utiliser les débuts de phrases</button>}</div>
+                <p className="small" style={{ margin: '8px 0' }}>{aide.desc}</p>
+                {aide.ideas.length > 0 && <div className="row small" style={{ gap: 6 }}><span className="muted">Idées possibles :</span>{aide.ideas.map((x) => <span key={x} className="tag teal">{x}</span>)}</div>}
+                {aide.starters.length > 0 && <div className="row small" style={{ gap: 6, marginTop: 8 }}><span className="muted">Débuts de phrases :</span>{aide.starters.map((x) => <span key={x} className="tag">{x}</span>)}</div>}
+              </div>
+            )}
+          </>
         ) : (
           <div className="card" style={{ background: 'var(--night)', color: '#fbf3e4' }}>
             <div className="eyebrow" style={{ color: 'var(--gold-2)' }}>Sujet type examen régional</div>
@@ -248,6 +263,7 @@ function Production({ theme, level }) {
           </button>
           {a.words < minWords / 2 && <span className="small muted">Écris au moins {Math.ceil(minWords / 2)} mots pour envoyer.</span>}
         </div>
+        {level === 4 && aide && <div className="note small"><b>Défi binôme :</b> échange ton paragraphe avec ton binôme. Il souligne tes connecteurs et compte tes arguments.</div>}
         {sent && <div className="bubble ok"><b>{api.isGuest ? 'Production enregistrée sur cet appareil.' : 'Production envoyée ! Ton professeur va la corriger avec la grille.'}</b></div>}
         {mine.length > 0 && (
           <div className="card flat">
@@ -278,7 +294,10 @@ function Production({ theme, level }) {
         </div>
         <div className="card">
           <h3>Boîte à expressions</h3>
-          {PE.expressions.map(([k, v]) => <div key={k} className="small" style={{ marginBottom: 8 }}><b>{k}</b><br /><span className="muted">{v}</span></div>)}
+          {PE.expressions.map(([k, v]) => {
+            const obj = theme.objectif?.rows.includes(k)
+            return <div key={k} className="small" style={{ marginBottom: 8, ...(obj ? { background: 'var(--gold-soft)', borderRadius: 8, padding: '4px 8px' } : {}) }}><b>{k}</b>{obj && <span className="tag gold" style={{ marginLeft: 6 }}>Objectif du thème</span>}<br /><span className="muted">{v}</span></div>
+          })}
         </div>
       </aside>
     </div>
@@ -286,6 +305,7 @@ function Production({ theme, level }) {
 }
 
 export function Theme() {
+  const { K: PE, D: WORK, base, prefix } = useRW()
   const { n } = useParams()
   const [sp, setSp] = useSearchParams()
   const pr = useProgress()
@@ -293,7 +313,7 @@ export function Theme() {
   const level = Math.min(5, Math.max(0, Number(sp.get('niveau') || 0)))
   const setLevel = (l) => setSp({ niveau: String(l) })
   const api = useApi()
-  const act = `bam.pe.t${t?.n}.n${level}`
+  const act = `${prefix}.pe.t${t?.n}.n${level}`
   const [solved, setSolved] = useState([])
   const solvedHoles = useMemo(() => new Set([...solved, ...api.attempts.filter((a) => a.activity === act && a.item.startsWith('conn.')).map((a) => Number(a.item.split('.')[1]))]), [solved, api.attempts, act])
   if (!t) return <div className="wrap section">Thème introuvable.</div>
@@ -301,13 +321,27 @@ export function Theme() {
   const catShort = n2.b.cats.map((c) => c.split(' :')[0].replace(/^POUR le.*$/, 'POUR'))
   return (
     <div className="wrap section narrow" style={{ maxWidth: 960 }}>
-      <Link to="/oeuvre/bam/ecriture" className="small">← Tous les thèmes</Link>
+      <Link to={`${base}/ecriture`} className="small">← Tous les thèmes</Link>
       <div className="eyebrow" style={{ marginTop: 10 }}>Thème {t.n} · {WORK.title}</div>
       <h1>{t.title}</h1>
+      {t.oeuvre && level === 0 && (
+        <div className="grid g2" style={{ marginTop: 10 }}>
+          <div className="card">
+            <div className="eyebrow">Le thème dans l’œuvre · {t.oeuvre.chapitres}</div>
+            <p style={{ margin: '6px 0 0' }}>{t.oeuvre.texte}</p>
+          </div>
+          <div className="card">
+            <div className="eyebrow">Objectif de langue</div>
+            <h3 style={{ margin: '4px 0 8px' }}>{t.objectif.name}</h3>
+            <div className="row small" style={{ gap: 6 }}>{t.objectif.expressions.map((x) => <span key={x} className="tag gold">{x}</span>)}</div>
+            <ul className="small" style={{ margin: '10px 0 0', paddingLeft: 18 }}>{t.objectif.examples.map((x) => <li key={x}>{x}</li>)}</ul>
+          </div>
+        </div>
+      )}
       <div className="steps" style={{ marginTop: 14 }}>
         {LEVEL_NAMES.map((l, i) => (
-          <button key={l} className={`${level === i ? 'on' : ''} ${pr.done(`bam.pe.t${t.n}.n${i}`) ? 'ok' : ''}`} onClick={() => setLevel(i)}>
-            <small>Niveau {i} {pr.done(`bam.pe.t${t.n}.n${i}`) ? '✓' : ''}</small>{l}
+          <button key={l} className={`${level === i ? 'on' : ''} ${pr.done(`${prefix}.pe.t${t.n}.n${i}`) ? 'ok' : ''}`} onClick={() => setLevel(i)}>
+            <small>Niveau {i} {pr.done(`${prefix}.pe.t${t.n}.n${i}`) ? '✓' : ''}</small>{l}
           </button>
         ))}
       </div>
@@ -327,7 +361,7 @@ export function Theme() {
           <h3 style={{ marginTop: 24 }}>Activité B · Vrai ou faux ?</h3>
           {t.n0.vf.map((v, i) => (
             <ChoiceItem key={i} activity={act} item={`vf.${i}`} competence="Compréhension" question={v.q} options={['Vrai', 'Faux']} answer={v.a ? 0 : 1} inline
-              hint="Pense à ce que tu sais du roman : les personnages, la ville, la vie de Sidi Mohammed." explain={v.a ? 'Cette phrase est juste.' : 'Cette phrase est fausse.'} />
+              hint={PE.vfHint} explain={v.a ? 'Cette phrase est juste.' : 'Cette phrase est fausse.'} />
           ))}
           <h3 style={{ marginTop: 24 }}>Activité C · Les connotations des mots</h3>
           <p className="muted small">Un mot fait penser à d’autres mots : ce sont ses connotations. Attention, 3 mots sont des intrus !</p>
@@ -337,7 +371,7 @@ export function Theme() {
 
       {level === 1 && (
         <div className="stack">
-          <p className="muted">Ces quatre paragraphes forment un texte argumentatif, mais ils sont dans le désordre. Remets-les dans l’ordre avec les flèches. Aide-toi des mots en gras.</p>
+          <p className="muted">Ces quatre paragraphes forment un texte argumentatif, mais ils sont dans le désordre. Remets-les dans l’ordre avec les flèches. Aide-toi des mots en gras{t.n1.help ? ` : ${t.n1.help}` : ''}.</p>
           <OrderParas activity={act} item="ordre" competence="Structure du texte" paras={t.n1.paras} answer={t.n1.answer} />
         </div>
       )}
@@ -383,9 +417,9 @@ export function Theme() {
       {level >= 4 && <Production key={level} theme={t} level={level} />}
 
       <div className="row spread" style={{ marginTop: 26 }}>
-        {level > 0 ? <button className="btn btn-ghost" onClick={() => setLevel(level - 1)}>← Niveau {level - 1}</button> : <Link className="btn btn-ghost" to="/oeuvre/bam/ecriture/structure">Revoir la structure</Link>}
+        {level > 0 ? <button className="btn btn-ghost" onClick={() => setLevel(level - 1)}>← Niveau {level - 1}</button> : <Link className="btn btn-ghost" to={`${base}/ecriture/structure`}>Revoir la structure</Link>}
         {level < 5 ? <button className="btn btn-primary" onClick={() => setLevel(level + 1)}>Niveau {level + 1} →</button>
-          : t.n < 6 && <Link className="btn btn-primary" to={`/oeuvre/bam/ecriture/theme/${t.n + 1}`}>Thème {t.n + 1} →</Link>}
+          : t.n < PE.themes.length && <Link className="btn btn-primary" to={`${base}/ecriture/theme/${t.n + 1}`}>Thème {t.n + 1} →</Link>}
       </div>
     </div>
   )

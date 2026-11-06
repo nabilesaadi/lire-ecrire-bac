@@ -8,6 +8,7 @@ import { Lecture, Chapter, Quiz } from './pages/lecture'
 import { Writing, Structure, Theme } from './pages/writing'
 import { Teacher } from './pages/teacher'
 import { WorkScope, WHub, WLecture, WUnit, WQuiz } from './pages/unitwork'
+import { RWScope } from './pages/rwscope'
 
 function ScrollTop() {
   const { pathname } = useLocation()
@@ -38,13 +39,20 @@ function Shell() {
           <Route path="/inscription-prof" element={<SignupTeacher />} />
           <Route path="/eleve" element={<Need role="learner"><StudentHome /></Need>} />
           <Route path="/mes-travaux" element={<Need role="learner"><MyWork /></Need>} />
-          <Route path="/oeuvre/bam" element={<Need role="learner"><WorkHub /></Need>} />
-          <Route path="/oeuvre/bam/lecture" element={<Need role="learner"><Lecture /></Need>} />
-          <Route path="/oeuvre/bam/chapitre/:n" element={<Need role="learner"><Chapter /></Need>} />
-          <Route path="/oeuvre/bam/quiz/:n" element={<Need role="learner"><Quiz /></Need>} />
-          <Route path="/oeuvre/bam/ecriture" element={<Need role="learner"><Writing /></Need>} />
-          <Route path="/oeuvre/bam/ecriture/structure" element={<Need role="learner"><Structure /></Need>} />
-          <Route path="/oeuvre/bam/ecriture/theme/:n" element={<Need role="learner"><Theme /></Need>} />
+          <Route path="/oeuvre/bam" element={<Need role="learner"><RWScope wid="bam"><WorkHub /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/lecture" element={<Need role="learner"><RWScope wid="bam"><Lecture /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/chapitre/:n" element={<Need role="learner"><RWScope wid="bam"><Chapter /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/quiz/:n" element={<Need role="learner"><RWScope wid="bam"><Quiz /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/ecriture" element={<Need role="learner"><RWScope wid="bam"><Writing /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/ecriture/structure" element={<Need role="learner"><RWScope wid="bam"><Structure /></RWScope></Need>} />
+          <Route path="/oeuvre/bam/ecriture/theme/:n" element={<Need role="learner"><RWScope wid="bam"><Theme /></RWScope></Need>} />
+          <Route path="/oeuvre/candide" element={<Need role="learner"><RWScope wid="candide"><WorkHub /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/lecture" element={<Need role="learner"><RWScope wid="candide"><Lecture /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/chapitre/:n" element={<Need role="learner"><RWScope wid="candide"><Chapter /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/quiz/:n" element={<Need role="learner"><RWScope wid="candide"><Quiz /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/ecriture" element={<Need role="learner"><RWScope wid="candide"><Writing /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/ecriture/structure" element={<Need role="learner"><RWScope wid="candide"><Structure /></RWScope></Need>} />
+          <Route path="/oeuvre/candide/ecriture/theme/:n" element={<Need role="learner"><RWScope wid="candide"><Theme /></RWScope></Need>} />
           <Route path="/oeuvre/antigone" element={<Need role="learner"><WorkScope wid="antigone"><WHub /></WorkScope></Need>} />
           <Route path="/oeuvre/antigone/lecture" element={<Need role="learner"><WorkScope wid="antigone"><WLecture /></WorkScope></Need>} />
           <Route path="/oeuvre/antigone/etape/:n" element={<Need role="learner"><WorkScope wid="antigone"><WUnit /></WorkScope></Need>} />
