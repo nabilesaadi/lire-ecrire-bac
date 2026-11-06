@@ -24,7 +24,7 @@ export function useProgress() {
     const done = (id) => activityDone(id, byAct, api.submissions)
     const rw = Object.fromEntries(RW_LIST.map((w) => {
       let pe = 0
-      w.K.themes.forEach((t) => { for (let n = 0; n <= 5; n++) if (done(`${w.prefix}.pe.t${t.n}.n${n}`)) pe++ })
+      w.K?.themes.forEach((t) => { for (let n = 0; n <= 5; n++) if (done(`${w.prefix}.pe.t${t.n}.n${n}`)) pe++ })
       return [w.id, {
         chapters: w.D.chapters.filter((c) => done(`${w.prefix}.ch.${c.n}`)).length,
         quizzes: w.D.quizzes.filter((q) => done(`${w.prefix}.quiz.${q.n}`)).length,
@@ -59,7 +59,7 @@ export function StudentHome() {
   const nextChaps = RW_LIST.filter((w) => w.level === level).map((w) => ({ w, c: w.D.chapters.find((c) => !pr.done(`${w.prefix}.ch.${c.n}`)) })).filter((o) => o.c)
   const totCh = RW_LIST.reduce((t, w) => t + w.D.chapters.length, 0)
   const totQz = RW_LIST.reduce((t, w) => t + w.D.quizzes.length, 0)
-  const totPe = RW_LIST.reduce((t, w) => t + w.K.themes.length * 6, 0)
+  const totPe = RW_LIST.reduce((t, w) => t + (w.K ? w.K.themes.length * 6 : 0), 0)
   const nexts = Object.values(UNIT_WORKS).map((w) => ({ w, x: PATHS[w.id].find((x) => !pr.done(x.id)) })).filter((o) => o.x)
   const totalUnits = Object.values(UNIT_WORKS).reduce((t, w) => t + w.data.units.length, 0)
   const totalQuizzes = Object.values(UNIT_WORKS).reduce((t, w) => t + w.data.quizzes.length, 0)
@@ -184,12 +184,20 @@ export function WorkHub() {
             <p className="muted">Les {WORK.chapters.length} chapitres en images, les personnages et les lieux, puis {WORK.quizzes.length} quiz.</p>
             <div className="row"><span className="tag teal">{me.chapters}/{WORK.chapters.length} chapitres lus</span><span className="tag teal">{me.quizzes}/{WORK.quizzes.length} quiz</span></div>
           </Link>
-          <Link to={`${base}/ecriture`} className="card card-link">
-            <img src={img(K.hero)} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
-            <h2 style={{ marginTop: 14 }}>Production écrite</h2>
-            <p className="muted">Comprendre la structure du texte argumentatif, puis {K.themes.length} thèmes en 6 niveaux.</p>
-            <div className="row"><span className="tag teal">{me.pe}/{K.themes.length * 6} niveaux terminés</span></div>
-          </Link>
+          {K ? (
+            <Link to={`${base}/ecriture`} className="card card-link">
+              <img src={img(K.hero)} alt="" style={{ borderRadius: 12, aspectRatio: '16/9', objectFit: 'cover', width: '100%' }} />
+              <h2 style={{ marginTop: 14 }}>Production écrite</h2>
+              <p className="muted">Comprendre la structure du texte argumentatif, puis {K.themes.length} thèmes en 6 niveaux.</p>
+              <div className="row"><span className="tag teal">{me.pe}/{K.themes.length * 6} niveaux terminés</span></div>
+            </Link>
+          ) : (
+            <div className="card flat" style={{ display: 'grid', alignContent: 'center', background: 'var(--paper-2)' }}>
+              <span className="tag" style={{ width: 'fit-content' }}>Bientôt</span>
+              <h2 style={{ marginTop: 14 }}>Production écrite</h2>
+              <p className="muted" style={{ margin: 0 }}>Le kit de production écrite de cette œuvre n’est pas encore en ligne. En attendant, fais les chapitres, les quiz et les questions « À deux ».</p>
+            </div>
+          )}
         </div>
       </div>
     </>

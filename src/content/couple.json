@@ -1,0 +1,2120 @@
+{
+ "id": "couple",
+ "title": "Il était une fois un vieux couple heureux",
+ "shortTitle": "Le Vieux couple",
+ "author": "Mohammed Khaïr-Eddine",
+ "year": 2002,
+ "cover": "vch/cover.webp",
+ "hero": "vch/cover.webp",
+ "levelLabel": "2e année du baccalauréat",
+ "brefTitle": "Un roman du Sud marocain",
+ "lectureLead": "Découvre Bouchaïb, sa femme et les gens du village, puis lis les vingt-sept chapitres et teste-toi avec les cinq quiz.",
+ "bref": {
+  "img": "vch/bref.webp",
+  "rows": [
+   [
+    "Auteur",
+    "Mohammed Khaïr-Eddine (1941-1995), né à Tafraout, dans le Sud marocain."
+   ],
+   [
+    "Genre",
+    "Roman (récit) : un narrateur raconte la vie d’un vieux couple berbère."
+   ],
+   [
+    "Dates",
+    "Écrit dans les années 1990, publié après la mort de l’auteur, en 2002 (Éditions du Seuil)."
+   ],
+   [
+    "Lieu et époque",
+    "Un village de l’Anti-Atlas, des années 1950 (avant l’indépendance) aux années 1980 (la sécheresse)."
+   ],
+   [
+    "Héros",
+    "Bouchaïb, « le Vieux », et sa femme, « la vieille »."
+   ],
+   [
+    "Structure",
+    "27 chapitres courts : la vie d’un couple, d’un village et d’un pays qui change."
+   ]
+  ]
+ },
+ "bref_alt": "Le vieux couple sur sa terrasse, au milieu des rochers de l’Anti-Atlas.",
+ "groups": [
+  [
+   "couple",
+   "Le vieux couple et sa maison"
+  ],
+  [
+   "autres",
+   "Les autres personnages"
+  ]
+ ],
+ "characters": [
+  {
+   "id": "bouchaib",
+   "name": "Bouchaïb",
+   "role": "« le Vieux », un sage du village",
+   "group": "couple",
+   "img": "vch/p_bouchaib.webp",
+   "facts": [
+    "Identité : Un vieil homme berbère. Son surnom vient de Mazagan (El-Jadida), où il a travaillé.",
+    "Son passé : Soldat au Sahara, déserteur, cinq ans de prison, puis la misère dans le Nord.",
+    "Caractère : Calme, sage et généreux. Il aime la nature, les bêtes et sa femme.",
+    "Au village : Il est anflouss (policier du village) et écrivain public. Il prie à la mosquée.",
+    "Sa passion : Il lit beaucoup et il écrit des poèmes en berbère sur un saint méconnu.",
+    "Ses idées : Il accepte la modernité utile, mais il méprise les parvenus et l’amour de l’argent."
+   ],
+   "quote": "« Je suis le gardien de la tradition » — p. 37"
+  },
+  {
+   "id": "vieille",
+   "name": "La vieille",
+   "role": "la femme de Bouchaïb",
+   "group": "couple",
+   "img": "vch/p_vieille.webp",
+   "facts": [
+    "Le roman ne dit jamais son prénom : on l’appelle « la vieille ».",
+    "Cousine lointaine de Bouchaïb, elle vient d’un autre village.",
+    "Elle travaille beaucoup : la vache, les poules, l’eau du puits, la cuisine.",
+    "Elle aime la tradition : bijoux d’argent, pots en terre, moulin à main.",
+    "Elle ne sait pas lire, mais son mari lui apprend le monde."
+   ],
+   "quote": "« je suis une grand-mère sans petits-enfants, mais je suis heureuse. » — p. 13"
+  },
+  {
+   "id": "betes",
+   "name": "Les bêtes de la maison",
+   "role": "la « famille » du vieux couple",
+   "group": "couple",
+   "img": "vch/p_betes.webp",
+   "facts": [
+    "Le chat noir est gâté : il ne chasse même plus les rats.",
+    "Après sa mort, un chat roux le remplace.",
+    "L’âne (plus tard la mule) et la vache font partie de la maison.",
+    "Bouchaïb aime les bêtes et protège les oiseaux."
+   ],
+   "quote": "« Je le considère un peu comme un fils » — p. 33"
+  },
+  {
+   "id": "talouqit",
+   "name": "Talouqit",
+   "role": "la voisine, sainte et savante",
+   "group": "autres",
+   "img": "vch/p_talouqit.webp",
+   "facts": [
+    "Elle vit seule et cuit le pain des fêtes."
+   ],
+   "quote": null
+  },
+  {
+   "id": "hmad",
+   "name": "Hmad",
+   "role": "l’ancien tueur, devenu chasseur",
+   "group": "autres",
+   "img": "vch/p_hmad.webp",
+   "facts": [
+    "Tout le monde le craint ; il apporte du gibier au Vieux."
+   ],
+   "quote": null
+  },
+  {
+   "id": "lemokaddem",
+   "name": "Le Mokaddem",
+   "role": "le représentant de l’État au village",
+   "group": "autres",
+   "img": "vch/p_lemokaddem.webp",
+   "facts": [
+    "Il juge avec bon sens et aime raconter des histoires."
+   ],
+   "quote": null
+  },
+  {
+   "id": "limam",
+   "name": "L’imam",
+   "role": "le maître de la medersa",
+   "group": "autres",
+   "img": "vch/p_limam.webp",
+   "facts": [
+    "Il aide Bouchaïb à publier son poème."
+   ],
+   "quote": null
+  },
+  {
+   "id": "amzil",
+   "name": "Amzil",
+   "role": "l’ancien forgeron, devenu pauvre",
+   "group": "autres",
+   "img": "vch/p_amzil.webp",
+   "facts": [
+    "Haj Lahcène sauve sa femme et son bébé."
+   ],
+   "quote": null
+  },
+  {
+   "id": "hajlahcene",
+   "name": "Haj Lahcène",
+   "role": "un riche généreux et discret",
+   "group": "autres",
+   "img": "vch/p_hajlahcene.webp",
+   "facts": [
+    "« Un saint d’aujourd’hui », dit le Vieux."
+   ],
+   "quote": null
+  },
+  {
+   "id": "radwane",
+   "name": "Radwane",
+   "role": "le vieil ami parti en France",
+   "group": "autres",
+   "img": "vch/p_radwane.webp",
+   "facts": [
+    "Il revient après trente ans, pour une seule journée."
+   ],
+   "quote": null
+  },
+  {
+   "id": "oumouh",
+   "name": "Oumouh",
+   "role": "le vieux propriétaire du verger",
+   "group": "autres",
+   "img": "vch/p_oumouh.webp",
+   "facts": [
+    "Son verger brûle : il veut se venger avec son vieux fusil."
+   ],
+   "quote": null
+  },
+  {
+   "id": "lesamericains",
+   "name": "Les Américains",
+   "role": "de jeunes touristes",
+   "group": "autres",
+   "img": "vch/p_lesamericains.webp",
+   "facts": [
+    "Contre la guerre du Vietnam, ils veulent une randonnée."
+   ],
+   "quote": null
+  }
+ ],
+ "schemas": [
+  {
+   "img": "vch/relations.webp",
+   "t": "Les liens entre les personnages",
+   "alt": "Schéma : Bouchaïb et la vieille au centre ; l’imam publie son poème, Radwane est son ami de toujours, Hmad lui offre du gibier, il bavarde avec le Mokaddem, il fait ferrer sa mule chez Amzil ; Haj Lahcène sauve la femme d’Amzil ; le Mokaddem prend le fusil d’Oumouh ; la vieille donne du gibier à Talouqit ; le chat de la maison."
+  },
+  {
+   "img": "vch/histoire.webp",
+   "t": "Quarante ans de changements",
+   "alt": "Frise : avant 1956, le temps des Français (ch. 2 à 4) ; 1956, l’indépendance (ch. 5 et 6) ; 1960, le séisme d’Agadir (ch. 7) ; années 1970, l’émigration (ch. 8 et 11) ; années 1980, l’argent et la télé (ch. 14 à 23) ; la fin, la sécheresse (ch. 26 et 27)."
+  }
+ ],
+ "placesTitle": "Les lieux du roman",
+ "places": [
+  {
+   "name": "La maison et la terrasse",
+   "img": "vch/l_lamaisonetlaterrasse.webp",
+   "chapters": "1, 7, 9"
+  },
+  {
+   "name": "La mosquée haute",
+   "img": "vch/l_lamosqueehaute.webp",
+   "chapters": "2 et 3"
+  },
+  {
+   "name": "Le chemin du souk",
+   "img": "vch/l_lechemindusouk.webp",
+   "chapters": "5"
+  },
+  {
+   "name": "Le cimetière",
+   "img": "vch/l_lecimetire.webp",
+   "chapters": "5 et 8"
+  },
+  {
+   "name": "Chez l’adjudant",
+   "img": "vch/l_chezladjudant.webp",
+   "chapters": "13"
+  },
+  {
+   "name": "La forge d’Amzil",
+   "img": "vch/l_laforgedamzil.webp",
+   "chapters": "16"
+  },
+  {
+   "name": "Le petit salon",
+   "img": "vch/l_lepetitsalon.webp",
+   "chapters": "9, 11, 14"
+  },
+  {
+   "name": "La medersa",
+   "img": "vch/l_lamedersa.webp",
+   "chapters": "20 et 21"
+  },
+  {
+   "name": "Le verger d’Oumouh",
+   "img": "vch/l_levergerdoumouh.webp",
+   "chapters": "24"
+  },
+  {
+   "name": "Les ruines",
+   "img": "vch/l_lesruines.webp",
+   "chapters": "1 et 27"
+  }
+ ],
+ "chapters": [
+  {
+   "n": 1,
+   "title": "Un vieux couple heureux",
+   "cover": "vch/ch01_cover.webp",
+   "phrase": "« il vivait en silence, presque en secret » — p. 9",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Aujourd’hui, dans une vallée du Sud marocain, il reste une ruine. C’était la maison d’un vieux couple sans enfants. Le mari s’appelle Bouchaïb. Jeune, il a voyagé dans le Nord et en Europe. Aujourd’hui, c’est un homme savant : il prie à la mosquée, il tient les comptes dans un cahier vert et il écrit les lettres des villageois.",
+     "quote": "« Elle avait été la demeure d’un couple âgé sans descendance » — p. 9",
+     "img": "vch/ch01_i1.webp",
+     "duo": null
+    },
+    {
+     "k": 2,
+     "text": "Le soir, sur la terrasse, la vieille prépare un tagine. Le Vieux boit son thé. Ils regardent le ciel étoilé. Bouchaïb aime sa femme, son âne et son chat. Il n’a pas d’enfants, mais il n’est pas triste. Sa femme non plus : elle est heureuse avec lui.",
+     "quote": "« je suis une grand-mère sans petits-enfants, mais je suis heureuse. » — p. 13",
+     "img": "vch/ch01_i2.webp",
+     "duo": "Le vieux couple n’a pas d’enfants. Pourquoi est-il heureux quand même ? Et pour vous, qu’est-ce qui rend un couple heureux ?"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Un homme d’honneur",
+   "cover": "vch/ch02_cover.webp",
+   "phrase": "« Nous ne sommes pas des traîtres » — p. 16",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Avant l’indépendance, un Mokhazni armé cherche des résistants. Bouchaïb sait qu’ils sont au village, mais il ne dit rien. Il partage son gibier avec Talouqit, une voisine sainte et savante. Chaque nuit, il fait le même rêve : il grimpe dans un grand amandier… et il tombe.",
+     "quote": "« Ils ne sont pas ici, un point c’est tout. » — p. 15",
+     "img": "vch/ch02_i1.webp",
+     "duo": "Bouchaïb ne dénonce pas les résistants. Que montre ce geste ? À votre avis, que veut dire son rêve de l’amandier ?"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "La grande fête de la mosquée",
+   "cover": "vch/ch03_cover.webp",
+   "phrase": "« Il y avait foule sur la place. » — p. 21",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "À la mosquée haute, deux bœufs énormes attendent le sacrifice, payés par les commerçants du Nord. Toute la place est en fête : les hommes boivent le thé, les enfants courent, on cuit un grand tagine. Ensuite, chaque famille reçoit sa part de viande.",
+     "quote": "« Ainsi se passa cette mémorable fête » — p. 21",
+     "img": "vch/ch03_i1.webp",
+     "duo": "Comment le village partage-t-il la viande ? Que montre cette fête sur la vie du village à cette époque ?"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Le secret de Bouchaïb",
+   "cover": "vch/ch04_cover.webp",
+   "phrase": "« J’ai moins souffert en prison qu’en liberté. » — p. 28",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Un coup de feu : c’est Hmad, un ancien tueur, qui chasse le corbeau. Puis Bouchaïb raconte son passé. Il a été spahi (soldat) au Sahara, il a déserté et il a passé cinq ans en prison. Ensuite, pendant la guerre et la famine, il a erré de ville en ville et il a volé pour ne pas mourir de faim.",
+     "quote": "« J’ai passé cinq ans de ma vie dans les prisons militaires. » — p. 24",
+     "img": "vch/ch04_i1.webp",
+     "duo": null
+    },
+    {
+     "k": 2,
+     "text": "Il est enfin rentré au village. Il a épousé une cousine lointaine et il cultive la terre. Il protège les oiseaux et aime son chat noir comme un fils. Un jour, il dit à sa femme qu’il est fidèle et qu’il n’aime qu’elle. Elle rit : il ne le lui avait jamais dit.",
+     "quote": "« Moi, je suis fidèle et je n’aime que toi, ma vieille. » — p. 35",
+     "img": "vch/ch04_i2.webp",
+     "duo": "Bouchaïb a eu une jeunesse très dure. Comment est-il devenu un homme calme et heureux ? Quel moment de ce chapitre vous touche le plus ?"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "La première maison de béton",
+   "cover": "vch/ch05_cover.webp",
+   "phrase": "« Petit à petit, l’aspect des lieux changeait. » — p. 36",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Après l’indépendance, la première maison en béton apparaît près du cimetière. Puis arrivent les automobiles, les pompes à eau et les radios. Les vieilles maisons tombent en ruine. Bouchaïb, lui, va toujours au souk à dos d’âne, par le vieux chemin de la montagne.",
+     "quote": "« La première maison de béton apparut près du cimetière » — p. 36",
+     "img": "vch/ch05_i1.webp",
+     "duo": "Quelles nouveautés arrivent au village ? Bouchaïb dit : « Tout évolue, sauf les mentalités. » Êtes-vous d’accord ?"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "L’or, l’argent et la poésie",
+   "cover": "vch/ch06_cover.webp",
+   "phrase": "« Seule compte la foi, la foi inébranlable des Anciens. » — p. 41",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Une minoterie ouvre au village, mais la vieille continue à moudre à la main. Elle préfère aussi ses vieux bijoux d’argent à l’or des femmes de la ville : ils ont une histoire. Un jour, elle voit son mari écrire : c’est de la poésie berbère.",
+     "quote": "« Je n’ai jamais eu que des bijoux en argent pur. C’est noble et c’est berbère. » — p. 40",
+     "img": "vch/ch06_i1.webp",
+     "duo": "Pourquoi la vieille préfère-t-elle l’argent à l’or ? Et vous, préférez-vous les objets anciens ou les objets neufs ? Pourquoi ?"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Le tremblement de terre d’Agadir",
+   "cover": "vch/ch07_cover.webp",
+   "phrase": "« Allez chercher le savoir jusqu’en Chine. » — p. 47",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Le chat noir est mort : un chat roux l’a remplacé. Une nuit d’été, ce chat est inquiet, puis il disparaît. Au milieu de la nuit, la terre tremble très fort. Le lendemain, on apprend la nouvelle : la ville d’Agadir est détruite.",
+     "quote": "« une ville avait été rayée de la carte en quelques secondes. » — p. 46",
+     "img": "vch/ch07_i1.webp",
+     "duo": null
+    },
+    {
+     "k": 2,
+     "text": "Au village, on dit que c’est une punition de Dieu. Bouchaïb, lui, connaît la science : il explique à sa femme pourquoi la terre tremble. La lumière qui passe dans le ciel ? C’est le Spoutnik, pas un démon ! Puis un gros orage remplit enfin les puits.",
+     "quote": "« l’ignorance est aussi malsaine que la mécréance. » — p. 47",
+     "img": "vch/ch07_i2.webp",
+     "duo": "Pourquoi Bouchaïb ne croit-il pas que le séisme est une punition ? Que pensez-vous de la phrase : « Allez chercher le savoir jusqu’en Chine » ?"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Les enfants venus de France",
+   "cover": "vch/ch08_cover.webp",
+   "phrase": "« Je me demande ce qu’on leur apprend là-bas dans les écoles. » — p. 54",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Beaucoup de jeunes partent en ville ou en Europe. Chaque été, ils reviennent avec une voiture neuve. Un été, des enfants nés en France viennent au village. Ils ne parlent pas la langue du pays et vont même chercher des os au cimetière. Bouchaïb est choqué.",
+     "quote": "« Ils n’ont même pas peur de la mort » — p. 54",
+     "img": "vch/ch08_i1.webp",
+     "duo": "Pourquoi les enfants venus de France ne comprennent-ils pas le village ? Selon vous, comment garder le lien avec le pays de ses parents ?"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "title": "Un poème pendant la tempête",
+   "cover": "vch/ch09_cover.webp",
+   "phrase": "« Ne cherchez pas, ô gens. Le saint n’a point de tombe. » — p. 58",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "L’hiver commence par une tempête. Bien au chaud, Bouchaïb écrit un long poème sur un saint méconnu. Le chat roux dresse les oreilles au bruit de la plume ! Le Vieux est aussi choqué par les mariages des riches, alors que les filles pauvres ne trouvent pas de mari.",
+     "quote": "« Mon chat, tu comprends la poésie. » — p. 57",
+     "img": "vch/ch09_i1.webp",
+     "duo": "Le Vieux dit que la cuisine de sa femme est « aussi de la poésie ». Que veut-il dire ? Que pensez-vous des mariages très chers ?"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "title": "Les premières oranges",
+   "cover": "vch/ch10_cover.webp",
+   "phrase": "« Ce bonheur de vivre qui est le bien le plus précieux au monde. » — p. 62",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "En janvier arrivent les premières oranges. Le Vieux les cueille avec respect et attend sa femme pour les partager. Il raconte la légende d’Hercule et des pommes d’or. Il rit aussi d’une histoire du Mokaddem, pour qui la terre appartient à ceux qui la travaillent.",
+     "quote": "« Les premières oranges arrivèrent en janvier » — p. 62",
+     "img": "vch/ch10_i1.webp",
+     "duo": "Le Mokaddem dit : « La terre appartient à ceux qui la travaillent. » Êtes-vous d’accord ? Pourquoi ?"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "title": "Les visiteurs américains",
+   "cover": "vch/ch11_cover.webp",
+   "phrase": "« Elle était visiblement heureuse d’avoir un mari tel que le Vieux » — p. 68",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "En hiver, Bouchaïb parle beaucoup avec sa femme : elle ne sait pas lire, mais elle connaît le monde. Un matin, le guide arrive avec cinq jeunes Américains, opposés à la guerre du Vietnam. Ils veulent louer des bêtes. Le Vieux refuse de louer sa mule.",
+     "quote": "« Ma mule ne connaît que son maître. » — p. 68",
+     "img": "vch/ch11_i1.webp",
+     "duo": "Pourquoi la vieille est-elle fière de son mari ? Selon vous, qu’est-ce qui rend un couple solide ?"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Le chat et la mésange",
+   "cover": "vch/ch12_cover.webp",
+   "phrase": "« Mais un chat est d’abord un chat. » — p. 70",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Les amandiers vont fleurir. Le chat roux guette une mésange sur un figuier. Le Vieux le chasse : l’oiseau est chez lui ici. Puis il écrit sans s’arrêter. Le guide repasse : pas de randonnée, les ânes du village transportent le fumier.",
+     "quote": "« Il est ici chez lui comme toi. » — p. 70",
+     "img": "vch/ch12_i1.webp",
+     "duo": "Bouchaïb protège les oiseaux contre son propre chat. Que montre ce geste ? Et vous, comment protégez-vous la nature ?"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "title": "Une fête chez l’adjudant",
+   "cover": "vch/ch13_cover.webp",
+   "phrase": "« Un homme honnête et travailleur. » — p. 73",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Salem vient chercher le Vieux : l’adjudant fête la circoncision de ses deux fils, dans sa maison pareille à un petit château. Les garçons pleurent, leur mère les console avec des gâteaux. On boit le thé, on mange un couscous. Le Vieux aime cette fête simple.",
+     "quote": "« Le Vieux aimait cette réunion de gens simples. » — p. 73",
+     "img": "vch/ch13_i1.webp",
+     "duo": "Comparez cette fête avec les mariages des riches (chapitre 9). Laquelle Bouchaïb préfère-t-il ? Pourquoi ?"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "title": "L’électricité et la radio",
+   "cover": "vch/ch14_cover.webp",
+   "phrase": "« Comme les choses vont vite ! » — p. 75",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Les riches ont maintenant l’électricité, la télévision et la parabole. Le Vieux se met en colère contre ces parvenus. Puis un colis arrive de France : du thé, un transistor (une radio) et une robe que sa femme ne portera jamais. Ensemble, ils écoutent l’Ahwach.",
+     "quote": "« Nous, on a maintenant une radio. » — p. 79",
+     "img": "vch/ch14_i1.webp",
+     "duo": "Selon Bouchaïb, pourquoi les fêtes et l’Ahwach disparaissent-ils du village ? Que pensez-vous de son avis ?"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "title": "Haj Lahcène, un homme généreux",
+   "cover": "vch/ch15_cover.webp",
+   "phrase": "« même un grand a tôt ou tard besoin d’un plus petit que soi. » — p. 81",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Amzil, l’ancien forgeron, vient ferrer la mule. Il raconte : sa femme a eu un accouchement très difficile. Haj Lahcène les a conduits à l’hôpital de Tiznit dans sa vieille Chevrolet et il a tout payé. Pour le Vieux, c’est Dieu qui le récompensera.",
+     "quote": "« sans lui ma femme serait morte, et l’enfant aussi. » — p. 81",
+     "img": "vch/ch15_i1.webp",
+     "duo": "Haj Lahcène aide Amzil sans rien demander. Connaissez-vous des gestes généreux de ce genre ? Racontez."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "title": "La forge éteinte",
+   "cover": "vch/ch16_cover.webp",
+   "phrase": "« Haj Lahcène est vraiment un saint. Un saint d’aujourd’hui. » — p. 82",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Pour le Vieux, Haj Lahcène est un saint d’aujourd’hui. Mais Amzil est pauvre : on achète tout au souk, en plastique ou en aluminium. Il a fermé sa forge. Le soir, le Vieux s’endort en écoutant l’Ahwach à la radio.",
+     "quote": "« Ce n’est donc pas le village qui crève, non ! C’est son âme. » — p. 83",
+     "img": "vch/ch16_i1.webp",
+     "duo": "Pourquoi la forge d’Amzil a-t-elle fermé ? Connaissez-vous des métiers anciens qui disparaissent aujourd’hui ?"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "title": "Le Vieux devient moderne ?",
+   "cover": "vch/ch17_cover.webp",
+   "phrase": "« Faut s’y faire, hé ! » — p. 85",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Le magasin du village a grandi : on ne va presque plus au souk. Le Vieux veut des objets modernes : couscoussier en aluminium, poêle, couteaux. Sa femme refuse le couscoussier : ses pots en terre cuite donnent meilleur goût. Lui achètera un réchaud à gaz pour le thé.",
+     "quote": "« Mes ustensiles en terre cuite sont meilleurs. » — p. 85",
+     "img": "vch/ch17_i1.webp",
+     "duo": "La vieille dit : « Il n’y a pas mieux que le feu de bois. » Et chez vous, quels objets anciens utilise-t-on encore ?"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "title": "Le saint méconnu",
+   "cover": "vch/ch18_cover.webp",
+   "phrase": "« Je suis fidèle à la nature » — p. 87",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Au magasin, le Vieux refuse l’engrais : pour lui, c’est du poison, le fumier de sa vache suffit. À la maison, il reprend son poème. Le saint, enfermé dans un temple gardé par des tigres, s’échappe grâce à un garde, qui cesse de croire aux faux dieux.",
+     "quote": "« Vous êtes réellement un saint » — p. 89",
+     "img": "vch/ch18_i1.webp",
+     "duo": "Pourquoi le Vieux refuse-t-il l’engrais ? Aujourd’hui, que pense-t-on des produits chimiques dans l’agriculture ?"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Le dernier troupeau",
+   "cover": "vch/ch19_cover.webp",
+   "phrase": "« Le dernier symbole de jadis est tombé » — p. 93",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Le dernier troupeau du village part au souk dans trois camions : ses propriétaires sont devenus riches en ville. Dans la vieille maison, l’aïeule refuse de partir et parle à ses morts. Pour le Vieux, c’est la fin d’un symbole. Il se réfugie dans la poésie.",
+     "quote": "« Le dernier troupeau est parti pour le souk à bord de trois camions. » — p. 91",
+     "img": "vch/ch19_i1.webp",
+     "duo": "Pourquoi le départ du troupeau rend-il Bouchaïb triste ? Pour vous, à quoi sert la poésie ?"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Le poème à la medersa",
+   "cover": "vch/ch20_cover.webp",
+   "phrase": "« Achève d’abord ce travail. Après, nous aviserons. » — p. 98",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Près du village, la medersa garde une bibliothèque de vieux manuscrits. L’imam, doux avec ses élèves, lit le poème du Vieux : il est enthousiaste ! Mais publier un livre coûte cher : il faut un mécène. À la maison, la vieille plume des perdreaux offerts par Hmad.",
+     "quote": "« Le poème est magnifique. » — p. 97",
+     "img": "vch/ch20_i1.webp",
+     "duo": "L’imam ne frappe pas ses élèves. Que pensez-vous de sa façon d’enseigner ? Comment imaginez-vous le professeur idéal ?"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Le livre est publié",
+   "cover": "vch/ch21_cover.webp",
+   "phrase": "« La modernité n’est pas complètement négative » — p. 103",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Le Vieux écrit même la nuit et finit son poème. Un élève de la medersa le recopie en belle calligraphie. Grâce à une souscription, le livre paraît ! Un éditeur le met aussi sur cassettes. Le Vieux accepte : l’important est d’être lu.",
+     "quote": "« Ce qui compte, c’est qu’on me lise, le reste importe peu. » — p. 103",
+     "img": "vch/ch21_i1.webp",
+     "duo": "Bouchaïb accepte enfin les cassettes. Pourquoi ? D’après lui, la modernité est-elle toujours mauvaise ?"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "title": "On parle de lui à la radio",
+   "cover": "vch/ch22_cover.webp",
+   "phrase": "« J’ai toujours su que tu cachais une grande âme. » — p. 105",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Sa femme l’accueille avec un grand sourire : la radio d’Agadir a parlé de lui ! Grâce aux cassettes, elle pourra enfin écouter ses poèmes. Elle lui dit qu’elle n’a jamais souffert avec lui, contrairement à d’autres femmes du village.",
+     "quote": "« Hé ! On a parlé de toi à la radio d’Agadir. » — p. 104",
+     "img": "vch/ch22_i1.webp",
+     "duo": "La vieille compare son mari aux autres maris du village. Que dit-elle ? Que pensez-vous de ce couple ?"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "title": "La fiancée de l’eau",
+   "cover": "vch/ch23_cover.webp",
+   "phrase": "« Ce dont manque ce pays, c’est d’un bon système éducatif » — p. 110",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Le Vieux achète un lecteur de cassettes, des cassettes de Haj Bélaïd et une lampe à gaz. Puis il imagine un poème : Tislit Ouaman, « la fiancée de l’eau », l’arc-en-ciel. Le soleil tue son ami ; alors il ne pleut plus : c’est la sécheresse.",
+     "quote": "« Tout vrai poète est plus ou moins devin » — p. 108",
+     "img": "vch/ch23_i1.webp",
+     "duo": "Le Vieux pense que les hommes sont responsables de la sécheresse. Que font-ils de mal ? Que manque-t-il au pays selon lui ?"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "title": "Le verger en feu",
+   "cover": "vch/ch24_cover.webp",
+   "phrase": "« Soleil maudit, tu as tué l’époux splendide de la terre ! » — p. 114",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Un après-midi très chaud, un incendie brûle le verger d’Oumouh. On trouve des canettes de bière : des jeunes de la ville ont fait la fête là, la nuit. Le Vieux se souvient : autrefois, tout le village faisait une chaîne humaine contre le feu. Cette solidarité a disparu.",
+     "quote": "« Cette solidarité n’existe plus. » — p. 113",
+     "img": "vch/ch24_i1.webp",
+     "duo": "Comparez l’incendie d’autrefois et celui d’aujourd’hui. Qu’est-ce qui a changé ? La solidarité existe-t-elle encore autour de vous ?"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "title": "Radwane, l’ami de France",
+   "cover": "vch/ch25_cover.webp",
+   "phrase": "« Tu ne peux pas savoir le prix d’une amitié. » — p. 120",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "Radwane, l’ami de France, revient après trente ans. Il a entendu parler du livre à Paris et admire la calligraphie. Il parle du chômage et du racisme en France. Après le déjeuner, il part déjà pour Agadir. Le Vieux est très ému.",
+     "quote": "« Ce sont des œuvres d’art, mon vieux ! » — p. 116",
+     "img": "vch/ch25_i1.webp",
+     "duo": "Radwane et Bouchaïb ont choisi deux vies différentes. Lesquelles ? Laquelle préférez-vous ? Pourquoi ?"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "title": "La sécheresse",
+   "cover": "vch/ch26_cover.webp",
+   "phrase": "« Tout change, en effet, tout évolue » — p. 124",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "L’automne passe sans pluie. Les prix montent, des ânes abandonnés errent sur les routes. La vieille dit : ton poème avait raison ! Pour le Vieux, les hommes coupent trop d’arbres. Après vingt leçons, elle sait enfin écouter ses poèmes sur le magnétophone.",
+     "quote": "« Ce que tu as prévu dans ton fameux poème est arrivé » — p. 122",
+     "img": "vch/ch26_i1.webp",
+     "duo": "Le Vieux dit : « Le temps est l’acteur principal de cette histoire. » Expliquez cette phrase avec des exemples du roman."
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "title": "La vie est partout",
+   "cover": "vch/ch27_cover.webp",
+   "phrase": "« Tout s’oublie, tout passe. » — p. 127",
+   "ideas": [
+    {
+     "k": 1,
+     "text": "La deuxième année de sécheresse est terrible : des villages entiers se vident et deviennent des ruines. Le Vieux, lui, reste. Tant que les puits sont pleins, le village vivra. Il faut creuser plus profond et ne pas croire au mirage de la ville.",
+     "quote": "« Car la vie est partout, même dans le désert le plus aride. » — p. 128",
+     "img": "vch/ch27_i1.webp",
+     "duo": "Le roman commence par une ruine et finit par l’espoir du Vieux. Partir en ville ou rester au village : qu’en pensez-vous ?"
+    }
+   ]
+  }
+ ],
+ "quizzes": [
+  {
+   "n": 1,
+   "chapters": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "cover": "vch/quiz1.webp",
+   "retenir": [
+    {
+     "t": "Un couple heureux",
+     "d": "Bouchaïb et sa femme n’ont pas d’enfants, mais ils vivent en paix, unis et pleins de respect l’un pour l’autre."
+    },
+    {
+     "t": "Un homme sage",
+     "d": "Bouchaïb est savant, croyant et calme. Il aide les villageois et il protège la nature."
+    },
+    {
+     "t": "Un passé difficile",
+     "d": "Soldat, déserteur, prisonnier, affamé : sa jeunesse a été dure. Il a choisi la vie simple du village."
+    },
+    {
+     "t": "L’époque coloniale",
+     "d": "Avant 1956, la résistance lutte contre la France. Bouchaïb protège les résistants du village."
+    },
+    {
+     "t": "La vie du village",
+     "d": "Fêtes, partage de la viande, entraide : le village vit au rythme des saisons et de la solidarité."
+    },
+    {
+     "t": "Les premiers changements",
+     "d": "Après l’indépendance arrivent le béton, les autos et les radios. Le Vieux reste « le gardien de la tradition »."
+    }
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ?",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Le vieux couple a beaucoup d’enfants.",
+       "a": false,
+       "ref": [
+        1,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb écrit les lettres des villageois.",
+       "a": true,
+       "ref": [
+        1,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb dénonce les résistants au Mokhazni.",
+       "a": false,
+       "ref": [
+        2,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Talouqit sait lire l’arabe et le berbère.",
+       "a": true,
+       "ref": [
+        2,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb a passé cinq ans en prison militaire.",
+       "a": true,
+       "ref": [
+        4,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb va au souk en car.",
+       "a": false,
+       "ref": [
+        5,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Pourquoi appelle-t-on le vieil homme « Bouchaïb » ?",
+       "opts": [
+        "Il a travaillé à Mazagan (El-Jadida).",
+        "C’est le nom de son père.",
+        "Il est né à Casablanca."
+       ],
+       "a": 0,
+       "ref": [
+        1,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quels êtres Bouchaïb aime-t-il ?",
+       "opts": [
+        "ses enfants et ses voisins",
+        "sa femme, son âne et son chat",
+        "le Mokaddem et le fqih"
+       ],
+       "a": 1,
+       "ref": [
+        1,
+        2
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que se passe-t-il dans le rêve de Bouchaïb ?",
+       "opts": [
+        "Il nage dans le torrent.",
+        "Il tombe d’un grand amandier.",
+        "Il part en France."
+       ],
+       "a": 1,
+       "ref": [
+        2,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qu’est-ce qui apparaît près du cimetière après l’indépendance ?",
+       "opts": [
+        "une école",
+        "un hôpital",
+        "la première maison en béton"
+       ],
+       "a": 2,
+       "ref": [
+        5,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Complète le tableau",
+     "title": "Complète le tableau : classe chaque mot dans la bonne colonne.",
+     "type": "sort",
+     "cats": [
+      "Personnages",
+      "Lieux",
+      "Objets"
+     ],
+     "items": [
+      [
+       "Talouqit",
+       0
+      ],
+      [
+       "le souk",
+       1
+      ],
+      [
+       "le cahier vert",
+       2
+      ],
+      [
+       "Hmad",
+       0
+      ],
+      [
+       "la mosquée haute",
+       1
+      ],
+      [
+       "le brasero",
+       2
+      ],
+      [
+       "le Mokhazni",
+       0
+      ],
+      [
+       "le cimetière",
+       1
+      ],
+      [
+       "le piège",
+       2
+      ],
+      [
+       "le Mokaddem",
+       0
+      ],
+      [
+       "Mazagan",
+       1
+      ],
+      [
+       "la lampe à carbure",
+       2
+      ]
+     ]
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Pour aller plus loin",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "« Ils ne sont pas ici, un point c’est tout. » Qui parle ?",
+       "opts": [
+        "Hmad",
+        "Bouchaïb",
+        "le Mokhazni"
+       ],
+       "a": 1,
+       "ref": [
+        2,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi Bouchaïb volait-il dans sa jeunesse ?",
+       "opts": [
+        "pour devenir riche",
+        "pour ne pas mourir de faim",
+        "pour aider les résistants"
+       ],
+       "a": 1,
+       "ref": [
+        4,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi Hmad chasse-t-il le corbeau ?",
+       "opts": [
+        "pour sa femme malade",
+        "pour le vendre au souk",
+        "pour protéger ses figues"
+       ],
+       "a": 0,
+       "ref": [
+        4,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que pense Bouchaïb des familles très nombreuses ?",
+       "opts": [
+        "Il les envie.",
+        "Elles ne peuvent pas nourrir leurs enfants.",
+        "Ce sont les plus heureuses."
+       ],
+       "a": 1,
+       "ref": [
+        1,
+        2
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "chapters": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "cover": "vch/quiz2.webp",
+   "retenir": [
+    {
+     "t": "Le monde change",
+     "d": "Minoterie, voitures, émigration : le village se modernise vite, et l’argent devient roi."
+    },
+    {
+     "t": "Une femme fidèle à la tradition",
+     "d": "La vieille moud son orge, garde ses bijoux d’argent et refuse l’or des parvenus."
+    },
+    {
+     "t": "Le savoir contre l’ignorance",
+     "d": "Après le séisme d’Agadir, Bouchaïb explique la science et refuse les superstitions."
+    },
+    {
+     "t": "Le choc des générations",
+     "d": "Les enfants nés en France ne connaissent ni la langue du village ni le respect des morts."
+    },
+    {
+     "t": "Un poète caché",
+     "d": "Bouchaïb écrit en berbère l’histoire d’un saint méconnu. Pour lui, la cuisine de sa femme est aussi de la poésie."
+    },
+    {
+     "t": "Riches et pauvres",
+     "d": "Mariages très chers d’un côté, filles pauvres sans mari de l’autre : le Vieux dénonce cette injustice."
+    }
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ?",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Comme les autres femmes, la vieille porte son orge à la minoterie.",
+       "a": false,
+       "ref": [
+        6,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "La vieille préfère les bijoux en or.",
+       "a": false,
+       "ref": [
+        6,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le tremblement de terre a détruit la ville d’Agadir.",
+       "a": true,
+       "ref": [
+        7,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb pense que le séisme est une punition de Dieu.",
+       "a": false,
+       "ref": [
+        7,
+        2
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Des enfants venus de France grattent les tombes du cimetière.",
+       "a": true,
+       "ref": [
+        8,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le Vieux attend sa femme pour goûter les premières oranges.",
+       "a": true,
+       "ref": [
+        10,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Qu’est-ce que Bouchaïb écrit en secret ?",
+       "opts": [
+        "un journal",
+        "de la poésie berbère",
+        "des lettres d’amour"
+       ],
+       "a": 1,
+       "ref": [
+        6,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quel animal remplace le chat noir ?",
+       "opts": [
+        "un chien",
+        "un chat roux",
+        "une mule"
+       ],
+       "a": 1,
+       "ref": [
+        7,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Selon Bouchaïb, quelle est la lumière qui passe la nuit dans le ciel ?",
+       "opts": [
+        "un démon",
+        "le Spoutnik des Russes",
+        "une étoile filante"
+       ],
+       "a": 1,
+       "ref": [
+        7,
+        2
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "De quoi parle le long poème du Vieux ?",
+       "opts": [
+        "d’un saint méconnu",
+        "d’un roi d’Agadir",
+        "d’un voyage en France"
+       ],
+       "a": 0,
+       "ref": [
+        9,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Complète le tableau",
+     "title": "Complète le tableau : classe chaque mot dans la bonne colonne.",
+     "type": "sort",
+     "cats": [
+      "La tradition",
+      "La modernité",
+      "La nature"
+     ],
+     "items": [
+      [
+       "le moulin à main",
+       0
+      ],
+      [
+       "la minoterie",
+       1
+      ],
+      [
+       "la tempête",
+       2
+      ],
+      [
+       "les bijoux d’argent",
+       0
+      ],
+      [
+       "la voiture neuve",
+       1
+      ],
+      [
+       "le torrent",
+       2
+      ],
+      [
+       "le chemin de la montagne",
+       0
+      ],
+      [
+       "le car",
+       1
+      ],
+      [
+       "l’orage",
+       2
+      ],
+      [
+       "la poésie berbère",
+       0
+      ],
+      [
+       "le Spoutnik",
+       1
+      ],
+      [
+       "les oranges",
+       2
+      ]
+     ]
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Pour aller plus loin",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "« Ce que tu fais là, c’est aussi de la poésie. » De quoi parle le Vieux ?",
+       "opts": [
+        "de la cuisine de sa femme",
+        "de son chat",
+        "de la radio"
+       ],
+       "a": 0,
+       "ref": [
+        9,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi les filles pauvres ne se marient-elles plus ?",
+       "opts": [
+        "Elles ne veulent pas.",
+        "Les garçons pauvres sont partis en ville.",
+        "Leurs pères refusent."
+       ],
+       "a": 1,
+       "ref": [
+        9,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui a conquis les « pommes d’or » dans la légende ?",
+       "opts": [
+        "Hercule",
+        "Alexandre le Grand",
+        "Ibn Khaldoun"
+       ],
+       "a": 0,
+       "ref": [
+        10,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que répond le Mokaddem à l’homme qui se plaint ?",
+       "opts": [
+        "« Tu as raison. »",
+        "« La terre appartient à ceux qui la travaillent. »",
+        "« Va voir le caïd. »"
+       ],
+       "a": 1,
+       "ref": [
+        10,
+        1
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "chapters": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "cover": "vch/quiz3.webp",
+   "retenir": [
+    {
+     "t": "Un couple qui se parle",
+     "d": "Bouchaïb discute avec sa femme comme avec un égal. Grâce à lui, elle connaît le monde."
+    },
+    {
+     "t": "L’amour des bêtes",
+     "d": "Le Vieux protège les oiseaux, même contre son propre chat. Il garde sa mule pour lui."
+    },
+    {
+     "t": "Les gens simples",
+     "d": "Chez l’adjudant, la fête est simple et sincère, loin du luxe des parvenus."
+    },
+    {
+     "t": "L’électricité et la télé",
+     "d": "Les riches ont tout, mais ils vivent ailleurs. Le Vieux se contente d’une petite radio."
+    },
+    {
+     "t": "La générosité",
+     "d": "Haj Lahcène sauve la femme et l’enfant d’Amzil. Pour le Vieux, c’est « un saint d’aujourd’hui »."
+    },
+    {
+     "t": "Des métiers qui meurent",
+     "d": "Les objets d’usine remplacent l’artisan : la forge d’Amzil ferme. C’est l’âme du village qui meurt."
+    }
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ?",
+     "items": [
+      {
+       "type": "vf",
+       "q": "La vieille sait lire et écrire.",
+       "a": false,
+       "ref": [
+        11,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Bouchaïb loue sa mule aux Américains.",
+       "a": false,
+       "ref": [
+        11,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le Vieux laisse son chat chasser les oiseaux.",
+       "a": false,
+       "ref": [
+        12,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "L’adjudant fête la circoncision de ses deux fils.",
+       "a": true,
+       "ref": [
+        13,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Les riches viennent seulement quelques jours par an au village.",
+       "a": true,
+       "ref": [
+        14,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Haj Lahcène conduit la femme d’Amzil à l’hôpital de Tiznit.",
+       "a": true,
+       "ref": [
+        15,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Contre quelle guerre sont les jeunes Américains ?",
+       "opts": [
+        "la guerre du Vietnam",
+        "la guerre d’Algérie",
+        "la Seconde Guerre mondiale"
+       ],
+       "a": 0,
+       "ref": [
+        11,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que contient le colis venu de France ?",
+       "opts": [
+        "une télévision",
+        "une radio et une robe",
+        "des cassettes"
+       ],
+       "a": 1,
+       "ref": [
+        14,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi la vieille ne porte-t-elle pas la robe française ?",
+       "opts": [
+        "Elle est trop petite.",
+        "Elle s’habille en Berbère.",
+        "Elle est déchirée."
+       ],
+       "a": 1,
+       "ref": [
+        14,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quel est l’ancien métier d’Amzil ?",
+       "opts": [
+        "forgeron",
+        "boucher",
+        "guide"
+       ],
+       "a": 0,
+       "ref": [
+        15,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Complète le tableau",
+     "title": "Complète le tableau : classe chaque mot dans la bonne colonne.",
+     "type": "sort",
+     "cats": [
+      "Personnages",
+      "Objets modernes",
+      "Traditions"
+     ],
+     "items": [
+      [
+       "Salem",
+       0
+      ],
+      [
+       "le transistor",
+       1
+      ],
+      [
+       "l’Ahwach",
+       2
+      ],
+      [
+       "l’adjudant",
+       0
+      ],
+      [
+       "la parabole",
+       1
+      ],
+      [
+       "la circoncision",
+       2
+      ],
+      [
+       "Amzil",
+       0
+      ],
+      [
+       "le groupe électrogène",
+       1
+      ],
+      [
+       "l’amlou",
+       2
+      ],
+      [
+       "Haj Lahcène",
+       0
+      ],
+      [
+       "la Chevrolet",
+       1
+      ],
+      [
+       "le thé à la menthe",
+       2
+      ]
+     ]
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Pour aller plus loin",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "« Ma mule ne connaît que son maître. » Que veut dire Bouchaïb ?",
+       "opts": [
+        "Il refuse de louer sa mule.",
+        "Sa mule est malade.",
+        "Il veut la vendre."
+       ],
+       "a": 0,
+       "ref": [
+        11,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi le Vieux est-il en colère contre les riches ?",
+       "opts": [
+        "Ils l’ont insulté.",
+        "Ils ont tout, mais ne vivent pas au village.",
+        "Ils ont volé son âne."
+       ],
+       "a": 1,
+       "ref": [
+        14,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi la forge d’Amzil a-t-elle fermé ?",
+       "opts": [
+        "Amzil est malade.",
+        "On achète tout au souk, en plastique ou en aluminium.",
+        "Le Mokaddem l’a interdite."
+       ],
+       "a": 1,
+       "ref": [
+        16,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Comment le Vieux appelle-t-il Haj Lahcène ?",
+       "opts": [
+        "« un parvenu »",
+        "« un saint d’aujourd’hui »",
+        "« un vieux bandit »"
+       ],
+       "a": 1,
+       "ref": [
+        16,
+        1
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "chapters": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ],
+   "cover": "vch/quiz4.webp",
+   "retenir": [
+    {
+     "t": "Moderne… mais pas trop",
+     "d": "Le Vieux accepte le réchaud et la radio, mais il refuse l’engrais. Sa femme garde ses pots en terre."
+    },
+    {
+     "t": "La fin d’un monde",
+     "d": "Le dernier troupeau s’en va. L’aïeule reste seule avec ses souvenirs."
+    },
+    {
+     "t": "Le pouvoir du rêve",
+     "d": "Pour Bouchaïb, la poésie et le merveilleux aident à supporter la réalité."
+    },
+    {
+     "t": "Un maître doux",
+     "d": "L’imam enseigne sans violence. Il aide Bouchaïb à publier son œuvre."
+    },
+    {
+     "t": "Le poète reconnu",
+     "d": "Le livre paraît, la radio en parle, les raïss vont chanter ses vers."
+    },
+    {
+     "t": "Une femme heureuse",
+     "d": "La vieille est fière de son mari : avec lui, elle n’a jamais souffert."
+    }
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ?",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Les gens vont de plus en plus au souk.",
+       "a": false,
+       "ref": [
+        17,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "La vieille accepte le couscoussier en aluminium.",
+       "a": false,
+       "ref": [
+        17,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le Vieux refuse l’engrais chimique.",
+       "a": true,
+       "ref": [
+        18,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le dernier troupeau part au souk dans trois camions.",
+       "a": true,
+       "ref": [
+        19,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "L’imam frappe souvent ses élèves.",
+       "a": false,
+       "ref": [
+        20,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "La radio d’Agadir parle du poème de Bouchaïb.",
+       "a": true,
+       "ref": [
+        22,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Que préfère le Vieux à l’engrais ?",
+       "opts": [
+        "le fumier de sa vache",
+        "l’eau du torrent",
+        "le sable du désert"
+       ],
+       "a": 0,
+       "ref": [
+        18,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui sont les « invités » de l’aïeule ?",
+       "opts": [
+        "ses voisins",
+        "les gens qu’elle a aimés, morts depuis longtemps",
+        "des touristes"
+       ],
+       "a": 1,
+       "ref": [
+        19,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui fait la belle copie du poème ?",
+       "opts": [
+        "l’imam",
+        "un élève de la medersa",
+        "la vieille"
+       ],
+       "a": 1,
+       "ref": [
+        21,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Comment le livre est-il publié ?",
+       "opts": [
+        "grâce à une souscription",
+        "grâce à Hmad",
+        "grâce au Mokaddem"
+       ],
+       "a": 0,
+       "ref": [
+        21,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Complète le tableau",
+     "title": "Complète le tableau : classe chaque mot dans la bonne colonne.",
+     "type": "sort",
+     "cats": [
+      "Le Vieux",
+      "La vieille",
+      "L’imam"
+     ],
+     "items": [
+      [
+       "écrit la nuit",
+       0
+      ],
+      [
+       "garde ses pots en terre",
+       1
+      ],
+      [
+       "dirige la medersa",
+       2
+      ],
+      [
+       "refuse l’engrais",
+       0
+      ],
+      [
+       "plume les perdreaux",
+       1
+      ],
+      [
+       "lit le manuscrit",
+       2
+      ],
+      [
+       "achète un réchaud à gaz",
+       0
+      ],
+      [
+       "va à la minoterie",
+       1
+      ],
+      [
+       "cherche un mécène",
+       2
+      ],
+      [
+       "aide la medersa",
+       0
+      ],
+      [
+       "écoute la radio d’Agadir",
+       1
+      ],
+      [
+       "ne frappe pas ses élèves",
+       2
+      ]
+     ],
+     "hint": "Relis les chapitres 17 à 22 : qui écrit, qui garde la maison, qui dirige la medersa ?"
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Pour aller plus loin",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Pourquoi le troupeau est-il un symbole pour Bouchaïb ?",
+       "opts": [
+        "L’Ancêtre est venu avec un troupeau.",
+        "Il était berger.",
+        "Il aime le lait de chèvre."
+       ],
+       "a": 0,
+       "ref": [
+        19,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi la vieille va-t-elle enfin à la minoterie ?",
+       "opts": [
+        "Elle est devenue moderne.",
+        "Ses épaules lui font mal.",
+        "Sa meule est cassée."
+       ],
+       "a": 1,
+       "ref": [
+        17,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi Bouchaïb accepte-t-il les cassettes ?",
+       "opts": [
+        "pour devenir riche",
+        "pour être écouté par plus de gens",
+        "parce que sa femme le demande"
+       ],
+       "a": 1,
+       "ref": [
+        21,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "« Mieux qu’un jeunot ! » Que veut dire le Vieux ?",
+       "opts": [
+        "Il se sent plein de force quand il écrit.",
+        "Il veut se remarier.",
+        "Il va reprendre la chasse."
+       ],
+       "a": 0,
+       "ref": [
+        21,
+        1
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "chapters": [
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "cover": "vch/quiz5.webp",
+   "retenir": [
+    {
+     "t": "Le poète voit loin",
+     "d": "Son poème Tislit Ouaman annonce la sécheresse. Le Vieux accuse les hommes : ils coupent les arbres."
+    },
+    {
+     "t": "La solidarité perdue",
+     "d": "Autrefois, tout le village éteignait le feu ensemble. Aujourd’hui, c’est chacun pour soi."
+    },
+    {
+     "t": "L’amitié",
+     "d": "Radwane revient après trente ans pour revoir son ami. Le Vieux est très ému."
+    },
+    {
+     "t": "Deux pays, deux misères",
+     "d": "Radwane parle des problèmes de la France ; le Vieux parle de la misère du Maroc."
+    },
+    {
+     "t": "La sécheresse",
+     "d": "Bêtes abandonnées, villages vides, exode : la nature souffre, et les hommes aussi."
+    },
+    {
+     "t": "Un message d’espoir",
+     "d": "Le Vieux reste. Il faut creuser plus profond, garder sa terre et croire à la vie."
+    }
+   ],
+   "sections": [
+    {
+     "label": "Vrai ou faux ?",
+     "title": "Vrai ou faux ?",
+     "items": [
+      {
+       "type": "vf",
+       "q": "Le Vieux achète un lecteur de cassettes.",
+       "a": true,
+       "ref": [
+        23,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Tislit Ouaman veut dire « la fiancée de l’eau ».",
+       "a": true,
+       "ref": [
+        23,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Le verger d’Oumouh brûle à cause de la foudre.",
+       "a": false,
+       "ref": [
+        24,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Radwane vit en France depuis trente ans.",
+       "a": true,
+       "ref": [
+        25,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "Radwane reste une semaine chez Bouchaïb.",
+       "a": false,
+       "ref": [
+        25,
+        1
+       ]
+      },
+      {
+       "type": "vf",
+       "q": "À la fin, Bouchaïb décide de partir en ville.",
+       "a": false,
+       "ref": [
+        27,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Choisis la bonne réponse",
+     "title": "Choisis la bonne réponse",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Que représente Tislit Ouaman ?",
+       "opts": [
+        "l’arc-en-ciel",
+        "la lune",
+        "le torrent"
+       ],
+       "a": 0,
+       "ref": [
+        23,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qui prend le fusil d’Oumouh ?",
+       "opts": [
+        "Hmad",
+        "le Mokaddem",
+        "Radwane"
+       ],
+       "a": 1,
+       "ref": [
+        24,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qu’apporte Hmad pour le déjeuner ?",
+       "opts": [
+        "deux lièvres",
+        "six perdreaux",
+        "un mouflon"
+       ],
+       "a": 1,
+       "ref": [
+        25,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Pourquoi des villages entiers se vident-ils ?",
+       "opts": [
+        "à cause de la sécheresse",
+        "à cause d’un séisme",
+        "à cause d’une guerre"
+       ],
+       "a": 0,
+       "ref": [
+        27,
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Complète le tableau",
+     "title": "Complète le tableau : classe chaque mot dans la bonne colonne.",
+     "type": "sort",
+     "cats": [
+      "Causes",
+      "Conséquences",
+      "Solutions du Vieux"
+     ],
+     "items": [
+      [
+       "on coupe trop d’arbres",
+       0
+      ],
+      [
+       "des ânes abandonnés",
+       1
+      ],
+      [
+       "creuser plus profond",
+       2
+      ],
+      [
+       "le Sahara avance",
+       0
+      ],
+      [
+       "des villages vides",
+       1
+      ],
+      [
+       "garder ses terres",
+       2
+      ],
+      [
+       "il ne pleut plus",
+       0
+      ],
+      [
+       "les prix montent",
+       1
+      ],
+      [
+       "respecter la nature",
+       2
+      ],
+      [
+       "on ne respecte pas la nature",
+       0
+      ],
+      [
+       "l’exode vers les villes",
+       1
+      ],
+      [
+       "une bonne éducation",
+       2
+      ]
+     ]
+    },
+    {
+     "label": "Pour aller plus loin",
+     "title": "Pour aller plus loin",
+     "items": [
+      {
+       "type": "qcm",
+       "q": "Pourquoi le Vieux dit-il qu’un poète est « devin » ?",
+       "opts": [
+        "Son poème annonçait la sécheresse.",
+        "Il lit l’avenir dans le thé.",
+        "Il a rêvé de Radwane."
+       ],
+       "a": 0,
+       "ref": [
+        23,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Qu’est-ce qui a disparu depuis l’incendie d’autrefois ?",
+       "opts": [
+        "les puits",
+        "la solidarité",
+        "les vergers"
+       ],
+       "a": 1,
+       "ref": [
+        24,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Que dit Radwane des livres de Bouchaïb ?",
+       "opts": [
+        "« Ce sont des œuvres d’art »",
+        "« Ils sont trop chers »",
+        "« Personne ne les lira »"
+       ],
+       "a": 0,
+       "ref": [
+        25,
+        1
+       ]
+      },
+      {
+       "type": "qcm",
+       "q": "Quelle est la dernière idée du roman ?",
+       "opts": [
+        "La ville est un paradis.",
+        "La vie est partout, même dans le désert.",
+        "Il faut tout vendre et partir."
+       ],
+       "a": 1,
+       "ref": [
+        27,
+        1
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "finale": {
+  "t": "« Car la vie est partout, même dans le désert le plus aride. »",
+  "d": "La dernière phrase du roman : le Vieux reste au village, il faut creuser plus profond et croire à la vie.",
+  "img": "vch/ch27_i1.webp"
+ },
+ "quizTile": "Vrai ou faux, je choisis, je classe, je vais plus loin",
+ "hub": {
+  "lectureImg": "vch/ch01_i2.webp"
+ }
+}

@@ -53,6 +53,10 @@ function Shell() {
           <Route path="/oeuvre/candide/ecriture" element={<Need role="learner"><RWScope wid="candide"><Writing /></RWScope></Need>} />
           <Route path="/oeuvre/candide/ecriture/structure" element={<Need role="learner"><RWScope wid="candide"><Structure /></RWScope></Need>} />
           <Route path="/oeuvre/candide/ecriture/theme/:n" element={<Need role="learner"><RWScope wid="candide"><Theme /></RWScope></Need>} />
+          <Route path="/oeuvre/couple" element={<Need role="learner"><RWScope wid="couple"><WorkHub /></RWScope></Need>} />
+          <Route path="/oeuvre/couple/lecture" element={<Need role="learner"><RWScope wid="couple"><Lecture /></RWScope></Need>} />
+          <Route path="/oeuvre/couple/chapitre/:n" element={<Need role="learner"><RWScope wid="couple"><Chapter /></RWScope></Need>} />
+          <Route path="/oeuvre/couple/quiz/:n" element={<Need role="learner"><RWScope wid="couple"><Quiz /></RWScope></Need>} />
           <Route path="/oeuvre/antigone" element={<Need role="learner"><WorkScope wid="antigone"><WHub /></WorkScope></Need>} />
           <Route path="/oeuvre/antigone/lecture" element={<Need role="learner"><WorkScope wid="antigone"><WLecture /></WorkScope></Need>} />
           <Route path="/oeuvre/antigone/etape/:n" element={<Need role="learner"><WorkScope wid="antigone"><WUnit /></WorkScope></Need>} />

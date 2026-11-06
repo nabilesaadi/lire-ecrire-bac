@@ -201,7 +201,7 @@ function IdeaRef({ refx, onOpen }) {
 }
 
 export function Quiz() {
-  const { D: WORK, base, prefix } = useRW()
+  const { D: WORK, K, base, prefix } = useRW()
   const { n } = useParams()
   const api = useApi()
   const q = WORK.quizzes[Number(n) - 1]
@@ -263,7 +263,8 @@ export function Quiz() {
             {step > 0 ? <button className="btn btn-ghost" onClick={() => setStep(step - 1)}>← Précédent</button> : <span />}
             {step < 4 ? <button className="btn btn-primary" onClick={() => setStep(step + 1)}>{step === 3 ? 'À retenir →' : 'Niveau suivant →'}</button>
               : c1 < WORK.chapters.length ? <Link className="btn btn-primary" to={`${base}/chapitre/${c1 + 1}`}>Chapitre {c1 + 1} →</Link>
-                : <Link className="btn btn-primary" to={`${base}/ecriture`}>Passer à la production écrite →</Link>}
+                : K ? <Link className="btn btn-primary" to={`${base}/ecriture`}>Passer à la production écrite →</Link>
+                  : <Link className="btn btn-primary" to={base}>Retour à l’œuvre →</Link>}
           </div>
         </div>
       </div>

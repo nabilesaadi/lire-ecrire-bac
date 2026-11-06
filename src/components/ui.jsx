@@ -32,6 +32,7 @@ export function Header() {
               <NavLink to="/oeuvre/antigone">Antigone</NavLink>
               <NavLink to="/oeuvre/djc">Le Dernier Jour</NavLink>
               <NavLink to="/oeuvre/candide">Candide</NavLink>
+              <NavLink to="/oeuvre/couple">Vieux couple</NavLink>
               {p.role === 'student' && <NavLink to="/mes-travaux">Mes travaux</NavLink>}
             </nav>
           )}
@@ -42,6 +43,7 @@ export function Header() {
               <NavLink to="/oeuvre/antigone/lecture">Antigone</NavLink>
               <NavLink to="/oeuvre/djc/lecture">Le Dernier Jour</NavLink>
               <NavLink to="/oeuvre/candide/lecture">Candide</NavLink>
+              <NavLink to="/oeuvre/couple/lecture">Vieux couple</NavLink>
             </nav>
           )}
           <div className="grow" />
@@ -87,7 +89,7 @@ export function Footer() {
     <footer className="foot">
       <div className="wrap row spread">
         <span>{SITE} · conçu par Nabil Saadi, professeur de français · Tétouan</span>
-        <span>Illustrations : résumés illustrés de <i>La Boîte à merveilles</i> (A. Sefrioui) , d’<i>Antigone</i> (J. Anouilh), du <i>Dernier Jour d’un condamné</i> (V. Hugo) et de <i>Candide</i> (Voltaire)</span>
+        <span>Illustrations : résumés illustrés de <i>La Boîte à merveilles</i> (A. Sefrioui) , d’<i>Antigone</i> (J. Anouilh), du <i>Dernier Jour d’un condamné</i> (V. Hugo), de <i>Candide</i> (Voltaire) et d’<i>Il était une fois un vieux couple heureux</i> (M. Khaïr-Eddine)</span>
       </div>
     </footer>
   )

@@ -1,18 +1,18 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useApi } from '../lib/api'
-import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, RW_LIST, UNIT_WORKS, activityDone } from '../lib/items'
+import { ACTIVITY_BY_ID, CATALOG, COMPETENCES, ITEM_BY_KEY, ITEM_KEY, PE_LIST, RW_LIST, UNIT_WORKS, activityDone } from '../lib/items'
 import { Modal, pct } from '../components/ui'
 
 const DAY = 86400000
 const fmtDate = (d) => new Date(d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })
 // Grille de correction de la production (elle dépend du kit et du thème)
 function gridFor(activity) {
-  const w = RW_LIST.find((x) => activity?.startsWith(`${x.prefix}.pe.`)) || RW_LIST[0]
+  const w = PE_LIST.find((x) => activity?.startsWith(`${x.prefix}.pe.`)) || PE_LIST[0]
   const m = /\.pe\.t(\d+)\./.exec(activity || '')
   return (w.K.themes[(m ? Number(m[1]) : 1) - 1] || w.K.themes[0]).n5.grille
 }
-const GRID_MAX = Math.max(...RW_LIST.flatMap((w) => w.K.themes.map((t) => t.n5.grille.length)))
+const GRID_MAX = Math.max(...PE_LIST.flatMap((w) => w.K.themes.map((t) => t.n5.grille.length)))
 const SCALE = [['Non', 0], ['En partie', 1], ['Oui', 2]]
 
 function fnv(s) {
@@ -265,7 +265,7 @@ function Assignments({ st, cls, api, reload }) {
       [`${w.data.title} · ${w.unitsWord}`, CATALOG.activities.filter((a) => a.kind === 'unit' && a.work === w.id)],
       [`${w.data.title} · quiz`, CATALOG.activities.filter((a) => a.kind === 'quiz' && a.work === w.id)],
     ]),
-    ...RW_LIST.flatMap((w) => w.K.themes.map((t) => [`Écriture ${w.D.shortTitle} · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.work === w.id && a.theme === t.n)])),
+    ...PE_LIST.flatMap((w) => w.K.themes.map((t) => [`Écriture ${w.D.shortTitle} · thème ${t.n}`, CATALOG.activities.filter((a) => a.kind === 'pe' && a.work === w.id && a.theme === t.n)])),
   ]
   return (
     <div className="grid g2" style={{ alignItems: 'start' }}>

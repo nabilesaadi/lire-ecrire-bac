@@ -6,21 +6,25 @@ import ant from '../content/antigone.json'
 import djc from '../content/djc.json'
 import cand from '../content/candide.json'
 import peCand from '../content/pe_candide.json'
+import couple from '../content/couple.json'
 
 export const WORK = bam
 export const PE = pe
 export const ANT = ant
 export const DJC = djc
-export const WORKS = { bam, antigone: ant, djc, candide: cand }
+export const WORKS = { bam, antigone: ant, djc, candide: cand, couple }
 
-// Œuvres « résumé illustré » : chapitres + idées, quiz à 4 niveaux et kit de production écrite
+// Œuvres « résumé illustré » : chapitres + idées, quiz à 4 niveaux et, si K n'est pas nul, kit de production écrite
 export const RES_WORKS = {
   bam: { id: 'bam', prefix: 'bam', base: '/oeuvre/bam', D: bam, K: pe, level: '1bac', levelLabel: '1re année du baccalauréat',
     chShort: (n) => `Ch. ${n}`, quizShort: (n) => `Quiz ${n}`, peShort: (t, n) => `T${t} N${n}`, label: '' },
   candide: { id: 'candide', prefix: 'cand', base: '/oeuvre/candide', D: cand, K: peCand, level: '2bac', levelLabel: '2e année du baccalauréat',
     chShort: (n) => `Cand. ${n}`, quizShort: (n) => `Cand. Q${n}`, peShort: (t, n) => `C-T${t} N${n}`, label: 'Candide · ' },
+  couple: { id: 'couple', prefix: 'vch', base: '/oeuvre/couple', D: couple, K: null, level: '2bac', levelLabel: '2e année du baccalauréat',
+    chShort: (n) => `VC ${n}`, quizShort: (n) => `VC Q${n}`, peShort: null, label: 'Vieux couple · ' },
 }
 export const RW_LIST = Object.values(RES_WORKS)
+export const PE_LIST = RW_LIST.filter((w) => w.K)
 export const quizRange = (q) => [q.chapters[0], q.chapters[q.chapters.length - 1]]
 
 // Œuvres organisées en étapes (unités de lecture) et quiz : identifiants « préfixe.u.N » et « préfixe.quiz.N »
@@ -74,7 +78,7 @@ export function buildCatalog() {
         })
       })
     })
-    w.K.themes.forEach((t) => {
+    w.K?.themes.forEach((t) => {
       const base = `${w.prefix}.pe.t${t.n}`
       const lv = (n, label) => {
         const a = { id: `${base}.n${n}`, kind: 'pe', work: w.id, theme: t.n, level: n, label: `${w.label}Thème ${t.n} · niveau ${n} · ${label}`, short: w.peShort(t.n, n) }
@@ -144,6 +148,6 @@ export const LEVELS = [
   ] },
   { id: '2bac', label: '2e année du baccalauréat', works: [
     { id: 'candide', title: 'Candide', author: 'Voltaire', ready: true },
-    { id: 'couple', title: 'Il était une fois un vieux couple heureux', author: 'Mohammed Khaïr-Eddine', ready: false },
+    { id: 'couple', title: 'Il était une fois un vieux couple heureux', author: 'Mohammed Khaïr-Eddine', ready: true },
   ] },
 ]
